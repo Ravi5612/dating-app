@@ -70,7 +70,7 @@ export default function About() {
           <div className="col-span-2">
             <div className="w-full h-48 md:h-56 lg:h-64 rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/Images/Rectangle 94.png" 
+                src="/Images/unsplash_fdlZBWIP0aM.png" 
                 alt="Couple having meaningful conversation" 
                 className="w-full h-full object-cover"
               />
@@ -80,7 +80,8 @@ export default function About() {
           {/* Small Images - Bottom Row */}
           <div className="w-full h-32 md:h-40 lg:h-48 rounded-2xl overflow-hidden shadow-lg">
             <img 
-              src="/Images/image (1).png" 
+              src="/Images/unsplash_jpkfc5_d-DI.png" 
+             
               alt="Friends connecting over coffee" 
               className="w-full h-full object-cover"
             />
@@ -88,7 +89,8 @@ export default function About() {
           
           <div className="w-full h-32 md:h-40 lg:h-48 rounded-2xl overflow-hidden shadow-lg">
             <img 
-              src="/Images/Rectangle 94.png" 
+              src="/Images/unsplash_mAQZ3X_8_l0.png" 
+             
               alt="People networking and chatting" 
               className="w-full h-full object-cover"
             />
@@ -108,7 +110,8 @@ export default function About() {
       <div className="order-1 lg:order-1">
         <div className="w-full h-64 md:h-72 lg:h-80 rounded-2xl overflow-hidden shadow-lg">
           <img 
-            src="/Images/Rectangle 94.png" 
+            src="/Images/Nwe1.png"
+       
             alt="Couple having meaningful conversation over coffee" 
             className="w-full h-full object-cover"
           />
@@ -162,7 +165,8 @@ export default function About() {
     <div className="flex justify-center">
       <div className="w-full max-w-4xl h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg">
         <img 
-          src="/Images/Rectangle 94.png" 
+          src="/Images/new3.png"
+    
           alt="Happy couple having meaningful conversation outdoors" 
           className="w-full h-full object-cover"
         />

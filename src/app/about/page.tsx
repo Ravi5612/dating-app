@@ -10,7 +10,11 @@ export default function About() {
       <main>
         {/* Hero Section */}
     
-
+   <img 
+  src="/Images/about.png" 
+  alt="Happy couple" 
+  className="w-full h-[28rem] md:h-[34rem] lg:h-[40rem] object-cover"
+/>
      {/* Real Connections Section */}
 <section className="py-16 md:py-20 bg-pink-100">
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
@@ -26,18 +30,16 @@ export default function About() {
     </p>
     
     {/* Image with Blue Border - CORRECTED */}
-    <div className="relative max-w-2xl mx-auto mb-8">
-      
-        <div className="bg-white rounded-2xl overflow-hidden">
-          <img 
-            src="/Images/Rectangle 94 (1).png" 
-            // C:\Users\Roshan Rai\dating-app\public\images\Rectangle 94 (1).png
-            alt="Couple in garden" 
-            className="w-full h-64 md:h-80 lg:h-96 object-cover"
-          />
-        </div>
-     
-    </div>
+   <div className="relative max-w-4xl mx-auto mb-8">
+  <div className="bg-white rounded-2xl overflow-hidden">
+    <img 
+      src="/Images/Rectangle 94 (1).png"
+      alt="Couple in garden" 
+      className="w-full h-64 md:h-80 lg:h-96 object-cover"
+    />
+  </div>
+</div>
+
     
    
   </div>
@@ -114,7 +116,8 @@ export default function About() {
   <div className="w-full h-full bg-white rounded-lg shadow-xl p-3">
     <div className="w-full h-full bg-gray-200 rounded-md overflow-hidden relative">
       <img 
-        src="/Images/Rectangle 94.png" 
+        src="/Images/Rectangle 23855.png"
+       
         alt="Real Connections" 
         className="w-full h-full object-cover"
       />

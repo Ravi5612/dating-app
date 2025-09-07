@@ -7,10 +7,10 @@ const EventPage = () => {
     <div>
       <Header />
       
-      <main>
+     <main className="bg-white">
         {/* Hero Section */}
     
-<section className="py-16 md:py-20 bg-stone-100">
+<section className="py-16 md:py-20 bg-pink-100">
   <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
       
@@ -18,7 +18,8 @@ const EventPage = () => {
       <div className="order-1 lg:order-1">
         <div className="w-full h-64 md:h-72 lg:h-80 rounded-2xl overflow-hidden shadow-lg">
           <img 
-            src="/Images/Rectangle 94.png" 
+            src="/Images/7.png"
+            
             alt="Happy couple embracing" 
             className="w-full h-full object-cover"
           />
@@ -37,6 +38,7 @@ const EventPage = () => {
     </div>
   </div>
 </section>
+
  
 <section className="py-16 md:py-20 bg-gray-50">
   <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
@@ -74,7 +76,8 @@ const EventPage = () => {
         <div className="bg-white rounded-lg shadow-lg p-2 md:p-3">
           <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-200 rounded-md overflow-hidden">
             <img 
-              src="/Images/Rectangle 94.png" 
+              src="/Images/unsplash_jpkfc5_d-DI.png"
+              
               alt="Couple having coffee together" 
               className="w-full h-full object-cover"
             />
@@ -104,42 +107,46 @@ const EventPage = () => {
   <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
     
     {/* Header */}
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8">
-        Discover Events Nearby!
-      </h2>
-      
-      {/* Filter Dropdowns */}
-      <div className="flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
-        <div className="w-full md:w-64">
-          <select className="w-full px-4 py-3 border-2 border-pink-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:border-pink-500">
-            <option>All Cities</option>
-            <option>New York, NY</option>
-            <option>Aspen, CO</option>
-            <option>Los Angeles, CA</option>
-          </select>
-        </div>
-        
-        <div className="w-full md:w-64">
-          <select className="w-full px-4 py-3 border-2 border-pink-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:border-pink-500">
-            <option>All Modes</option>
-            <option>In-Person</option>
-            <option>Virtual</option>
-            <option>Hybrid</option>
-          </select>
-        </div>
-      </div>
-    </div>
+   <div className="mb-12">
+  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8 text-left">
+    Discover Events Nearby!
+  </h2>
+  
+  {/* Filter Dropdowns */}
+ <div className="flex flex-col md:flex-row gap-4 justify-start items-center max-w-5xl mr-auto">
+  <div className="w-full md:w-96">
+    <select className="w-full px-4 py-3 border-2 border-pink-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:border-pink-500">
+      <option>All Cities</option>
+      <option>New York, NY</option>
+      <option>Aspen, CO</option>
+      <option>Los Angeles, CA</option>
+    </select>
+  </div>
+  
+  <div className="w-full md:w-96">
+    <select className="w-full px-4 py-3 border-2 border-pink-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:border-pink-500">
+      <option>All Modes</option>
+      <option>In-Person</option>
+      <option>Virtual</option>
+      <option>Hybrid</option>
+    </select>
+  </div>
+</div>
+
+</div>
+
     
     {/* Event Cards Grid */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
       
       {/* Card 1 - Love Chalet */}
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+     <div className="bg-white rounded-2xl shadow-lg overflow-hidden min-h-[28rem]">
         <div className="relative">
           <div className="w-full h-48 md:h-56">
             <img 
-              src="/Images/Rectangle 94.png" 
+              src="/Images/17.png" 
+              
+            
               alt="Love Chalet Aspen Pop Up" 
               className="w-full h-full object-cover"
             />
@@ -175,7 +182,8 @@ const EventPage = () => {
         <div className="relative">
           <div className="w-full h-48 md:h-56">
             <img 
-              src="/Images/image (1).png" 
+              src="/Images/16.png" 
+          
               alt="Trivia Night in NYC" 
               className="w-full h-full object-cover"
             />
@@ -214,7 +222,8 @@ const EventPage = () => {
         <div className="relative">
           <div className="w-full h-48 md:h-56">
             <img 
-              src="/Images/Rectangle 94.png" 
+               src="/Images/15.png" 
+               
               alt="Velvet x Reference.Point" 
               className="w-full h-full object-cover"
             />

@@ -8,7 +8,8 @@ const TestimonialCarousel = () => {
   const testimonials = [
     {
       id: 1,
-      profileImage: "/Images/Rectangle 94.png",
+     
+      profileImage: "/Images/image.png",
       name: "James K.",
       role: "Traveler",
       rating: 5,
@@ -16,6 +17,7 @@ const TestimonialCarousel = () => {
     },
     {
       id: 2,
+      
       profileImage: "/Images/image (1).png",
       name: "Sarah W.",
       role: "Designer",
@@ -24,7 +26,8 @@ const TestimonialCarousel = () => {
     },
     {
       id: 3,
-      profileImage: "/Images/Rectangle 94.png",
+    
+      profileImage: "/Images/Rectangle 23860.png",
       name: "Mike T.",
       role: "Engineer", 
       rating: 5,

@@ -8,23 +8,27 @@ const ambassadors = () => {
    const [currentSlide, setCurrentSlide] = useState(0);
  const images = [
     {
-      src: "/Images/Rectangle 94.png",
+      src: "/Images/new5.png",
+    
       alt: "Ambassador event 1"
     },
     {
-      src: "/Images/image (1).png", 
+      src: "/Images/new7.png",
+     
+   
       alt: "Ambassador event 2"
     },
     {
-      src: "/Images/Rectangle 94.png",
+     src: "/Images/new6.png",
       alt: "Ambassador event 3"
     },
     {
-      src: "/Images/image (1).png",
+      src: "/Images/new5.png",
       alt: "Ambassador event 4"
     },
     {
-      src: "/Images/Rectangle 94.png",
+      src: "/Images/unsplash_jpkfc5_d-DI.png",
+
       alt: "Ambassador event 5"
     }
   ];
@@ -43,7 +47,11 @@ const ambassadors = () => {
       
       <main>
         {/* Hero Section */}
-    
+    <img 
+  src="/Images/ambassodars.png" 
+  alt="Happy couple" 
+  className="w-full h-[28rem] md:h-[34rem] lg:h-[40rem] object-cover"
+/>
 <section className="py-16 md:py-20 bg-gradient-to-br from-pink-100 to-pink-200">
   <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -297,7 +305,7 @@ const ambassadors = () => {
       {/* Image 1 */}
       <div className="w-1/4 h-48 md:h-64 lg:h-72 flex-shrink-0">
         <img 
-          src="/Images/Rectangle 94.png" 
+           src="/Images/Rectangle 23855 (1).png"
           alt="Friends laughing together" 
           className="w-full h-full object-cover"
         />
@@ -307,6 +315,7 @@ const ambassadors = () => {
       <div className="w-1/4 h-48 md:h-64 lg:h-72 flex-shrink-0">
         <img 
           src="/Images/image (1).png" 
+          
           alt="Couple enjoying sunset" 
           className="w-full h-full object-cover"
         />
@@ -315,7 +324,8 @@ const ambassadors = () => {
       {/* Image 3 */}
       <div className="w-1/4 h-48 md:h-64 lg:h-72 flex-shrink-0">
         <img 
-          src="/Images/Rectangle 94.png" 
+          src="/Images/unsplash_fdlZBWIP0aM.png"
+      
           alt="Group having fun" 
           className="w-full h-full object-cover"
         />

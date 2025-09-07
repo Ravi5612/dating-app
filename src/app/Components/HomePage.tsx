@@ -50,12 +50,13 @@ const faqs = [
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
       {/* Left Content */}
       <div className="order-2 lg:order-1">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-          Raise Your Standards<br />
-          Date With Confidence<br />
-          Because You Deserve<br />
-          Better.
-        </h2>
+       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-black">
+  Raise Your Standards<br />
+  Date With Confidence<br />
+  Because You Deserve<br />
+  Better.
+</h2>
+
         <div className="flex items-start space-x-3 mb-6">
           {/* Chat Bubble Icon */}
           <div className="w-8 h-8 mt-1 flex-shrink-0">
@@ -91,7 +92,8 @@ const faqs = [
         <div className="relative max-w-lg mx-auto">
           <div className="w-full h-64 md:h-80 lg:h-96 bg-gray-200 rounded-2xl overflow-hidden">
             <img 
-              src="/Images/Rectangle 94.png" 
+         
+              src="/Images/Rectangle 94 (2).png" 
               alt="Dating App" 
               className="w-full h-full object-cover"
             />
@@ -179,7 +181,7 @@ const faqs = [
                   <div className="w-full h-48 md:h-56 lg:h-64 bg-blue-300 rounded-2xl flex items-center justify-center text-gray-600">
                     <div className="text-center text-sm">
                    <img 
-    src="/Images/Rectangle 23860.png" 
+      src="/Images/\Rectangle 23860.png"
     alt="Dating App" 
     className="w-[1439px] h-[1026px] max-w-full h-auto object-cover"
   />
@@ -190,7 +192,7 @@ const faqs = [
               
               {/* Right Content - Text */}
               <div className="order-1 lg:order-2">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-black">
                   Raise Your Standards.<br />
                   Date With Confidence.
                 </h2>
