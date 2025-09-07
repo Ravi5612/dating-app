@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from 'next/image';
 
 const TestimonialCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -8,7 +9,6 @@ const TestimonialCarousel = () => {
   const testimonials = [
     {
       id: 1,
-     
       profileImage: "/Images/image.png",
       name: "James K.",
       role: "Traveler",
@@ -17,7 +17,6 @@ const TestimonialCarousel = () => {
     },
     {
       id: 2,
-      
       profileImage: "/Images/image (1).png",
       name: "Sarah W.",
       role: "Designer",
@@ -26,7 +25,6 @@ const TestimonialCarousel = () => {
     },
     {
       id: 3,
-    
       profileImage: "/Images/Rectangle 23860.png",
       name: "Mike T.",
       role: "Engineer", 
@@ -59,63 +57,68 @@ const TestimonialCarousel = () => {
     setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
-  const renderStars = (rating) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <span key={i} className={`text-sm md:text-base lg:text-lg ${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}>
-        ★
-      </span>
-    ));
-  };
+const renderStars = (rating: number) => {
+  return Array.from({ length: 5 }, (_, i) => (
+    <span
+      key={i}
+      className={`text-sm md:text-base lg:text-lg ${
+        i < rating ? 'text-yellow-400' : 'text-gray-300'
+      }`}
+    >
+      ★
+    </span>
+  ));
+};
 
-  const getCardPosition = (index) => {
-    if (index === activeIndex) {
-      // Main card - center (responsive)
-      const dimensions = {
-        mobile: { width: '280px', height: '200px' },
-        tablet: { width: '450px', height: '280px' },
-        desktop: { width: '650px', height: '320px' }
-      };
-      
+const getCardPosition = (index: number) => {
+  if (index === activeIndex) {
+    // Main card - center (responsive)
+    const dimensions = {
+      mobile: { width: '280px', height: '200px' },
+      tablet: { width: '450px', height: '280px' },
+      desktop: { width: '650px', height: '320px' }
+    };
+    
+    return {
+      transform: 'translateX(-50%)',
+      left: '50%',
+      top: '0',
+      zIndex: 30,
+      opacity: 1,
+      ...dimensions[screenSize as keyof typeof dimensions]
+    };
+  } else {
+    const isLeft = (index + testimonials.length - activeIndex) % testimonials.length === testimonials.length - 1;
+    
+    const bgDimensions = {
+      mobile: { width: '120px', height: '80px', offset: '10px', topOffset: '20px' },
+      tablet: { width: '180px', height: '120px', offset: '20px', topOffset: '40px' },
+      desktop: { width: '240px', height: '180px', offset: '50px', topOffset: '60px' }
+    };
+    
+    const dims = bgDimensions[screenSize as keyof typeof bgDimensions];
+    
+    if (isLeft) {
       return {
-        transform: 'translateX(-50%)',
-        left: '50%',
-        top: '0',
-        zIndex: 30,
-        opacity: 1,
-        ...dimensions[screenSize]
+        left: dims.offset,
+        top: dims.topOffset,
+        zIndex: 20,
+        opacity: 0.6,
+        width: dims.width,
+        height: dims.height
       };
     } else {
-      const isLeft = (index + testimonials.length - activeIndex) % testimonials.length === testimonials.length - 1;
-      
-      const bgDimensions = {
-        mobile: { width: '120px', height: '80px', offset: '10px', topOffset: '20px' },
-        tablet: { width: '180px', height: '120px', offset: '20px', topOffset: '40px' },
-        desktop: { width: '240px', height: '180px', offset: '50px', topOffset: '60px' }
+      return {
+        right: dims.offset,
+        top: dims.topOffset,
+        zIndex: 20,
+        opacity: 0.6,
+        width: dims.width,
+        height: dims.height
       };
-      
-      const dims = bgDimensions[screenSize];
-      
-      if (isLeft) {
-        return {
-          left: dims.offset,
-          top: dims.topOffset,
-          zIndex: 20,
-          opacity: 0.6,
-          width: dims.width,
-          height: dims.height
-        };
-      } else {
-        return {
-          right: dims.offset,
-          top: dims.topOffset,
-          zIndex: 20,
-          opacity: 0.6,
-          width: dims.width,
-          height: dims.height
-        };
-      }
     }
-  };
+  }
+};
 
   return (
     <section className="py-8 md:py-12 lg:py-16 bg-pink-100">
@@ -138,11 +141,12 @@ const TestimonialCarousel = () => {
                   <div className="flex flex-col md:flex-row items-center h-full">
                     {/* Profile Image */}
                     <div className="mb-3 md:mb-0 md:mr-6">
-                      <div className="w-16 h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 bg-gray-200 rounded-lg md:rounded-xl overflow-hidden">
-                        <img 
+                      <div className="relative w-16 h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 bg-gray-200 rounded-lg md:rounded-xl overflow-hidden">
+                        <Image 
                           src={testimonials[activeIndex].profileImage} 
                           alt={testimonials[activeIndex].name}
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
                         />
                       </div>
                     </div>
@@ -150,7 +154,7 @@ const TestimonialCarousel = () => {
                     {/* Content */}
                     <div className="flex-1 text-center md:text-left">
                       <p className="text-gray-700 text-xs md:text-sm lg:text-base mb-2 md:mb-4 leading-relaxed">
-                        "{testimonials[activeIndex].text}"
+                        &ldquo;{testimonials[activeIndex].text}&rdquo;
                       </p>
                       
                       {/* Stars */}
@@ -172,11 +176,12 @@ const TestimonialCarousel = () => {
                 ) : (
                   // Background Cards - Simple Layout
                   <div className="flex items-center h-full">
-                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 bg-gray-200 rounded-md md:rounded-lg overflow-hidden mr-2 md:mr-4">
-                      <img 
+                    <div className="relative w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 bg-gray-200 rounded-md md:rounded-lg overflow-hidden mr-2 md:mr-4">
+                      <Image 
                         src={testimonial.profileImage} 
                         alt={testimonial.name}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
                       />
                     </div>
                     <div className="flex-1">

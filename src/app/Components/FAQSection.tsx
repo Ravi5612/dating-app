@@ -1,10 +1,19 @@
 // components/FAQSection.js
 import { useState } from 'react';
 
-const FAQSection = ({ faqs }) => {
-  const [openFaq, setOpenFaq] = useState(null);
+type FAQ = {
+  question: string;
+  answer: string;
+};
 
-  const toggleFaq = (index) => {
+type FAQSectionProps = {
+  faqs: FAQ[];
+};
+
+const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
