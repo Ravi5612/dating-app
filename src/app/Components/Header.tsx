@@ -106,6 +106,19 @@ const Header: React.FC = () => {
               isActive('/about') ? 'w-full' : 'w-0 group-hover:w-full'
             }`}></span>
           </Link>
+
+     <Link 
+  href="/join-us"
+  className={`relative transition-colors group ${
+    isActive('/join-us') ? 'text-pink-500' : 'hover:text-gray-900'
+  }`}
+>
+  Join Us
+  <span className={`absolute left-0 bottom-[-8px] h-0.5 bg-pink-500 transition-all duration-300 ${
+    isActive('/join-us') ? 'w-full' : 'w-0 group-hover:w-full'
+  }`}></span>
+</Link>
+
         </nav>
 
         {/* Login Button */}
