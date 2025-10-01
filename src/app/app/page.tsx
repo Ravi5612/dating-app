@@ -100,7 +100,7 @@ export default function AppPage() {
                         {/* Card 1 */}
                         <div className="bg-teal-100 rounded-xl p-4 flex items-center space-x-3">
                           <div className="relative w-12 h-12 bg-gray-300 rounded-full overflow-hidden">
-                            <Image src="/Images/Rectangle 94.png" alt="User" fill className="object-cover" />
+                            <Image src="/images/Rectangle 94.png" alt="User" fill className="object-cover" />
                           </div>
                           <div className="flex-1">
                             <h3 className="font-semibold text-sm">Sarah, 24</h3>
@@ -111,7 +111,7 @@ export default function AppPage() {
                         {/* Card 2 */}
                         <div className="bg-pink-100 rounded-xl p-4 flex items-center space-x-3">
                           <div className="relative w-12 h-12 bg-gray-300 rounded-full overflow-hidden">
-                            <Image src="/Images/image (1).png" alt="User" fill className="object-cover" />
+                            <Image src="/images/image (1).png" alt="User" fill className="object-cover" />
                           </div>
                           <div className="flex-1">
                             <h3 className="font-semibold text-sm">Mike, 28</h3>
@@ -122,7 +122,7 @@ export default function AppPage() {
                         {/* Card 3 */}
                         <div className="bg-orange-100 rounded-xl p-4 flex items-center space-x-3">
                           <div className="relative w-12 h-12 bg-gray-300 rounded-full overflow-hidden">
-                            <Image src="/Images/Rectangle 94.png" alt="User" fill className="object-cover" />
+                            <Image src="/images/Rectangle 94.png" alt="User" fill className="object-cover" />
                           </div>
                           <div className="flex-1">
                             <h3 className="font-semibold text-sm">Emma, 26</h3>
@@ -155,7 +155,7 @@ export default function AppPage() {
           <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               
-              {/* Left Column - Images */}
+              {/* Left Column - images */}
               <div className="order-1 lg:order-1 relative">
                 <div className="space-y-6">
                   {/* First Image */}
@@ -164,7 +164,7 @@ export default function AppPage() {
                     <div className="bg-pink-200 p-2 rounded-xl shadow-lg transform -rotate-6 w-72 h-72 ml-auto">
                       <div className="relative w-full h-full">
                         <Image
-                          src="/Images/31.png"
+                          src="/images/31.png"
                           alt="Couple 1"
                           fill
                           className="object-cover rounded-lg"
@@ -176,7 +176,7 @@ export default function AppPage() {
                    <div className="bg-pink-200 p-2 rounded-xl shadow-lg transform -rotate-6 w-72 h-72 -ml-16">
                       <div className="relative w-full h-full">
                         <Image
-                         src="/Images/33.png"
+                         src="/images/33.png"
                           alt="Couple 1"
                           fill
                           className="object-cover rounded-lg"
@@ -260,7 +260,7 @@ export default function AppPage() {
                 <div className="relative">
                   <div className="relative w-full h-80 md:h-96 bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
                     <Image 
-                      src="/Images/19.png"
+                      src="/images/19.png"
                       alt="Happy couple celebrating at night"
                       fill
                       className="object-cover"

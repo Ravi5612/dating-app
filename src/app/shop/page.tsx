@@ -60,7 +60,7 @@ export default function ShopPage() {
                 
                 <div className="relative w-full max-w-4xl h-80 md:h-96">
                   <Image 
-                    src="/Images/Container (1).png" 
+                    src="/images/Container (1).png" 
                     alt="AI Robot for emotional support"
                     fill
                     className="object-cover rounded-xl"
@@ -92,7 +92,7 @@ export default function ShopPage() {
                 <div className="order-1">
                   <div className="relative w-full h-64 md:h-80">
                     <Image 
-                      src="/Images/r1.png"
+                      src="/images/r1.png"
                       alt="AI Robot for emotional support"
                       fill
                       className="object-cover rounded-xl"
@@ -122,7 +122,7 @@ export default function ShopPage() {
                 <div className="order-1 lg:order-2">
                   <div className="relative w-full h-64 md:h-80">
                     <Image 
-                      src="/Images/r2.png"
+                      src="/images/r2.png"
                       alt="AI personalized coaching"
                       fill
                       className="object-cover rounded-xl"
@@ -136,7 +136,7 @@ export default function ShopPage() {
                 <div className="order-1">
                   <div className="relative w-full h-64 md:h-80">
                     <Image 
-                      src="/Images/r3.png"
+                      src="/images/r3.png"
                       alt="AI 24/7 companion"
                       fill
                       className="object-cover rounded-xl"
@@ -166,7 +166,7 @@ export default function ShopPage() {
                 <div className="order-1 lg:order-2">
                   <div className="relative w-full h-64 md:h-80">
                     <Image 
-                      src="/Images/r4.png"
+                      src="/images/r4.png"
                       alt="AI behavioral insights and safety"
                       fill
                       className="object-cover rounded-xl"

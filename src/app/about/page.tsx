@@ -13,7 +13,7 @@ export default function About() {
         {/* Hero Section */}
         <div className="relative w-full h-[28rem] md:h-[34rem] lg:h-[40rem]">
           <Image 
-            src="/Images/about.png" 
+            src="/images/about.png" 
             alt="Happy couple" 
             fill
             className="object-cover"
@@ -39,7 +39,7 @@ export default function About() {
               <div className="bg-white rounded-2xl overflow-hidden">
                 <div className="relative w-full h-64 md:h-80 lg:h-96">
                   <Image 
-                    src="/Images/Rectangle 94 (1).png"
+                    src="/images/Rectangle 94 (1).png"
                     alt="Couple in garden" 
                     fill
                     className="object-cover"
@@ -68,7 +68,7 @@ export default function About() {
                 </p>
               </div>
               
-              {/* Right Images - Corner Touching Layout */}
+              {/* Right images - Corner Touching Layout */}
               <div className="order-1 lg:order-2 relative">
                 <div className="relative w-full h-96 md:h-[450px]">
                   
@@ -79,7 +79,7 @@ export default function About() {
                       {/* Image Container */}
                       <div className="relative w-full h-64 md:h-80 bg-gray-200 rounded-md overflow-hidden">
                         <Image 
-                          src="/Images/Group 1597884004.png"
+                          src="/images/Group 1597884004.png"
                           alt="Couple in garden" 
                           fill
                           className="object-cover"
@@ -101,7 +101,7 @@ export default function About() {
                     <div className="w-full h-full bg-white rounded-lg shadow-xl p-3">
                       <div className="relative w-full h-full bg-gray-200 rounded-md overflow-hidden">
                         <Image 
-                          src="/Images/image (1).png" 
+                          src="/images/image (1).png" 
                           alt="Meaningful Moments" 
                           fill
                           className="object-cover"
@@ -119,7 +119,7 @@ export default function About() {
                     <div className="w-full h-full bg-white rounded-lg shadow-xl p-3">
                       <div className="relative w-full h-full bg-gray-200 rounded-md overflow-hidden">
                         <Image 
-                          src="/Images/Rectangle 23855.png"
+                          src="/images/Rectangle 23855.png"
                           alt="Real Connections" 
                           fill
                           className="object-cover"
@@ -153,7 +153,7 @@ export default function About() {
                 {/* Image */}
                 <div className="relative w-full h-64 md:h-80 rounded-tl-3xl overflow-hidden">
                   <Image 
-                    src="/Images/Rectangle 23841.png" 
+                    src="/images/Rectangle 23841.png" 
                     alt="Couple embracing outdoors" 
                     fill
                     className="object-cover rounded-tl-3xl"
@@ -177,7 +177,7 @@ export default function About() {
                 {/* Image */}
                 <div className="relative w-full h-64 md:h-80 rounded-tl-3xl overflow-hidden">
                   <Image 
-                    src="/Images/Rectangle 23845.png" 
+                    src="/images/Rectangle 23845.png" 
                     alt="Couple embracing outdoors" 
                     fill
                     className="object-cover rounded-tl-3xl"
@@ -201,7 +201,7 @@ export default function About() {
                 {/* Image */}
                 <div className="relative w-full h-64 md:h-80 rounded-tl-3xl overflow-hidden">
                   <Image 
-                    src="/Images/Rectangle 23847.png" 
+                    src="/images/Rectangle 23847.png" 
                     alt="Couple embracing outdoors" 
                     fill
                     className="object-cover rounded-tl-3xl"

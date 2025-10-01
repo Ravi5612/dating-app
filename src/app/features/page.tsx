@@ -73,7 +73,7 @@ export default function About() {
                   <div className="col-span-2">
                     <div className="relative w-full h-48 md:h-56 lg:h-64 rounded-2xl overflow-hidden shadow-lg">
                       <Image 
-                        src="/Images/unsplash_fdlZBWIP0aM.png" 
+                        src="/images/unsplash_fdlZBWIP0aM.png" 
                         alt="Couple having meaningful conversation" 
                         fill
                         className="object-cover"
@@ -81,10 +81,10 @@ export default function About() {
                     </div>
                   </div>
                   
-                  {/* Small Images - Bottom Row */}
+                  {/* Small images - Bottom Row */}
                   <div className="relative w-full h-32 md:h-40 lg:h-48 rounded-2xl overflow-hidden shadow-lg">
                     <Image 
-                      src="/Images/unsplash_jpkfc5_d-DI.png" 
+                      src="/images/unsplash_jpkfc5_d-DI.png" 
                       alt="Friends connecting over coffee" 
                       fill
                       className="object-cover"
@@ -93,7 +93,7 @@ export default function About() {
                   
                   <div className="relative w-full h-32 md:h-40 lg:h-48 rounded-2xl overflow-hidden shadow-lg">
                     <Image 
-                      src="/Images/unsplash_mAQZ3X_8_l0.png" 
+                      src="/images/unsplash_mAQZ3X_8_l0.png" 
                       alt="People networking and chatting" 
                       fill
                       className="object-cover"
@@ -115,7 +115,7 @@ export default function About() {
               <div className="order-1 lg:order-1">
                 <div className="relative w-full h-64 md:h-72 lg:h-80 rounded-2xl overflow-hidden shadow-lg">
                   <Image 
-                    src="/Images/Nwe1.png"
+                    src="/images/Nwe1.png"
                     alt="Couple having meaningful conversation over coffee" 
                     fill
                     className="object-cover"
@@ -170,7 +170,7 @@ export default function About() {
             <div className="flex justify-center">
               <div className="relative w-full max-w-4xl h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg">
                 <Image 
-                  src="/Images/new3.png"
+                  src="/images/new3.png"
                   alt="Happy couple having meaningful conversation outdoors" 
                   fill
                   className="object-cover"

@@ -20,7 +20,7 @@ const EventPage = () => {
               <div className="order-1 lg:order-1">
                 <div className="relative w-full h-64 md:h-72 lg:h-80 rounded-2xl overflow-hidden shadow-lg">
                   <Image 
-                    src="/Images/7.png"
+                    src="/images/7.png"
                     alt="Happy couple embracing" 
                     fill
                     className="object-cover"
@@ -69,7 +69,7 @@ const EventPage = () => {
               </p>
             </div>
             
-            {/* Tilted Images */}
+            {/* Tilted images */}
             <div className="flex justify-center items-center space-x-4 md:space-x-8">
               
               {/* Left Image - Tilted Left */}
@@ -77,7 +77,7 @@ const EventPage = () => {
                 <div className="bg-white rounded-lg shadow-lg p-2 md:p-3">
                   <div className="relative w-full h-48 md:h-56 lg:h-64 bg-gray-200 rounded-md overflow-hidden">
                     <Image 
-                      src="/Images/unsplash_jpkfc5_d-DI.png"
+                      src="/images/unsplash_jpkfc5_d-DI.png"
                       alt="Couple having coffee together" 
                       fill
                       className="object-cover"
@@ -91,7 +91,7 @@ const EventPage = () => {
                 <div className="bg-white rounded-lg shadow-lg p-2 md:p-3">
                   <div className="relative w-full h-48 md:h-56 lg:h-64 bg-gray-200 rounded-md overflow-hidden">
                     <Image 
-                      src="/Images/image (1).png" 
+                      src="/images/image (1).png" 
                       alt="Happy couple at restaurant" 
                       fill
                       className="object-cover"
@@ -146,7 +146,7 @@ const EventPage = () => {
                 <div className="relative">
                   <div className="relative w-full h-48 md:h-56">
                     <Image 
-                      src="/Images/17.png" 
+                      src="/images/17.png" 
                       alt="Love Chalet Aspen Pop Up" 
                       fill
                       className="object-cover"
@@ -183,7 +183,7 @@ const EventPage = () => {
                 <div className="relative">
                   <div className="relative w-full h-48 md:h-56">
                     <Image 
-                      src="/Images/16.png" 
+                      src="/images/16.png" 
                       alt="Trivia Night in NYC" 
                       fill
                       className="object-cover"
@@ -223,7 +223,7 @@ const EventPage = () => {
                 <div className="relative">
                   <div className="relative w-full h-48 md:h-56">
                     <Image 
-                       src="/Images/15.png" 
+                       src="/images/15.png" 
                        alt="Velvet x Reference.Point" 
                        fill
                        className="object-cover"

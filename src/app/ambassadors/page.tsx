@@ -10,23 +10,23 @@ const Ambassadors = () => {
    const [currentSlide, setCurrentSlide] = useState(0);
  const images = [
     {
-      src: "/Images/new5.png",
+      src: "/images/new5.png",
       alt: "Ambassador event 1"
     },
     {
-      src: "/Images/new7.png",
+      src: "/images/new7.png",
       alt: "Ambassador event 2"
     },
     {
-     src: "/Images/new6.png",
+     src: "/images/new6.png",
       alt: "Ambassador event 3"
     },
     {
-      src: "/Images/new5.png",
+      src: "/images/new5.png",
       alt: "Ambassador event 4"
     },
     {
-      src: "/Images/unsplash_jpkfc5_d-DI.png",
+      src: "/images/unsplash_jpkfc5_d-DI.png",
       alt: "Ambassador event 5"
     }
   ];
@@ -48,7 +48,7 @@ const Ambassadors = () => {
         {/* Hero Section */}
         <div className="relative w-full h-[28rem] md:h-[34rem] lg:h-[40rem]">
           <Image 
-            src="/Images/ambassodars.png" 
+            src="/images/ambassodars.png" 
             alt="Happy couple" 
             fill
             className="object-cover"
@@ -310,7 +310,7 @@ const Ambassadors = () => {
               {/* Image 1 */}
               <div className="relative w-1/4 h-48 md:h-64 lg:h-72 flex-shrink-0">
                 <Image 
-                   src="/Images/Rectangle 23855 (1).png"
+                   src="/images/Rectangle 23855 (1).png"
                   alt="Friends laughing together" 
                   fill
                   className="object-cover"
@@ -320,7 +320,7 @@ const Ambassadors = () => {
               {/* Image 2 */}
               <div className="relative w-1/4 h-48 md:h-64 lg:h-72 flex-shrink-0">
                 <Image 
-                  src="/Images/image (1).png" 
+                  src="/images/image (1).png" 
                   alt="Couple enjoying sunset" 
                   fill
                   className="object-cover"
@@ -330,7 +330,7 @@ const Ambassadors = () => {
               {/* Image 3 */}
               <div className="relative w-1/4 h-48 md:h-64 lg:h-72 flex-shrink-0">
                 <Image 
-                  src="/Images/unsplash_fdlZBWIP0aM.png"
+                  src="/images/unsplash_fdlZBWIP0aM.png"
                   alt="Group having fun" 
                   fill
                   className="object-cover"
@@ -340,7 +340,7 @@ const Ambassadors = () => {
               {/* Image 4 */}
               <div className="relative w-1/4 h-48 md:h-64 lg:h-72 flex-shrink-0">
                 <Image 
-                  src="/Images/image (1).png" 
+                  src="/images/image (1).png" 
                   alt="Happy community" 
                   fill
                   className="object-cover"
