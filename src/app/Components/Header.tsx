@@ -29,13 +29,16 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/features", label: "Features" },
-    { href: "/shop", label: "The Shop" },
+     { href: "/about", label: "About" },
+     { href: "/features", label: "Dating" },
+      { href: "/ambassadors", label: "HangeOut" },
+      { href: "/event", label: "Event" },
+    { href: "/shop", label: "AI companion" },
     { href: "/app", label: "The App" },
-    { href: "/ambassadors", label: "Ambassadors" },
-    { href: "/event", label: "Event" },
-    { href: "/about", label: "About" },
-    { href: "/join-us", label: "Join Us" }
+   { href: "/hyper-near", label: "Hyper near" },
+   
+    { href: "/join-us", label: "Join Us" },
+    
   ];
 
   return (
