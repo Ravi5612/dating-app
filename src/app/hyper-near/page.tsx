@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+
 const HyperNearSection = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -44,8 +45,7 @@ const HyperNearSection = () => {
       description: "Spotted someone interesting on your daily commute? Don't let the moment pass. With Hyper Near, you can connect with people in the same train, bus, or metro without the awkwardness of approaching face-to-face.",
       icon: "🚆",
       gradient: "from-pink-100 to-rose-100",
-      image: "/images/train.png"
-      // Images\train.jpg
+      image: "/images/rav2.png"
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ const HyperNearSection = () => {
       description: "Working out alone? Find gym buddies with similar fitness goals nearby. Share workout tips, motivate each other, and make your fitness journey more fun and social.",
       icon: "💪",
       gradient: "from-purple-100 to-pink-100",
-      image: "/images/train.jpg"
+      image: "/images/zym.png"
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const HyperNearSection = () => {
       description: "Sitting alone at your favorite cafe? Discover fellow coffee lovers nearby who are up for a chat, collaboration, or just sharing recommendations about the best brews in town.",
       icon: "☕",
       gradient: "from-rose-100 to-orange-100",
-      image: "/images/coffee-scenario.jpg"
+      image: "/images/coffee.png"
     },
     {
       id: 4,
@@ -69,7 +69,7 @@ const HyperNearSection = () => {
       description: "Enjoying nature but missing company? Connect with people in the same park who want to play sports, have a picnic, or just enjoy a peaceful walk together.",
       icon: "🌳",
       gradient: "from-green-100 to-emerald-100",
-      image: "/images/park-scenario.jpg"
+      image: "/images/park.png"
     }
   ];
 
@@ -96,164 +96,148 @@ const HyperNearSection = () => {
       `}</style>
 
       {/* SECTION 1: Hero Section */}
-      <section className="relative py-16 md:py-24 lg:py-32 bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-10 right-10 w-64 h-64 bg-pink-300/30 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 left-10 w-80 h-80 bg-rose-300/20 rounded-full blur-3xl" style={{animation: 'float 8s ease-in-out infinite'}}></div>
-        </div>
+<section className="relative py-16 md:py-24 lg:py-32 bg-pink-500 overflow-hidden">
+  <div className="absolute inset-0 pointer-events-none">
+   
+    <div className="absolute bottom-10 left-10 w-80 h-80 bg-white/10 rounded-full blur-3xl" style={{animation: 'float 8s ease-in-out infinite'}}></div>
+  </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+  <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      
+      {/* Heart Shape Frame Section - RIGHT SIDE */}
+      <div className="relative flex justify-center items-center lg:order-2">
+        <div className="relative transform transition-all duration-500 group hover:scale-105">
+          
+          <svg 
+            width="700" 
+            height="760" 
+            viewBox="0 0 400 360"
+            className="drop-shadow-2xl filter"
+          >
+            <path
+              d="M200 60 C80 0 20 100 60 220 C100 300 200 350 200 350 C200 350 300 300 340 220 C380 100 320 0 200 60 Z"
+              fill="url(#heartGradient)"
+              stroke="white"
+              strokeWidth="8"
+            />
             
-            <div className="space-y-8">
-              <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                <div className="w-8 h-8 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-lg">🚀</span>
-                </div>
-                <span className="text-gray-800 font-semibold text-sm" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                  Hyper Near Features
-                </span>
-              </div>
+            <clipPath id="heartClip">
+              <path d="M200 65 C85 10 30 100 65 215 C100 295 200 340 200 340 C200 340 300 295 335 215 C370 100 315 10 200 65 Z"/>
+            </clipPath>
+            
+            <defs>
+              <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ec4899" />
+                <stop offset="100%" stopColor="#f43f5e" />
+              </linearGradient>
+            </defs>
+            
+            <image
+              href="/images/girlsg.png"  
+              width="380"
+              height="320"
+              x="10"
+              y="20"
+              clipPath="url(#heartClip)"
+              className="cursor-pointer"
+              preserveAspectRatio="xMidYMid slice"
+            />
+          </svg>
 
-              <div>
-                <h1 
-                  className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-tight mb-4"
-                  style={{ fontFamily: "'Poppins', sans-serif" }}
-                >
-                  Find your
-                  <br />
-                  <span className="relative">
-                    people
-                    <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
-                      <path d="M2 10C100 2 200 2 298 10" stroke="#F43F5E" strokeWidth="4" strokeLinecap="round"/>
-                    </svg>
-                  </span>
-                </h1>
-                <p className="text-xl md:text-2xl text-gray-700 font-semibold">
-                  Connect, Chat & Hangout Nearby
-                </p>
-              </div>
+      
 
-              <div className="grid grid-cols-2 gap-4">
-                {features.map((feature, index) => (
-                  <button
-                    key={feature.id}
-                    onClick={() => setActiveTab(index)}
-                    className={`relative p-4 rounded-2xl transition-all duration-300 text-left group ${
-                      activeTab === index 
-                        ? 'bg-white shadow-2xl scale-105' 
-                        : 'bg-white/70 hover:bg-white hover:shadow-lg'
-                    }`}
-                  >
-                    <div className="flex items-start gap-3">
-                      <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center text-2xl shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
-                        {feature.icon}
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-bold text-gray-900 text-sm mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                          {feature.title}
-                        </h3>
-                        <p className="text-xs text-gray-600 line-clamp-2">
-                          {feature.description}
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {activeTab === index && (
-                      <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-pink-500 to-rose-600 rounded-full"></div>
-                    )}
-                  </button>
-                ))}
-              </div>
-
-              <div className="flex gap-4 pt-4">
-                <button className="bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white px-8 py-3 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                  Download Now
-                </button>
-                <button className="bg-white hover:bg-gray-50 text-gray-800 px-8 py-3 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-pink-200">
-                  Learn More
-                </button>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="relative bg-white rounded-[4rem] overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105">
-                <div className={`w-full h-96 md:h-[500px] bg-gradient-to-br ${features[activeTab].gradient} flex items-center justify-center relative overflow-hidden`}>
-                  <div className="absolute inset-0 p-8">
-                    {activeTab === 0 && (
-                      <div className="space-y-4 mt-20">
-                        <div className="bg-white/90 backdrop-blur-sm rounded-2xl rounded-tl-sm p-4 max-w-xs shadow-lg">
-                          <p className="text-sm text-gray-800">Hey! Want to grab coffee? ☕</p>
-                        </div>
-                        <div className="bg-gray-800/90 backdrop-blur-sm rounded-2xl rounded-tr-sm p-4 max-w-xs ml-auto shadow-lg">
-                          <p className="text-sm text-white">Sure! There&apos;s a nice place nearby 📍</p>
-                        </div>
-                      </div>
-                    )}
-
-                    {activeTab === 1 && (
-                      <div className="mt-20">
-                        <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg mb-4">
-                          <div className="flex items-center gap-3 mb-3">
-                            <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full"></div>
-                            <div>
-                              <p className="font-bold text-gray-900">Sarah, 24</p>
-                              <p className="text-xs text-gray-600">500m away • Coffee lover</p>
-                            </div>
-                          </div>
-                          <div className="flex gap-2">
-                            <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Travel</span>
-                            <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-xs">Music</span>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    {activeTab === 2 && (
-                      <div className="mt-20">
-                        <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-5 shadow-lg">
-                          <div className="flex items-start gap-3 mb-3">
-                            <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center text-xl">
-                              🎸
-                            </div>
-                            <div className="flex-1">
-                              <p className="font-bold text-gray-900">Live Music Night</p>
-                              <p className="text-xs text-gray-600">Tonight 8 PM • 2.5km away</p>
-                            </div>
-                          </div>
-                          <p className="text-sm text-gray-700 mb-3">Looking for 3 people to join! 🎉</p>
-                          <button className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-2 rounded-xl font-semibold text-sm">
-                            Join Hangout
-                          </button>
-                        </div>
-                      </div>
-                    )}
-
-                    {activeTab === 3 && (
-                      <div className="mt-20">
-                        <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
-                          <p className="font-bold text-gray-900 mb-3">Mike is heading to:</p>
-                          <div className="bg-gradient-to-br from-orange-100 to-amber-100 rounded-xl p-4 mb-3">
-                            <p className="font-bold text-gray-900">Central Park 🌳</p>
-                            <p className="text-sm text-gray-600">In 15 minutes</p>
-                          </div>
-                          <button className="w-full bg-gradient-to-r from-orange-500 to-amber-500 text-white py-2 rounded-xl font-semibold text-sm">
-                            Join the Trip
-                          </button>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="absolute bottom-6 right-6 w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-2xl text-4xl animate-pulse">
-                    {features[activeTab].icon}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="absolute -top-6 -left-6 text-4xl animate-bounce">💖</div>
+          <div className="absolute -top-4 -right-8 text-3xl animate-pulse">💕</div>
+          <div className="absolute -bottom-8 -left-8 text-4xl animate-bounce delay-1000">💘</div>
+          <div className="absolute -bottom-6 -right-6 text-3xl animate-pulse delay-500">❤️</div>
         </div>
-      </section>
+      </div>
+
+      {/* Text Content - LEFT SIDE */}
+      <div className="space-y-8 lg:order-1">
+        <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+          <div className="w-8 h-8 bg-gradient-to-br from-pink-600 to-rose-700 rounded-full flex items-center justify-center">
+            <span className="text-white text-lg">💖</span>
+          </div>
+          <span className="text-gray-800 font-semibold text-sm" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            Find Your Soulmates
+          </span>
+        </div>
+
+        <div>
+          <h1 
+            className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-4"
+            style={{ fontFamily: "'Poppins', sans-serif" }}
+          >
+            Find your
+            <br />
+            <span className="relative">
+              perfect match
+              <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
+                <path d="M2 10C100 2 200 2 298 10" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round"/>
+              </svg>
+            </span>
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 font-semibold">
+            Connect with people who share your heart
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 gap-4">
+          {features.map((feature, index) => (
+            <button
+              key={feature.id}
+              onClick={() => setActiveTab(index)}
+              className={`relative p-4 rounded-2xl transition-all duration-300 text-left group ${
+                activeTab === index 
+                  ? 'bg-white shadow-2xl scale-105' 
+                  : 'bg-white/70 hover:bg-white hover:shadow-lg'
+              }`}
+            >
+              <div className="flex items-start gap-3">
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center text-2xl shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+                  {feature.icon}
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-bold text-gray-900 text-sm mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                    {feature.title}
+                  </h3>
+                  <p className="text-xs text-gray-600 line-clamp-2">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+              
+              {activeTab === index && (
+                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-pink-500 to-rose-600 rounded-full"></div>
+              )}
+            </button>
+          ))}
+        </div>
+
+        <div className="flex gap-4 pt-4">
+          <button className="bg-white hover:bg-gray-50 text-pink-600 px-8 py-3 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            Find Love Now
+          </button>
+          <button className="bg-transparent hover:bg-white/10 text-white px-8 py-3 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white">
+            Success Stories
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{/* Add custom animation for the hearts */}
+<style jsx>{`
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+  }
+`}</style>
+
 
       {/* SECTION 2: Real Life Scenarios */}
       <section className="py-20 md:py-28 bg-white">
@@ -280,7 +264,7 @@ const HyperNearSection = () => {
                       {scenario.title}
                     </span>
                   </div>
-                  
+
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
                     {scenario.description}
                   </p>
@@ -298,10 +282,20 @@ const HyperNearSection = () => {
                 <div className="flex-1">
                   <div className="relative group">
                     <div className={`absolute inset-0 bg-gradient-to-r ${scenario.gradient} rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300`}></div>
+
                     <div className="relative bg-gradient-to-br from-pink-200 to-rose-200 rounded-3xl overflow-hidden shadow-2xl h-80 md:h-96">
-                      <div className="absolute inset-0 flex items-center justify-center text-6xl">
-                        {scenario.icon}
-                      </div>
+                      {scenario.image ? (
+                        <Image 
+                          src={scenario.image}
+                          alt={scenario.title}
+                          fill
+                          className="object-cover"
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center text-6xl">
+                          {scenario.icon}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -375,7 +369,7 @@ const HyperNearSection = () => {
               Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-600">Safety</span> First
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Connect with confidence. We've built robust safety features to protect your privacy and security.
+              Connect with confidence. We&apos;ve built robust safety features to protect your privacy and security.
             </p>
           </div>
 
@@ -414,53 +408,65 @@ const HyperNearSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Priya & Rahul",
-                story: "Met in the same metro every day for months. Finally connected through Hyper Near and now we're best friends!",
-                location: "Delhi Metro",
-                image: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSExIWFRUXFhgYFxUYFRYYFxgXGBcWGBUYGRcYHiogGholHRcXITEhJSkrLi4uGCAzODMtNygtLisBCgoKDg0OGxAQGi0lICYtLS0vLSstLS0tLSstLS0tLS8tLy0tLS0tLS0tLy0tLS0tLS0vLS0tLS0tLS0tLS0tLf/AABEIANcA6wMBEQACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAwQFBgcCAQj/xABIEAABAwIDBQUFBQYDBQkBAAABAAIDBBEFEiEGMUFRYRMicYGRBzJCocEUI1JisXKCkqLR8DNTshUWJOHxF0NUY2Rzk6PSCP/EABsBAQACAwEBAAAAAAAAAAAAAAADBAECBQYH/8QAPREAAgEDAgQCCQMCBAUFAAAAAAECAwQRITEFEkFRYXETIjKBkaGx0fAGFMFC4SNScvEVMzRi0gcWJEOy/9oADAMBAAIRAxEAPwDcUAIAQFd2sxl8WWKI2e4El28tbuFgeJN9eis29JSy5GGxHZ3EJcwa95c0/i1IPO62rU44ykEQFRWyVEhe5xy37jbmzRwsOdt5ViMIwjhGpdMBqC6PK513N5nvZeBPHmL9FSrRxLKNkSahMggBACAEAIAQAgBACAEAIAQAgBACAEAIAQAgBACAEAIAQAgKftZBeoaf/LA9HP8A6q7bv1H5mrFsPp9NN9lmTMkbhtJu0UkpGBxWkxTwyDSw16tzd4ei0S5oNAuioGwIAQAgBACAEAIAQAgBACAEAIAQAgBACAEAIAQAgBACAEAICHx+mzZH8iR66j9Pmp6MsZRhhSx2C3bBwyls4nmb+qzzaAa4zT3LDyuPWxH1Wab3DDFtonxBjY2BzsoLi69geVhxWsKCk3kNkpgWKfaIs+XKQS1zd9iLHQ8RYhQ1afJLATJFRmQQAgBACAEAIAQAgBACAYVeN00WklREw8nSNB9CbrSVSEd2i1SsrmrrTpyfkmRU+3eHM0NU0/stkd82tKid1SX9RchwK/lqqT97S+rEf+0XDf8AxB/+Kb/8J+6pd/qbPgF+v/r+cfuO6XbTD5Pdq4h+2TH/AKwFuq9N9SvU4VeU96b92v0yTkMzXjM1wcDuIII9QpE8lGUXF4ksHayaggBACAEAIAQAgEK1l2HyPzW8H6wGrQpTB6gOJWXFllMDHEMPD23tqPmFspYA42Zp8jHjm+/8oUVaWWgiZUJkEAIAQAgBACAEBVsd2+oqYluftXj4I7OservdHhe45KtUuqcNN34HZs+BXdz62OWPeWny3/jxKJivtRq5LiFjIRz/AMR/q7u/yqlO+m/Z0PT236XtaetVub+C+WvzKpiGO1U9+1nkeD8Jecv8I0Hoq0qs5bs7dCxtqH/Lppe7X47ketC2CGDkhZyaOIm4LZMilEWocQmgdnhlfG7mxxbe3O28dCt4zcdmVK9vTqrFSKa8UXzZ32sTMIZVsErf8xgDZB1Lfddw/D5q5Tu2vaPOXn6epy1oPD7PVfdfM1bCMWhqYxLBIHsPEbweTgdWnoVejJSWUeWr0KlCfJUWGPVsQggBACAEAIBGpeALc1vBZYGqlMAgOJJLZdN5t4ID18gFr8TYeKAc0dhcc9VFMyOVoAQAgBACAEA2xGujgjdLK8MY0Xc4/wB6k7gBqSsSkorLJKVKdWahBZbMU2z2+mqy6OIuip92Xc6Qc3kcPyjTndcuvcSnotEe64XwalbJTqetP5Ly+/0Kg0qmz0UWdhYJUeoZBACAEMElQ7NVkwzRU0jmkXDspDT4OOhUsKU5bI59xxC1ovE6iT7Z1+BzX7MVsQvJTSgcXZCWjxc24C2dKpHdENPiFpVeIVIv3/chHBaonkiR2dx+eilEsLrfiYfceOTh9d4UtOo4PKOfeWVO5hyTXk+qPoDZXaSGuhEsRsRo+MnvMdyPMcjx9QOpTqKayjwl5Z1LWpyT9z7omVIVAQDapr449HO15bz8ty3jTlLYZEG4zFzPotvQyMZPJcWZ8Op9Asqi+oyNDUFxuSpVFLYwKskWGjIsHLAPVgHjmg7xfj5oDxjbPD77hYjmsNZQJJQGQQAgBACA8c4AEk2A1JO4BBufPm3u1766chpIp2E9kzUX4do4fiPDkDbnfl16rm/A95wqwja08teu93/C/NfgVlpVZnaixVpWrJosUaVqyaLOlgkBACA1v2c7FRsjZVVDA6R4Do2OFwxu9rrcXHf004rp2tskueW54Tj3Gqk6jt6DxFaNrq+q8unj5F7r6+KFueWRsbebnADwF956K7KSistnmaNCpWly04tvwKLjPtVp2HLTxul19912MA5gHvO8DZVJ3sV7Kyeitv0xWks1pKPgtX9l8yZ2s2HpatpdlEU3CVgAufztGj/16qarbwn4M5tjxevatLPNHs/47fTwMMxvCJaWV0MrbOGoI1a4cHNPEH+9QuZODg8M9tb3NO5pqpTenzT7MV2Y2gloZ2zR6jc9hNg9nFp5dDwPot6VRweUV76zhc03CXufZn0ZhOJR1MLJ4nZmPFweI4EHkQbgjmF1YyUllHga1GdGbpzWqHi2IjPqipOd2b3sxv431XTjFY0NDxlQmAOYp1hoDyKZatGR3HItGgOY3rVoDhpWpk8fIBvKwBA1rFtysEnTVDXjQ+Kryi0zIstQCAEAICme1rFTBh7w02dM4RA9HXL/ACLWuH7yguJYgdPhFFVLlN9Nft8zAWlc1nt4sVMT+Fh46/Vac0Sy6NbHq4Xnr/KEnQS/5o9At1OH+Uryt7p7VV8EedlMPiv6JzUn0NfQ30NVPP55HTaqQe8B6f0WHTg9jeN5c0/bXy+wvHWA7xb5qN0mti3Tvoy9pY+ZJYTC2WaJh3PkY0+DnAH9VrGOZJMnrVuWjOpHom/gjYPaXj1VRxxGnytY+7S/LdzXAAtAvoLjNwPurqXdWdNLlPB8Asba8nP0+W1qlnRrr46PHXqZphuDV2JSFwzScHTSOORvTMfH3W337lRhTqVnn5s9ZcXlnw6ny6LtGK1fu/l/EcbdbJigEAEhkdIH5jYBt2lujRvtZ3E+i3r0PRY1K3CuKu+dRuOEsY9+d/gaA/2n0DWDWV7souGx8ba++Qrv7umkeY/9vXcpPZLxf2yQ2PvjxWjfNFG5ro3O7MvAzEtDS4aE6EG2/eByWJ4r08pbG1s58KvFTqSTUkubGyy9H5r6GTOC5yPZSRovsZx8xzuo3HuSguYOUjRc/wATQfNo5q7a1MPlPM8etFKmq63Wj8v7P6mzq+eTI3EMDhmOZzSHfiabE+PA+ilhWlHRGMEdNsmy3ckeD+azh8rKVXT6oYIiswqaHVwu38TdR58QpoVYz2MYOIZFu0YH8Ei0aMj6Ny0YCoq8g6rVLJkgK7FuqljAwMft594kNbzcQB6lbS5YrLZtCEpvlim32WpZNma1shBY9rxexLXBw6g2VWUoTi3F58iSpRqUnipFxfisfUtKrkYIBGqqAwdTuC0nPlRJTpubIaet17zlUcm9y9GmktEZr7asV+6pmXuM0jutwGBo/mcsScp4iX7GULfnqy7L3mSvq3jXujpYk/qtlRgzEuMXKeUor3P7ljoMKkLA6bRx1yjeBwzX49OCilSjn1Tp0OI3EoZqpZ9/3FzhY4OPoCtXRXcsx4jJbxRF1VTEw2EgceIbfTzGnzWrt5mVxy2i8Syn4a/Q6hqWu3EHoRqop0pQ3R0bbiVC5fLCWX2aw/z4nroR4H5LVSZPKhB7aP5HVNI6N7Xg2c0gg9QbhZz1Ro6bWYS66eZsmBbZUmIsbTVsbWSZmkAkiN7gdMpvdp4ZSdb2ub2V+FeFVcszydzwq64fJ17VtrD23S8e/mvPQ0GCFrGhjGhrQLBrQAAOQA0AVxJJYR5uc5Tk5SeW+rIHa7ZKKv7LtHvZ2ZdbLa5zZb7wfwhRVqKqYz0Ohw/idSy5uRJ82N/DP3Mt9ouzNLQCKOJ0jpH3c4vc02YNBo1o3kn+EqjcUoU8JbnqeEcQuLxylUSUVponv729v5LbspB2VBA3iWl5/fJcPkQr1vHlpo8txer6W8qPs8fDQyXF4g2eVo0DZHgDoHEBcuaxNrxPdWs3Ut6c3u4p/FI8wWu7Cohm/wAuRjjbkHAuHmLhbU5cskyO6o+lpSh3TR9QrsHzcEAIDwhAQeIbPg96Lun8HDy5eG7wVmFd7SMYIsRuacrgQeRU+U9UYHcbrAnktGCv4vXFSwiCl4vjuQlrLOfxJ91p5dT/AH0VG6v1B8lPfv0X3PScL4DKulVr6R6Lq/svm/DcrVVVPkOZ7i49Tu8Bw8lx5zlN5k8s9jQt6VCPLSikvD81JXZLaKSinEre806SM4Ob9HDgfoSs06jg8orcRsIXlLklutn2f2fU+gMLxGOoibNE7Mx4uD+oI4EHQhdGMlJZR86r0J0Kjp1FhodErYiK5i1ba7vTwVGUuZ5OlSp4WCm12L2JubAbyToAsFxQ0Mr2t2h+2TB4/wAKIFsf5iT3nnxsLDkBzKlxjQoynzvPT81JHYLZszXq5RdjTaIH4ng95/g06DrfkFicuVYRNa0ud88tlsW2ro1EdLJW8bwp8jcjZDGD71m3JHK9xYfqt4ySecEdanKpHlUsFSrNlpWC8bxJb4bZT5akFTKonuc6pYTisxefkRkEx1GoPoQR+hSUStCbT00a+TLhhzBLCyTc4t15EgkO8NQVSq26z6p6+w4vUdOLqrP1+zOJYS3Qjy4eRVWUXF6nfpVYVY5pvK7fmwm023a9OIWHqSRbjtr4dUX/AGJ9or4MsNSTJDuD9S+P6uaOW8DduAVuhcuHqz2PO8W4JTuE61vhS7bJ/Z/j7muNr2OaHMcHNcAWuBuCDuIPFdNPOqPDyi4txksNGB7eYmauvkLdQHCKMdGnLp0Lsx81yq8ueo8eR73hdFW1nHm7cz9+vyRo9dUMhitezI2AfutFhbyC6jahHXZHhoxncVcR1lJ/NmNVcxe9zzvc4uPmbriuWW2fTadJU6cYLokvhoN3LKNZI+nsBqO0pYJPxwxu/iY0/VdmDzFM+aXMOStOPZtfMfrYhBACAEAnNC1ws4XCypNbAr2LwZBlGo3q1CXNqYM72trTCzT333DegHvO8dQPPoo724dOnyx3f4ztcDsFdV+aa9WOr8X0Xl1fljqUNcI+gAgBAWnYPa11DLZ13QPP3jd+U7u0aOY48x4C0tKo4PwORxbhkbynmPtrZ9/B/mnxNxlqmviD2ODmvALXA3BDuIPgrtSXqZR4SFOUanLJYa39xTdo5iLqodKkjE9tcYc57oGHQf4h+eX6n05qaEcas0u62f8ADj7/ALEVhGHSVUsdNCLuedTwa34nu6Aa9dBvIWdtWVd8Rib5RYayGJkLBZjGhredhxPU7z1KrSbbydamlGKihvVUawSZI2TBpHi7WEjnw9TvUkYSlsiOdenDSTISvw1zDqLLaVOUdzancU5vCZQtsKAMc2YC2Y5X9Ta7T42B9ApKbysFG/pKLVRddGS+zTCKaO/EOPk5ziPkQtKntMt2axRj+dSSe0EWKjaTWGXadSVOXNB4ZHVVJbUbvmFUqUnHVbHftb6Nf1ZaS/NvsNCL9D8ios4LrjzPtL5Msex+2D6U9lISYCd28xk/E3pzHmNd923rcmj2PN8X4Yrj14rE18/B/wAP3PwnK2rwtpa9rGFzSHN7MOGo1Hu2b5HRTSnbx1+hzaNrxirFwy1FrD5mtn8X8CubQ7RPqO6Bljvuvq7kXf0/VVa1w6mi0R3eGcGp2XryfNPv0Xl9/oQJUB1mcFZImfSWxZvQUn/sR/JgC7FL2F5Hzi//AOqqf6n9SaUhUBACAEAIBvV0oeNd/Nbxm4gpe3GxbqiDNHYyx3cwXPeBtmb4mwt1HVRXS9LHK3R2OC8QVpWxP2ZaPw7P7+HkYuRbQrln0BPJ4hkEAIDQvZVjEpdJSF14gwytB+Fwc1rg3oc97cxfibyQk8cp5njltBNV0vW2fj/tgteNUpcbAXJ3Bbo4lOWCj7J+ySRsvbV8kclnZuyZdwe4m95HOA0v8IBB4m1wbL8ClFPOv+5oVLglPC57oYI43P1eWMa0u8SAo5ZZYhyx2R7LEo2i1GRVNpdoWwyMpow+Sok9yKNofIR4HQDfqeAPLToWFrTb9JVWV0Xfxe2F9X8+LxXiFw3+3s8KX9UntHwXeT+S81hvs9tFUdoHZ5u7L2U9POS4tIIzCxJsbOBBb06hekdK3uKTXIotLTGFh4yttGvzc8lC7u7S7VKtLOceOU347fnQ0DaLBGPYSAvNHroTaZj21eB9pG6Lcc7deQDhmPjluqkv8OZ2cfuKOH4fnwGrYw0BoFgAAByA0AUZdSSWEeoAWDJHVtLbvDd+irVKfLqju2V76Vejqb9H3/uMntzD8w+ahT5fI6E4elWP6l8xvTy2OU+SknHKyipb1nGXo5DklRlxs4KyaM5KyRs+ldkGWoaUf+ni+cbSuzS9heR83vnm5qf6n9SXW5VBACAEAIAQAgMx9pWwxeXVdKy7jrLE0auPGRo4nmOO/fe9SvR/qj7z1XBeMKCVvXen9LfTwfh27bGUKoevBACAkdncaNJUNmDcwsWube2Zp3i/A3sfJZTw8nP4hbK4pOHw8zeMHlbLGyYNIztDmhws4BwuLgXsbK5Sjpk8LXzCTh2G+1+PQ0FK+pm1A7rGA2MkhvlY3qbE34AE8FNylbnwfO1TttVVNbBPUykRMqIn9k0kRMayRrvd4kW943KadDDb3Z9CYrKI43yHc1pPoFpSpekqKPcsXNw6FCVVLLS08+nzPmRm0lUyr/2iyTLPnLgbB1gQW5bEWIymy7btpQofucrD05fDou+mhy6UVBcm76vu3u/e9TXfZlh88zmyVBLpZpTUykgXt3bAgbgQ1otwzWU6m6VrKctHLZeawvgjzU2r3isVD2YdfLV/N4NleLgjouGesMs2hjGd1uap1ZZmd+0i40lnrqVCqHeWhbEVkASgIybHqYHL2mb9lrnD1AsVt6Nsru9pRektfAYfaY3H7t1+I0II8QdVTq0nB+B6Wx4hTuY+rL1l+Zx2E66O4zjeN61pPD5WTX1Pnh6WG63O4ZMzQf76rWUcPBJRq+kgpHRKG7YNaSQALkmwHUrKI5NJZZ9S0cAZGxg3Na1o/dAH0XaSwsHzGcuaTl3Flk1BACAEAIAQAgBAZX7UdjAA6tp224zMA9ZQP9XrzVOvSx6y9563gXFW2raq/wDS/wCPt8OxlyqnrAQDvBqHt6iGHg+Rod+zfvfy3WUsvBTvano6Mp9l8+h9DQPA3aBX0z5/OJkP/wDQ8zi6hZc5PvnW4F47Ia9QD/MVvnQr8vrGQVcei1izecT6A9nuPsxDDwx5vLGzsZhfXdZr/wB5ovfmHcllSdOamumpsoRrUnTl1WCnYd7NxHU2bTzTEO7mb/BHEOLrW8nHyJXoaFO0dNVnU0/yt6p9sbs8vew4k5Ogkl/3JYyvPOnibXs7g4p2WJDpHavcN3Rreg+e/oObd3Xp56bLZF7h3D4WdPlWre7/ADoKY1iIjaWg98j0HP8AoudVqcqwtzuWlv6SXM9l8zN8XmGqqI7aKpMbuWxuKR0xKAh8V2ZnnPenAbwYGHL0v3u8ep+SkjUjHoUq1vUq7z07Y/uV3Edn6iAF1g9o3lt7gcy0/S63UoyKdS1q01larwGtJVjQ8lrOnlYMULh05qcd0TkbtbcDouY0fRKc1nD2Y2gblLmcjceB/wCilk+ZKRToQdGc6T6PK8n/ALC11oWck7sJQdvX08fASB7v2Y++b+OW3mpaMeaaRz+J1vRWs5eGPjofSC6x8+BACAEAIAQAgBACA8c0EEEXB0IO4hDKbTyjANvtnDRVJa0fcyXdEenxM8Wk28C08VzatPkljp0PonCb/wDd0E37S0f39/1yVpRnULBsC29fEeQkP/1uH1W0PaRy+Lf9NJeX1NljlVpM8fKBQfbjLD/s9oeLymZnYkfC6xLyebcgcLcy3kpIPJVrRxgxNrSW6rGzM4ytS0eymCpFeHQODWNH3+YEtMZOjbD4iR3eVidwIOZSXLqKNOTnofQFK/5qAs1EPXAWWCum8kTXwh17+vFGsl2lJopGPUT2kkG7efEeKxguxlkrfahskcTWOlmlNo4mWzu5nU2a3qVNQpeklh7dSte3Lo0/Uw5dE9vf4fXw3JPDKsl0rHROilgcGywvLXEXFxZzd4IvY9F6i3oW1WHJGCi11XyeevvPnt3xPiFrcxdefNGXhheKS6Y8Cy4hh4A3LjTpxmtT1tGvKD0ZXq2n0uuXKPK2md6E+aKkjNcTwu1aI2juyWfbgBc5/wBCfNTKWYZZy6tD/wCSox2ev3JTE48sh5Hveu/53VCawz2NrU5qaz00G8uuV3Qg/JRx0yi7V9ZxqeGDi6yR5Na9iWCECWscN/3UfUXBkd6hov0cr1pDeR5fj91lxoLzf8fnkasrh5oEAIAQAgBACAEAIAQFY9otFTSUT/tEjYsvejkO8SWNgANXX1GUXNvBayoOsuVeee3i+y7l/ht5O1uIygs50aXXPRePYwFcs+lEzsdPkrYSdxLm/wATHNHzIWVuUOJR5reX51NdjmUyZ5OUDOfbfSPfDTzC5ZE94f07QMDXHpdtr/mCmpvdFK5hjEjL2EELDzk0WDUvZywRUwPGRznO9crfk0epWsmX6EMQz3L/AEtUtTM4ZHwqkIPRjeomQlhDBA4jIDdCdGP7WdvR1orIpnB5N43aXZpYsta1gDy1B46rpW/IqPOn6yeGu6/Pp5HGvoTVXL1T6/wXb2eYXPIXTVJc6epeJJS73hG3dm5aE6cMzRouxQzQoSqz0b2/j87HirmS4hfwpU9Yw3fTfX+EXjHZRquYtEeugssr1fHlaBxtr48VyJy5pNnoaUeWCRVZoW9oX271st+l729f0TOmCXlWebqQ+OvGcNBBLR3hyvqAfLXzUNTodGylpLHcZn3PNQf1HWf/ACE33JHZbApK2obBHpfV7rXDGC2Zx9bAcSQFNTpucsI513dxt6TqS93iz6TwygjgiZDE3KxjQ1o6DieZO8nmV1IpRWEeEq1JVZuct2OVkjBACAEAIAQAgBACAp+3+3kWHtDGgS1Lx3Ir2AH45D8LN+m8204kW7W0nXlhbEdSooLLMXxbF6iqf2lRKZH62G5jAfhYwaNG7qbaknU1OI3UP+noewt3/ma/hdF7+x7jgHCHQj+5rr/Ea0X+VPp5vr8O+WS5J6U6jlLHNe3e0hw8QbhPIirJODT2NkoqpssbJWHuvaHDwIuFNOMoScZLDR49NNZTyhWZjXtLHtDmuBDmkXBB0IIO8LCbRhwTWGY9t/sjBRtM1PKQM0YdAe9k7XtchD73y/dP0N929WacnNao5VxTjSfqv3ElsZX/APDsBOrcwP8AESPkQo57nStnmki40uIdVqStEgzEeqGvKcTV/VBgiayqQ3SIV0QlljblY45wWF/utdwduOvkrnD6kKdxF1FlfmPmc3jNpK5s5U4vD0/v8sl5oS2CMjNmefffzPIDgByXUubh1pZ2S2X51OBY2FO1hyQXm+41D857R3uj3ep5+AXLuq2FyI71nb687ITFqneqKOqinY7iwgbYWMrvdb+Efid05DifNSRjnfYgubj0awt/zUqmHyOzvcSSTYknW7je91rcJNIm4JOcZTfl8dSyYJg9TXPEUERdYjM7cxgPF7twHzPAFV6dFt6HavOJRhD/ABGl4Lqb9sVspFh8PZt70jrGWS1i4jcByaLmw6nmulTpqCweKvbydzPme3RdiwqQpggBACAEAIAQAgBAVXafbqkpYpC2eKWZo7sLZGucX7gHBp7ovqb8AVctrKrWmlhpd8dCOdWMFnJ8/GokmmknlcXyPJc5x3k6buQGgA3AADcuvxKX7Wyl6PRvEV4Z39+M+/UscAoK74jBT1Ucyfu2+eBZeGPqoIBrWSX7o/eP0XqODcLeleovJfz9vieE/U3HE82lB/6mv/z/AOXw7miezDEs9O6AnWF2n7D7kfzB/wAlV45Q5K6mtpL5r+2Chwitz0eR9Poy5LinWMJ9o+KyGvqWA/d/dx24fdhrr+ObPr+Yq7SWIHEum3VbEtmcSDXZCbB2mvBw0Hru9FHOLLdnXSfK+v1LnFVkKI6mB2zEeqGOU9fiHVBgaTVZKGcHWExF88bQdS4G/hqfkFmMuVpmtSPNBruXRmGEm733HIC1/E3U87tteqsFCFmk9WJYo4jQblULyRQNqMZEGmjpXC7WcAPxO6dOPqRJCOSGvcKksLcqOGUEtXPlzXe7WSQ7mN3XsPQNHgpW0l4HNSlUn4s23ZHYjChlYacveBo58jyHEDUloIbc77WstYOM5estSzUlWoUsU5addFnzyaTSUscTQyNjWMG5rWhrR4AaKyklscqUpSeZPLFlk1BACAEAIAQEVju0dLSAGeUNJ91gu57vBg1t13LSc4x3N4U5T9lFKxL2nkg/Z4Q1oF+0mO4cTkadPHN5Ks7mUnywWr/Ni5GzSWZsz7Gdva+oJaKmRjPyfdn1ZYjwvfnyHqrDhfo1zVvWl26Lw8X56HFu72OeWksLv1f2REOkmeLPlkeDvDpHuv43K7dO0itor4HKncyfUTdR2G5b4UXgzFuSyIwCzrcxouTxyhKrZvkWcNP3dfrk9J+lrmFDiC53jmTj73hr44x7xdeDPqhxK+2g3/p1XoeDcIddqtVXqdF/m/t9fI8j+o+Pq1i7eg/8R7v/ACr/AMn8t+w1LbBe0xhHzVPLJ32c1vZ1wYTpKxzOmYd9p/lI815vjdPmoZ7PP8Hc4RU5a2O6NcXkj1BhO1VHepqb7+3l+cjrfKy6EPZRWq0VJZG2HTUsloaxrmnQMqWEBwG4MlBBDmjcHEXAsL21Eiw1h/E5M6fJLXYmXVop5fs8smdlgYqi2j2EaZrE6g3F+Nr9TWq0ZR1wdK2vF7En5P7ko0g6jUc1AdJPJ6gBAQGLbSSxSD7K/K5t80gDXDllAcCCOalhBf1HNu7l55ab944h9qOINFiyB/V0bwf5XgfJZ9DArK8qrsXPYrFZ62nkqajK0doWtDW5WhrWgudqSTqSLk/CoqkVF4RdtaspxcpGUYjUumqJJGguMshLL/hJswdLNA9FMktjnyk5Tb7l42UouyblbqSbvd+I/wBBwC0m8l2jDkWDV9jKQl4edzR8yLAfqfJYpRzLPY1vJqNPl7l2Vs5AIAQAgBACAhNs8eFFSSVFgXCzY2ncZHGzb9BvPQFaTlyxyb04c8sHz+KiSaR0sry+R5u5zt5P0HAAaAaBc6bbeWdWCSWEdY0+0bWj4iSeoaN3qWnyXZ/T9FTuJVH/AErTzen3KPF6jhQUV1fyI+hhXuKFM8lWmTlNS3U85qJDGGRWppVQU8vJf5cLBDVlMpoyNWhqx7r23lU6nA7StNVZQx100T81/s2dm3/Ul/b0nTU8rGFnVrye/lnKXY6LbePErqYSWEcCU3OTlJ6iEi0kbRPMPkdFIyYe81wc3yN/mvE8av8Anm6MNlv59vd18fI95wLhPLS9PVWsl6vgn19/Tw8zcaGqbLGyVhu17Q4efDxG7yXDLTTTwyje0DZ12Y1UTSQR960akECweBysBfla/O1mjU05WamX4g0FWTn3EUyLNS/LkzHKDcA6gHjblfjbes5eMHM2ZP7M0ddMQIMzWX1kP+GOZ1FieguVBPkW5ct3Xl7Gi+RLY1VVVJII5TG4ObdrwwgO/EN+8Hh1B4qNRjJZRbqXFalLlljzwRdZi8jxZz9OQ0Hy3+ayoENS4nJasjRUaXINrkZraXFiRfdfUeqk5St6RdR/gOBz10ojhbZl+/KR3GDjc8Xcm7z81htQWWbQhKq8RNV2oojTYaKOkYXFwEW9oOQ3MzySQLu1BtxeoIvmlzMv1IOFLkgvzqVLZ3ZSRpzye+dLDUNHIHnz/u+7klsR0qLWr3LxS0LIGhz/ACbxP981tRozrvEfiS1asKKzL4HdHjkjTciw/Dy6Lu07aEIcsTi1asqkuaRd6fauItaGte91gCSA0E8evyVV20s5ehrklsNrjJvaB4KGpT5dgP1EZBACAEBnHtyB+xwcvtIv49lLb6qGv7JZtfafkZPQFUJHQiL4228bXcnWPg4f1DR5rt/p6qo3EoP+qPzWv3Ofxim5UFJdGIYcF72j7J46ruWXD2jRVq70ZPRWotVsCqRZaYls9gX2upMTiWxsbnkcN5ubNYOVyDryB3Gy5X6i42uEWHp4pSqSlyxT2TxlyfdLt3a6ZJ7W39NPD2Rcq32e0TmFsTDE62jw97teFw8m49PEL5xZ/wDqDxalW57iSqR6xcYx08HFLD88rwOhV4ZQnHCWH3MnxWifBK+GQWcw2PLmCOhFj5r7PZXtK9t4XNF5jJZX8p+Kej8UeeqUpUpuEt0MGszG/AfM/wBFyeN8QdtTUIe1LZ9u78+3xPTfprhEb2s6lT2IYyu7ey8u/wAO+PJl4Y+jVUWbYbagU57CY/dON2u/A477/lPyOvErZM5FzRbfNE0WSYEXBuDqCDoRwIKyUSr4rsvRzOLnwAOO8sLmXPEkMIBPVSKpJdSKdCE90NKbZmiiN2U7L77vu83/AHybeSOpJ9RC1pR2j/P1JIyrUnG1bTxzMMcrA9p4HnzB3g9Rqsptao1nCM1iSyQkewtHnzHtC3/LMnd9QM38y39LIq/saWc6+Wfxlvo4GMYI2Ma1g0DABlHko229SyopLCWg5qMQip2ZpHBjNw048g0anyC1ZtGDekURtVtTh57xnzG2gEcn1bZMm37eo+hxhe0sc/aiCMtyNBDn2ubmx7ouBbTid6t2dKNWeJFS/wCe3gmsaidBmkzlxLnB286mxGn6Fd+CUFyxWEeecnJ5k8s9qYz3RutfcBrfmd5Ui7mBeiryz4QViUMmSyYfjU1rAtb4DX53VadKPUzkncNleSDmJPUkqCaWDJYVUMggBAQW22BfbKOWAWDyA6Mnd2jDmaCeANspPJxWk480cElKfJJM+d2tdG9zHtLXtJDmkWLSN4I5rnyR04skWSBzS12oIsQsQnKnNTg8Nao3klOLjLZnWFYNUSvyU8ZmPTQjlmNso8SQF7Gz/UtNrFSm8/8Abhr5tYPN3XBGnmE1jx/tuXb/AHIr42h2Rj9NWsfdw8cwAPldXlxW2q6NuPmvtkofs61Ps/L++CAmm3g6EaEcQRvCmSNmSWxOLshqi15sJmZQ787Ddo8w53mBzXlP1vwyrecMVWksulLma/7ZLDfuaXuy+hcsKqhUafU0d9bGBfMLeK+LqlNvGDt5MV9ole2SrcW/haD43J/Qhfdf0VTqUeDxU+spNeWn85PP8QxKvp2K1Sy8/P6FdjiVn+8t3Fe0tV5/3Wn+xd4JxL/h92py9iWkvLv7nr5ZXU7mC+ftNPDPp02msoaOQpS3JLC8eqKfSN/d/A7Vvod3lZZyQzpRluTTNt3kd6FpP5XFvyIKzkhdsu42m27YCQYXacng6+i6ceHza3ODLitNSaSys6Pv4nA24hO+OQeGU/ULD4fNdUZXFaXVMkItpICLkuHQtN/kqDwng68aUpRUktxb/emBv43eDf6kLHMjZW8xrU7autaKID8zzf8AlH9VrzEkbbuyt19fJM7PK8uPXcOgA0A8FgsxgorCGywbFz2AjtHUyHcQxgPM95x9O76hdPhsfWbOBxya9SPmy07MwZu2dwu0eYDif9QXXm8HnUKV7S3UEg66jTeLH5EreOu5kiYwBuCmME/gtXFf7xzmeDS6/hZQVIy6GUW6ixmnbpGyQ/mIH9foqUqU5btG2Schq2OAde1+B0KruDTwZF1qAQAgILaDZCjrDmnhBeBYSNJY+3AFzfeA5G4WkoRluSQqyhsyKoPZnh8ZuWyS8hJIbejLA+d1oqEDd3NRlspaWONoZGxrGjc1rQ0DyClSS0RC228sWWTBi3tIw001W5wH3c15Gnhm/wC9b45jm8Hheo4bWVWil1jp9vzwOZcw5Z+DKbUPDhr5dF1Kc5QeUV2DsbqA3L2hI4E7/wDn5rlT/TfB6lT0ro4fZNpfBbeSwTq8rpYyQs7ySSTcnium1GMVGKwloktkuyIMtvLG2exuoefleSTlysDrtwR9foVyuJcJp3X+NSeJdez8+z8T0HCePVLSKoVlzQ6d15d14dPkJE8l5OvaVqDxUjj6fE9ZRvKFxrSkn4dfhueKuWBOolytvxO76ldPh1tzy9I9lt5/2OHxq99HD0MHrLfwj/fbyyRa7mMHlBeigzO3Xtw5ngFzb+vyR5Y7s6/CbP01Tnn7Mfm+33/ufSPs72Gipqa9RCx88oBkD2h2QfDGLjS3HmedgqNKkorXclv76VWp6jxFbfcm6nYnDn+9RQj9lgZ/ost3Tg+hXje3Edpv4kc/2Y4UQR9mI03iaa46i77LX0EOxN/xS6/zfJfYzbbT2YS0jTNDIJYQQCHd2RtzYX+Ei9hfTeNFF+0lJ4gdOhxmm1iqseK1X3+pUabAp3ODcmUHe4kWHXT6JGyrN45S1PidtGPMpZ8FuXUNZFEynhBIB5d573WBNhxOgA6ALt0KCowwjy11cyr1HOX+y7F7wrCDBTtY73vef+07ePLQeSjc+aRCkQuMN3qzTMEJFGXGwVhvBgm8Ow1x+E+hUE6iMlpw7CXfhI8Rb9VVnVXc2wTsdC0AXVZ1HkyO1GAQAgBACAEAICG2s2fZW07oXHK73o32uWPG49RvBHEE+Ks2lzK3qKa967ojq01Ujhnzti9JLTSvgmblkYbEcCODmni07wV7ClUhVgpwejOROEoPDI58ikbRrgQe5RSkbpDd5VabJooQc8jcVXc3HYlUU9xN0xKhnVb3N4xxsexyOJ94+u5VXQoyesF8EWlfXEFpUl8WczS3Op6KaNNQWIrCIJTnUbnN5b6njWXIHNR1ZckWzejTdSagnjPc2r2LbGRva2vls4NcRA0jTM02dKeZDgQORF+AtwnTm589Tft2O3c3UKdJW9u/V6vv3/PdsbKpDlAgBAcTRNc0tcA5rgQWkXBB0IIO8IngFQq/Z3TlxMcskYPw3DmjwzC/qSrKupLdGvKGFbKxU02bV7vhe62g42A0B4X3+q2lWc4hLBL4q4W0UdMyUbGn710KSNTQNm8OEFOxlgHZQX6alx1Nzxte3kubWqc82zZEoojIIAQAgBACAEAIAQAgBAZx7bmUopGvlb/xGYNgLSA7fd9+cYbckcyNxN1Ztr6dq8rVPdfnUw7dVtGYT2i9NRuoVoc8HocypRlTlyyE3PWXIwoiT3KGUiRIbvKryZKkcsYSbBQ7mXJJZZrGw3s9gMDKmqu8PAeyK5Dcp1a55GpuLEN3AHW/Dw/HP1JXpV5Wlno4vEp7vPVR6LG2d87Y3d23tU16Sp7kXaOko2t7NtLAGHQtETLG++4tqvMy/fSfpJVp578z+5a5qe2EZlsVsD/tCumeGluHxzyd8E2kaHnJFG7ebi13DcONyF9KpXVVUIc/t8sc+eFn5nPcFzPsfRNHSsiY2KNgYxgDWtaLAAbgAoG23lkgssAEAIAQAgOJYw4WP/RZTwCtY5mZodx3HmrVLDMMqPatM8Qd7vaszeGcXv0srmGoPHZmpqy5BuCAEAIAQAgBACAEAIAQAgPnH2t44anEJGg/dwXhYOF2n70+JfceDGqtUlmRdpx5YeZS4mZgQN41A5jivRcEqRlTlS6p5XiuvwOZfpxkp9NvLsedmTuXWlRk/ZKXOluNpSRv0VSfNHdEscPYSuoWyTB6x5CxCo4SyjEopmg7EbZ1mRtHHSvqw2waGXD42k7i6xGQcM1rc7bvN8V4DaXFZ3NOThN79U333TT7998ZLVKtNR5Zamo4bsjPUNvWgQRn3qeOQukcD8MkzQA0b7tjuTp37XBht7CFFpt8zXhhfDX86GW8l4pKVkTGxxsaxjRZrGgBrQNwAG5XQLIAQAgBACAEAIBli9EJonM42u08nDd/TzW9OfLLIMhqSS430tcEHhzC7UdiM2DCZXOgic73nRsJ8S0Eri1ElNpdyQdrQAgBACAEAIAQAgBACAEB8tbZUjo66qY8WIqJT5PeXsPm1zT5qnL2mdGOsV5EDlINxoea3p1JU5KUXho0lBSWGtBYyE7wL8xp/wAl2Y8erJetFN99ij/w2nnRvHbc2P2HbNWZJXSNv2l4orj4AfvXeBcA39w81UqXla59ao9OiWxvKlTperBeZf6zZDD5TeShp3E73GGPMf3gLrVVJrZsjwhtHsDhYNxQU/nG0j0Kz6WfcYJ2jo44mhkUbI2Dc1jQ1o8A0WC0bb3Mi6wAQAgBACAEAIAQAgBAQ9bszSyydq+PvE3NnOAceoBsfqpo3FSK5UzGCXAtooTJ6gBACAEAIAQAgBACAEAICl7f7Ax4gBKxwiqGiweR3XgbmyAa+DhqL8dyjnT5ialVcNHsYfjuzdRSP7OePKeFnNcCOYynd42KrSi47luMoy2LRsb7MaipLZJ7Q0+8kOa6R45MDSQ3xdu5FbwpN7kc60Y7bm7UdKyKNsUbQ1jGhrWjcGgWAVopt5eWLIYBACAEAIAQAgBACAEAIAQAgBACAEAIAQH/2Q==",
-                gradient: "from-pink-400 to-rose-500"
-              },
-              {
-                name: "Amit",
-                story: "Found my gym buddy through Hyper Near. Now we motivate each other every morning!",
-                location: "Fitness First Gym",
-                image: "/images/train.png",
-                gradient: "from-purple-400 to-pink-500"
-              },
-              {
-                name: "Sneha & Gang",
-                story: "Started a weekend hiking group with 5 people I met through Hyper Near. Best decision ever!",
-                location: "Nehru Park",
-                image: "/images/story-3.jpg",
-                gradient: "from-blue-400 to-cyan-500"
-              }
-            ].map((story, index) => (
-              <div key={index} className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group hover:scale-105">
-                <div className={`h-48 bg-gradient-to-br ${story.gradient} relative`}>
-                  <div className="absolute inset-0 flex items-center justify-center text-6xl">
-                    💝
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                    {story.name}
-                  </h3>
-                  <p className="text-sm text-pink-600 font-semibold mb-3">📍 {story.location}</p>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    &ldquo;{story.story}&rdquo;
-                  </p>
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-yellow-400 text-lg">★</span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
+    <div className="grid md:grid-cols-3 gap-8">
+  {[
+    {
+      name: "Priya & Rahul",
+      story: "Met in the same metro every day for months. Finally connected through Hyper Near and now we're best friends!",
+      location: "Delhi Metro",
+      image: "/images/gaye3.png",
+      gradient: "from-pink-400 to-rose-500"
+    },
+    {
+      name: "Amit",
+      story: "Found my gym buddy through Hyper Near. Now we motivate each other every morning!",
+      location: "Fitness First Gym",
+      image: "/images/love2.png",
+      gradient: "from-purple-400 to-pink-500"
+    },
+    {
+      name: "Sneha & Gang",
+      story: "Started a weekend hiking group with 5 people I met through Hyper Near. Best decision ever!",
+      location: "Nehru Park",
+      image: "/images/love.png",
+      gradient: "from-blue-400 to-cyan-500"
+    }
+  ].map((story, index) => (
+    <div key={index} className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group hover:scale-105">
+      <div className={`h-48 bg-gradient-to-br ${story.gradient} relative overflow-hidden`}>
+        {story.image ? (
+          <Image 
+            src={story.image}
+            alt={story.name}
+            fill
+            className="object-cover object-top brightness-110 group-hover:brightness-100 group-hover:scale-110 transition-all duration-500"
+            style={{ objectPosition: 'center top' }}
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center text-6xl">
+            💝
           </div>
+        )}
+        {/* Overlay gradient for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          {story.name}
+        </h3>
+        <p className="text-sm text-pink-600 font-semibold mb-3">📍 {story.location}</p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          &ldquo;{story.story}&rdquo;
+        </p>
+        <div className="flex">
+          {[...Array(5)].map((_, i) => (
+            <span key={i} className="text-yellow-400 text-lg">★</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 
@@ -489,11 +495,12 @@ const HyperNearSection = () => {
           </div>
 
           <p className="text-white/80 mt-6">
-            ✨ Free to download • 🔒 100% secure • 💝 50,000+ active users
+            Available on iOS and Android • Free Download
           </p>
         </div>
       </section>
-         <Footer />
+
+      <Footer />
     </>
   );
 };
