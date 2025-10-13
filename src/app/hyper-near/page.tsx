@@ -96,66 +96,16 @@ const HyperNearSection = () => {
       `}</style>
 
       {/* SECTION 1: Hero Section */}
-<section className="relative py-16 md:py-24 lg:py-32 bg-pink-500 overflow-hidden">
+<section className="relative py-8 md:py-12 lg:py-16 bg-pink-500 overflow-hidden">
   <div className="absolute inset-0 pointer-events-none">
-   
     <div className="absolute bottom-10 left-10 w-80 h-80 bg-white/10 rounded-full blur-3xl" style={{animation: 'float 8s ease-in-out infinite'}}></div>
   </div>
 
   <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
-    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       
-      {/* Heart Shape Frame Section - RIGHT SIDE */}
-      <div className="relative flex justify-center items-center lg:order-2">
-        <div className="relative transform transition-all duration-500 group hover:scale-105">
-          
-          <svg 
-            width="700" 
-            height="760" 
-            viewBox="0 0 400 360"
-            className="drop-shadow-2xl filter"
-          >
-            <path
-              d="M200 60 C80 0 20 100 60 220 C100 300 200 350 200 350 C200 350 300 300 340 220 C380 100 320 0 200 60 Z"
-              fill="url(#heartGradient)"
-              stroke="white"
-              strokeWidth="8"
-            />
-            
-            <clipPath id="heartClip">
-              <path d="M200 65 C85 10 30 100 65 215 C100 295 200 340 200 340 C200 340 300 295 335 215 C370 100 315 10 200 65 Z"/>
-            </clipPath>
-            
-            <defs>
-              <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ec4899" />
-                <stop offset="100%" stopColor="#f43f5e" />
-              </linearGradient>
-            </defs>
-            
-            <image
-              href="/images/girlsg.png"  
-              width="380"
-              height="320"
-              x="10"
-              y="20"
-              clipPath="url(#heartClip)"
-              className="cursor-pointer"
-              preserveAspectRatio="xMidYMid slice"
-            />
-          </svg>
-
-      
-
-          <div className="absolute -top-6 -left-6 text-4xl animate-bounce">💖</div>
-          <div className="absolute -top-4 -right-8 text-3xl animate-pulse">💕</div>
-          <div className="absolute -bottom-8 -left-8 text-4xl animate-bounce delay-1000">💘</div>
-          <div className="absolute -bottom-6 -right-6 text-3xl animate-pulse delay-500">❤️</div>
-        </div>
-      </div>
-
-      {/* Text Content - LEFT SIDE */}
-      <div className="space-y-8 lg:order-1">
+      {/* Text Content - Mobile me PEHLE aayega */}
+      <div className="space-y-6 md:space-y-8 order-1 lg:order-1">
         <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
           <div className="w-8 h-8 bg-gradient-to-br from-pink-600 to-rose-700 rounded-full flex items-center justify-center">
             <span className="text-white text-lg">💖</span>
@@ -167,36 +117,36 @@ const HyperNearSection = () => {
 
         <div>
           <h1 
-            className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-4"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight mb-4"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
             Find your
             <br />
-            <span className="relative">
+            <span className="relative inline-block">
               perfect match
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
                 <path d="M2 10C100 2 200 2 298 10" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round"/>
               </svg>
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 font-semibold">
+          <p className="text-lg md:text-xl lg:text-2xl text-white/90 font-semibold">
             Connect with people who share your heart
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
           {features.map((feature, index) => (
             <button
               key={feature.id}
               onClick={() => setActiveTab(index)}
-              className={`relative p-4 rounded-2xl transition-all duration-300 text-left group ${
+              className={`relative p-3 md:p-4 rounded-2xl transition-all duration-300 text-left group ${
                 activeTab === index 
                   ? 'bg-white shadow-2xl scale-105' 
                   : 'bg-white/70 hover:bg-white hover:shadow-lg'
               }`}
             >
               <div className="flex items-start gap-3">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center text-2xl shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center text-xl md:text-2xl shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
                   {feature.icon}
                 </div>
                 <div className="flex-1">
@@ -216,20 +166,67 @@ const HyperNearSection = () => {
           ))}
         </div>
 
-        <div className="flex gap-4 pt-4">
-          <button className="bg-white hover:bg-gray-50 text-pink-600 px-8 py-3 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4">
+          <button className="bg-white hover:bg-gray-50 text-pink-600 px-6 md:px-8 py-3 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             Find Love Now
           </button>
-          <button className="bg-transparent hover:bg-white/10 text-white px-8 py-3 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white">
+          <button className="bg-transparent hover:bg-white/10 text-white px-6 md:px-8 py-3 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white">
             Success Stories
           </button>
+        </div>
+      </div>
+
+      {/* Hexagon Shape Frame - BIGGER SIZE */}
+      <div className="relative flex justify-center items-center order-2 lg:order-2">
+        <div className="relative transform transition-all duration-500 group hover:scale-105 hover:rotate-2">
+          
+          <svg 
+            width="800" 
+            height="900" 
+            viewBox="0 0 400 400"
+            className="drop-shadow-2xl filter w-full max-w-[600px] md:max-w-[750px] lg:max-w-[800px] h-auto mx-auto"
+          >
+            <path
+              d="M200,30 L340,110 L340,270 L200,350 L60,270 L60,110 Z"
+              fill="url(#hexGradient)"
+              stroke="white"
+              strokeWidth="8"
+            />
+            
+            <clipPath id="hexClip">
+              <path d="M200,40 L330,115 L330,265 L200,340 L70,265 L70,115 Z"/>
+            </clipPath>
+            
+            <defs>
+              <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ec4899" />
+                <stop offset="50%" stopColor="#f43f5e" />
+                <stop offset="100%" stopColor="#fb7185" />
+              </linearGradient>
+            </defs>
+            
+            <image
+              href="/images/girlsg.png"  
+              width="340"
+              height="340"
+              x="30"
+              y="30"
+              clipPath="url(#hexClip)"
+              className="cursor-pointer"
+              preserveAspectRatio="xMidYMid slice"
+            />
+          </svg>
+
+          <div className="absolute -top-6 -left-6 text-5xl animate-spin-slow">💖</div>
+          <div className="absolute -top-4 -right-8 text-4xl animate-bounce">💕</div>
+          <div className="absolute -bottom-8 -left-8 text-5xl animate-pulse">💘</div>
+          <div className="absolute -bottom-6 -right-6 text-4xl animate-spin-slow">❤️</div>
         </div>
       </div>
 
     </div>
   </div>
 </section>
-
 {/* Add custom animation for the hearts */}
 <style jsx>{`
   @keyframes float {
