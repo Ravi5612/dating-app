@@ -326,52 +326,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Our Journey Timeline */}
-        <section className="py-16 md:py-20 bg-gradient-to-b from-pink-50 to-white">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                Our Journey
-              </h2>
-              <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-rose-500 mx-auto rounded-full"></div>
-              <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
-                From a small startup to helping thousands find love - heres our story
-              </p>
-            </div>
-
-            {/* Timeline */}
-            <div className="relative">
-              {/* Center Line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-pink-300 to-rose-300 hidden md:block"></div>
-
-              {/* Timeline Items */}
-              <div className="space-y-12">
-                {timeline.map((item, index) => (
-                  <div 
-                    key={index}
-                    className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
-                    onMouseEnter={() => setActiveTimeline(index)}
-                  >
-                    {/* Content Card */}
-                    <div className="w-full md:w-5/12">
-                      <div className={`bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 ${activeTimeline === index ? 'ring-2 ring-pink-500' : ''}`}>
-                        <div className="flex items-center gap-3 mb-3">
-                          <span className="text-4xl">{item.icon}</span>
-                          <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-500">{item.year}</span>
-                        </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                        <p className="text-gray-600">{item.description}</p>
-                      </div>
-                    </div>
-
-                    {/* Center Dot */}
-                    <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-pink-500 to-rose-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+       
 
         {/* Achievements Section */}
         <section className="py-16 md:py-20 bg-gradient-to-br from-pink-500 to-rose-500">
