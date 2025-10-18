@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 export default function About() {
  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-  const [activeTimeline, setActiveTimeline] = useState(0);
+  
 
   const aboutCards = [
     {
@@ -120,7 +120,56 @@ export default function About() {
       gradient: "from-pink-500 to-rose-500"
     }
   ];
-
+ const polaroidGallery = [
+    {
+      id: 1,
+      image: "/images/Rectangle 23841.png",
+      caption: "Authentic Moments",
+      rotation: '-rotate-6',
+      tapeColor: 'bg-red-400',
+      position: 'lg:translate-y-8'
+    },
+    {
+      id: 2,
+      image: "/images/Rectangle 23845.png",
+      caption: "Real Connections",
+      rotation: 'rotate-3',
+      tapeColor: 'bg-blue-400',
+      position: 'lg:-translate-y-4'
+    },
+    {
+      id: 3,
+      image: "/images/Rectangle 23847.png",
+      caption: "Genuine Love",
+      rotation: '-rotate-2',
+      tapeColor: 'bg-yellow-400',
+      position: 'lg:translate-y-12'
+    },
+    {
+      id: 4,
+      image: "/images/Group 1597884004.png",
+      caption: "Pure Joy",
+      rotation: 'rotate-4',
+      tapeColor: 'bg-green-400',
+      position: 'lg:-translate-y-8'
+    },
+    {
+      id: 5,
+      image: "/images/Rectangle 94 (1).png",
+      caption: "Happy Together",
+      rotation: '-rotate-5',
+      tapeColor: 'bg-purple-400',
+      position: 'lg:translate-y-6'
+    },
+    {
+      id: 6,
+      image: "/images/about.png",
+      caption: "Forever Love",
+      rotation: 'rotate-2',
+      tapeColor: 'bg-pink-400',
+      position: 'lg:-translate-y-10'
+    }
+  ];
   const achievements = [
     { number: "50K+", label: "Happy Couples", icon: "💑" },
     { number: "100K+", label: "Active Users", icon: "👥" },
@@ -163,7 +212,189 @@ export default function About() {
             </div>
           </div>
         </div>
+  <section className="py-20 bg-gradient-to-b from-white to-yellow-50">
+          <div className="max-w-7xl mx-auto px-4 md:px-8">
+            
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                Moments Gallery
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-rose-500 mx-auto rounded-full"></div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-20">
+              {polaroidGallery.map((photo) => (
+                <div 
+                  key={photo.id}
+                  className={`flex justify-center ${photo.position}`}
+                  onMouseEnter={() => setHoveredCard(photo.id)}
+                  onMouseLeave={() => setHoveredCard(null)}
+                >
+                  <div className={`
+                    relative bg-white p-4 pb-16 shadow-2xl
+                    transform transition-all duration-500
+                    ${hoveredCard === photo.id ? 'scale-110 rotate-0 z-30' : `scale-100 ${photo.rotation}`}
+                  `}>
+                    
+                    {/* Tape */}
+                    <div className={`absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 ${photo.tapeColor} opacity-60 rounded-sm transform rotate-6 shadow-md`}></div>
+                    {/* Photo */}
+                    <div className="relative w-72 h-72 bg-gray-900 overflow-hidden">
+                      <Image 
+                        src={photo.image} 
+                        alt={photo.caption} 
+                        fill
+                        className={`object-cover transition-all duration-700 ${hoveredCard === photo.id ? 'scale-110' : 'scale-100'}`}
+                      />
+                    </div>
+                    
+                    {/* Caption */}
+                    <div className="mt-4 text-center">
+                      <p className="text-lg font-bold text-gray-800" style={{ fontFamily: "'Caveat', cursive" }}>
+                        {photo.caption}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="py-20 bg-gray-100">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      {/* Left Side - Image Collage */}
+      <div className="relative h-[600px] lg:h-[700px]">
+        
+        {/* Image 1 - Top Left (Tall) */}
+        <div className="absolute top-0 left-0 w-32 md:w-40 h-64 md:h-80 bg-white rounded-3xl shadow-xl overflow-hidden transform -rotate-6 hover:rotate-0 transition-all duration-300 z-10">
+          <Image 
+            src="/images/Rectangle 23841.png" 
+            alt="User 1" 
+            fill
+            className="object-cover"
+          />
+          {/* Yellow Badge */}
+          <div className="absolute -top-6 -right-6 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
+            <span className="text-2xl">🔄</span>
+          </div>
+        </div>
 
+        {/* Image 2 - Center Left (Medium with yellow bg) */}
+        <div className="absolute top-20 left-28 md:left-36 w-48 md:w-56 bg-yellow-400 rounded-3xl shadow-xl p-2 transform rotate-3 hover:rotate-0 transition-all duration-300 z-20">
+          <div className="relative w-full h-72 md:h-80 bg-white rounded-2xl overflow-hidden">
+            <Image 
+              src="/images/Rectangle 23845.png" 
+              alt="User 2" 
+              fill
+              className="object-cover"
+            />
+          </div>
+          {/* Label */}
+          <div className="absolute top-4 left-4 bg-yellow-400 px-3 py-1 rounded-full">
+            <span className="text-sm font-bold text-gray-900">Shop Bedroom</span>
+          </div>
+          {/* Navigation Dots & Arrows */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3">
+            <button className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center hover:bg-yellow-500 transition">
+              <span className="text-gray-900">←</span>
+            </button>
+            <div className="flex gap-1">
+              <div className="w-2 h-2 bg-gray-900 rounded-full"></div>
+              <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+              <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+            </div>
+            <button className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center hover:bg-yellow-500 transition">
+              <span className="text-gray-900">→</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Image 3 - Top Right (Small) */}
+        <div className="absolute top-8 right-0 w-36 md:w-44 h-48 md:h-56 bg-white rounded-3xl shadow-xl overflow-hidden transform rotate-6 hover:rotate-0 transition-all duration-300 z-15">
+          <Image 
+            src="/images/Rectangle 23847.png" 
+            alt="User 3" 
+            fill
+            className="object-cover"
+          />
+          {/* Blue Check Badge */}
+          <div className="absolute -bottom-4 -right-4 w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+            <span className="text-2xl text-white">✓</span>
+          </div>
+        </div>
+
+        {/* Image 4 - Right Middle (Tall) */}
+        <div className="absolute top-48 right-12 md:right-20 w-36 md:w-44 h-72 md:h-80 bg-white rounded-3xl shadow-xl overflow-hidden transform -rotate-3 hover:rotate-0 transition-all duration-300 z-25">
+          <Image 
+            src="/images/Group 1597884004.png" 
+            alt="User 4" 
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        {/* Image 5 - Bottom Left (Medium with label) */}
+        <div className="absolute bottom-0 left-8 w-52 md:w-60 h-64 md:h-72 bg-yellow-400 rounded-3xl shadow-xl overflow-hidden transform rotate-2 hover:rotate-0 transition-all duration-300 z-30">
+          <Image 
+            src="/images/Rectangle 94 (1).png" 
+            alt="User 5" 
+            fill
+            className="object-cover rounded-3xl"
+          />
+          {/* Name Label */}
+          <div className="absolute bottom-4 left-4 bg-gray-900/70 backdrop-blur px-4 py-2 rounded-full">
+            <span className="text-white font-semibold">Jillian Turecki</span>
+          </div>
+        </div>
+
+        {/* Image 6 - Bottom Right (Small) */}
+        <div className="absolute bottom-12 right-0 w-40 md:w-48 h-52 md:h-60 bg-white rounded-3xl shadow-xl overflow-hidden transform -rotate-6 hover:rotate-0 transition-all duration-300 z-20">
+          <Image 
+            src="/images/about.png" 
+            alt="User 6" 
+            fill
+            className="object-cover"
+          />
+          {/* Heart Badge */}
+          <div className="absolute -top-4 -left-4 w-14 h-14 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
+            <span className="text-2xl">❤️</span>
+          </div>
+        </div>
+
+        {/* Decorative circles/badges */}
+        <div className="absolute top-12 right-32 w-12 h-12 bg-pink-400 rounded-full shadow-lg"></div>
+        <div className="absolute bottom-32 left-0 w-10 h-10 bg-blue-400 rounded-full shadow-lg"></div>
+        <div className="absolute bottom-0 right-24 w-8 h-8 bg-green-400 rounded-full shadow-lg"></div>
+      </div>
+
+      {/* Right Side - Content */}
+      <div className="lg:pl-8">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          Be the first to know
+        </h2>
+        
+        <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+          Bumble has led to millions of relationships, marriages, and friendships 
+          around the world. Want to see what we are building next? Sign up to get 
+          our latest updates and feature drops—straight to your inbox.
+        </p>
+        
+        <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+          Whether it is tips from our dating experts, how we are using AI to power 
+          better matchmaking, or feature updates like ID Verification that 
+          improve members safety, you will be the first to discover how we are 
+          putting love at the heart of dating.
+        </p>
+
+        <button className="bg-gray-900 hover:bg-gray-800 text-white font-semibold px-10 py-4 rounded-full text-lg transition-all transform hover:scale-105 shadow-lg">
+          Sign up
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
         {/* Real Connections Section */}
         <section className="py-16 md:py-20 bg-gradient-to-b from-pink-50 to-white">
           <div className="max-w-6xl mx-auto px-4 md:px-8">
@@ -327,6 +558,7 @@ export default function About() {
         </section>
 
        
+{/* Bumble Style Collage Section */}
 
         {/* Achievements Section */}
         <section className="py-16 md:py-20 bg-gradient-to-br from-pink-500 to-rose-500">
@@ -385,39 +617,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="py-16 md:py-20 bg-gradient-to-b from-pink-50 to-white">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                Meet Our Team
-              </h2>
-              <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-rose-500 mx-auto rounded-full"></div>
-              <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
-                Passionate people working to bring love into your life
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {team.map((member, index) => (
-                <div 
-                  key={index}
-                  className="group text-center"
-                >
-                  <div className={`relative w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br ${member.gradient} p-1 transform group-hover:scale-105 transition-all duration-300`}>
-                    <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-6xl">
-                      👤
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-pink-600 font-semibold mb-3">{member.role}</p>
-                  <p className="text-gray-600 italic">{member.quote}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+      
 
         {/* About Us Section */}
         <section className="py-16 md:py-20 bg-gradient-to-b from-white to-pink-50">
