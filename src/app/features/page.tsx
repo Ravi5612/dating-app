@@ -28,7 +28,190 @@ export default function About() {
   return (
     <div>
       <Header />
+      <section className="relative h-screen min-h-[600px] overflow-hidden bg-gradient-to-br from-pink-100 via-rose-50 to-purple-100">
+  {/* Background Image with Pink Overlay */}
+  <div className="absolute inset-0 z-0">
+    <Image 
+      src="/images/ambassodars.png" 
+      alt="Wedding Background" 
+      fill 
+      className="object-cover brightness-90"
+      priority
+    />
+    <div className="absolute inset-0 bg-gradient-to-r from-pink-500/70 via-rose-400/60 to-purple-500/70"></div>
+  </div>
+
+  {/* Content Container */}
+  <div className="relative z-10 h-full max-w-7xl mx-auto px-4 md:px-8 flex items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 w-full items-center">
       
+      {/* Left Side - Text Content */}
+      <div className="text-white space-y-8">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-lg" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          Start with the Blueprint AI Builder
+        </h1>
+        <p className="text-lg md:text-xl text-pink-50 max-w-xl leading-relaxed drop-shadow">
+          Create a unique and professional website in minutes. Get expert design guidance, premium starter content, and curated styling options that match your needs and personality.
+        </p>
+        
+        {/* CTA Button - Pink Theme */}
+        <button className="group bg-white text-pink-600 px-8 py-4 rounded-lg font-semibold text-lg flex items-center gap-3 hover:bg-pink-50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 border-2 border-pink-200">
+          <span className="text-2xl">💕</span>
+          <span>BUILD SITE</span>
+          <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      {/* Right Side - Floating Cards */}
+      <div className="relative h-[500px] hidden lg:block">
+        
+        {/* Card 1 - Top Left - Heading Card */}
+      <div 
+  className="absolute top-0 left-0 bg-white rounded-xl shadow-2xl overflow-hidden w-48 border-t-4 border-pink-400 animate-float"
+  style={{ 
+    animation: 'floatCard1 6s ease-in-out infinite',
+    animationDelay: '0s'
+  }}
+>
+  {/* Image Section */}
+  <div className="relative h-32 w-full bg-gradient-to-br from-pink-100 to-rose-100">
+    <Image 
+      src="/images/15.png" 
+      alt="Card Image" 
+      fill 
+      className="object-cover"
+    />
+  </div>
+  
+  {/* Text Content */}
+  <div 
+  className="absolute top-12 left-1/3 bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl shadow-2xl overflow-hidden w-44 border-l-4 border-rose-400 animate-float"
+  style={{ 
+    animation: 'floatCard2 7s ease-in-out infinite',
+    animationDelay: '0.5s'
+  }}
+>
+  {/* Image Section */}
+  <div className="relative h-28 w-full bg-gradient-to-br from-pink-100 to-rose-100">
+    <Image 
+      src="/images/Rectangle 23841.png
+  " 
+          alt="Card Image" 
+      fill 
+      className="object-cover"
+    />
+  </div>
+  
+  {/* Text Content */}
+  <div className="p-4">
+    <h3 className="text-sm font-bold text-rose-600 mb-2">Heading</h3>
+    <p className="text-xs text-gray-600">This is an example</p>
+    <div className="mt-3 w-12 h-1 bg-gradient-to-r from-pink-400 to-rose-400 rounded"></div>
+  </div>
+</div>
+  </div>
+
+        {/* Card 2 - Top Center - Another Heading */}
+        <div 
+          className="absolute top-12 left-1/3 bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl shadow-2xl p-6 w-44 border-l-4 border-rose-400 animate-float"
+          style={{ 
+            animation: 'floatCard2 7s ease-in-out infinite',
+            animationDelay: '0.5s'
+          }}
+        >
+          <h3 className="text-sm font-bold text-rose-600 mb-2">Heading</h3>
+          <p className="text-xs text-gray-600">This is an example</p>
+        </div>
+
+        {/* Card 3 - Center - Image Card */}
+        <div 
+          className="absolute top-24 right-0 bg-white rounded-2xl shadow-2xl overflow-hidden w-56 border-4 border-pink-200 animate-float"
+          style={{ 
+            animation: 'floatCard3 8s ease-in-out infinite',
+            animationDelay: '1s'
+          }}
+        >
+          <div className="relative h-40 bg-gradient-to-br from-pink-200 to-rose-200">
+            <Image 
+              src="/images/ambassodars.png" 
+              alt="Wedding Detail" 
+              fill 
+              className="object-cover"
+            />
+          </div>
+          <div className="p-4 bg-gradient-to-br from-pink-50 to-white">
+            <h3 className="text-sm font-bold text-pink-600 mb-1">More about our brand</h3>
+            <p className="text-xs text-gray-600 mb-3">Discover our story</p>
+            <div className="w-8 h-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded"></div>
+          </div>
+        </div>
+
+        {/* Card 4 - Bottom Center - Color Palette (Pink Theme) */}
+        <div 
+          className="absolute bottom-20 left-1/4 bg-white rounded-xl shadow-2xl p-5 w-40 border-2 border-pink-300 animate-float"
+          style={{ 
+            animation: 'floatCard4 7.5s ease-in-out infinite',
+            animationDelay: '1.5s'
+          }}
+        >
+          <div className="space-y-3">
+            <div className="flex gap-2">
+              <div className="w-full h-8 bg-pink-500 rounded shadow-inner"></div>
+              <div className="w-full h-8 bg-rose-400 rounded shadow-inner"></div>
+            </div>
+            <div className="flex gap-2">
+              <div className="w-full h-8 bg-pink-300 rounded shadow-inner"></div>
+              <div className="w-full h-8 bg-purple-400 rounded shadow-inner"></div>
+            </div>
+            <div className="flex gap-2">
+              <div className="w-full h-8 bg-pink-200 rounded shadow-inner"></div>
+              <div className="w-full h-8 bg-rose-300 rounded shadow-inner"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Card 5 - Bottom Right - Mockup Device */}
+        <div 
+          className="absolute bottom-0 right-8 bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl shadow-2xl p-1 w-48 border-2 border-pink-300 animate-float"
+          style={{ 
+            animation: 'floatCard5 6.5s ease-in-out infinite',
+            animationDelay: '2s'
+          }}
+        >
+          <div className="bg-white rounded-xl p-4 space-y-3">
+            <div className="h-3 bg-gradient-to-r from-pink-300 to-rose-300 rounded w-3/4"></div>
+            <div className="h-2 bg-pink-100 rounded w-full"></div>
+            <div className="h-2 bg-pink-100 rounded w-5/6"></div>
+            <div className="h-16 bg-gradient-to-br from-pink-200 to-rose-200 rounded"></div>
+            <div className="h-2 bg-pink-100 rounded w-full"></div>
+            <div className="h-2 bg-pink-100 rounded w-4/5"></div>
+          </div>
+        </div>
+
+        {/* Decorative Floating Hearts */}
+        <div className="absolute top-10 right-20 text-4xl animate-pulse opacity-30">💕</div>
+        <div className="absolute bottom-32 left-12 text-3xl animate-pulse opacity-20" style={{ animationDelay: '1s' }}>💖</div>
+        <div className="absolute top-1/2 right-32 text-2xl animate-pulse opacity-25" style={{ animationDelay: '2s' }}>💗</div>
+      </div>
+    </div>
+  </div>
+
+  {/* Bottom Decorative Wave */}
+  <div className="absolute bottom-0 left-0 right-0 z-5">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-20 md:h-32">
+      <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="url(#gradient)" fillOpacity="0.5"/>
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#ec4899" />
+          <stop offset="50%" stopColor="#f43f5e" />
+          <stop offset="100%" stopColor="#a855f7" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
       <main>
         <section className="py-16 md:py-20 bg-pink-100 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
@@ -186,21 +369,10 @@ export default function About() {
 {/* SECTION 2 - 💞 Heart Collage */}
 <section className="py-12 bg-gradient-to-br from-pink-50 via-rose-100 to-purple-50 relative overflow-hidden">
   {/* Full width container for bouncing images */}
-  <div className="w-full px-4 md:px-8">
+  <div className="w-full px-4 md:px-8 relative">
   
- 
-    {/* Header */}
-    <div className="text-center mb-4 relative z-30 max-w-6xl mx-auto">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-        💞 Love in Every Frame
-      </h2>
-      <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-        Where hearts meet and beautiful connections are made
-      </p>
-    </div>
-
-    {/* Full Width Heart Shape Container with Bouncing Images */}
-    <div className="relative w-full h-[800px] md:h-[900px] flex items-center justify-center">
+    {/* Full Width Heart Shape Container with Bouncing Images - MOVED BEFORE HEADER */}
+    <div className="relative w-full h-[1100px] md:h-[1200px] flex items-center justify-center">
       
       {/* Center Heart Background */}
       <div className="absolute inset-0 flex items-center justify-center z-0">
@@ -252,7 +424,6 @@ export default function About() {
         <Image src="/images/Nwe1.png" alt="Love 4" fill className="object-cover" />
       </div>
 
-
       {/* Bouncing Image 5 - LARGER */}
       <div 
         className="absolute w-52 h-52 md:w-68 md:h-68 rounded-full overflow-hidden border-4 shadow-2xl transition-all duration-300 hover:scale-125 hover:z-50 z-10"
@@ -296,13 +467,23 @@ export default function About() {
       >
         <Image src="/images/Group 1597884004.png" alt="Love 8" fill className="object-cover" />
       </div>
-    </div>
 
-    {/* Caption */}
-    <div className="text-center mt-8 relative z-30 max-w-6xl mx-auto">
-      <p className="text-2xl text-gray-800" style={{ fontFamily: "'Caveat', cursive" }}>
-        Love is composed of a single soul inhabiting two bodies 💕
-      </p>
+      {/* Header - NOW INSIDE THE CONTAINER */}
+      <div className="absolute top-8 left-1/2 -translate-x-1/2 text-center z-20 max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          💞 Love in Every Frame
+        </h2>
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+          Where hearts meet and beautiful connections are made
+        </p>
+      </div>
+
+      {/* Caption - ALSO INSIDE THE CONTAINER */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center z-20 max-w-6xl mx-auto">
+        <p className="text-2xl text-gray-800" style={{ fontFamily: "'Caveat', cursive" }}>
+          Love is composed of a single soul inhabiting two bodies 💕
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -446,227 +627,7 @@ export default function About() {
 </section>
 
 
-<section className="py-20 bg-gradient-to-b from-pink-50 to-purple-50">
-  <div className="max-w-6xl mx-auto px-4 md:px-8">
-    
-    {/* Header */}
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-        🌸 Flower Crown Memories
-      </h2>
-      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-        Blooming moments arranged in a beautiful floral crown
-      </p>
-    </div>
 
-    {/* Flower Crown Circle */}
-    <div className="relative w-full h-[600px] md:h-[700px] flex items-center justify-center overflow-hidden">
-      
-      {/* Decorative flower background */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[560px] h-[560px] md:w-[660px] md:h-[660px] rounded-full border-4 border-dashed border-pink-200 opacity-40"></div>
-      </div>
-
-      {/* Photo 1 - Continuous queue */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{ 
-          animation: 'photo1Path 50s linear infinite',
-          transformOrigin: 'center center',
-          willChange: 'transform',
-          backfaceVisibility: 'hidden',
-          WebkitBackfaceVisibility: 'hidden',
-          WebkitFontSmoothing: 'antialiased',
-          transform: 'translateZ(0)'
-        }}
-      >
-        <div className="relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
-            <div className="relative w-full h-full rounded-full overflow-hidden">
-              <Image src="/images/unsplash_fdlZBWIP0aM.png" alt="Flower 1" fill className="object-cover" />
-            </div>
-          </div>
-          <div className="absolute -top-2 -right-2 text-3xl">🌸</div>
-        </div>
-      </div>
-
-      {/* Photo 2 */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{ 
-          animation: 'photo2Path 50s linear infinite',
-          transformOrigin: 'center center',
-          willChange: 'transform',
-          backfaceVisibility: 'hidden',
-          WebkitBackfaceVisibility: 'hidden',
-          WebkitFontSmoothing: 'antialiased',
-          transform: 'translateZ(0)'
-        }}
-      >
-        <div className="relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
-            <div className="relative w-full h-full rounded-full overflow-hidden">
-              <Image src="/images/unsplash_jpkfc5_d-DI.png" alt="Flower 2" fill className="object-cover" />
-            </div>
-          </div>
-          <div className="absolute -top-2 -right-2 text-3xl">🌺</div>
-        </div>
-      </div>
-
-      {/* Photo 3 */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{ 
-          animation: 'photo3Path 50s linear infinite',
-          transformOrigin: 'center center',
-          willChange: 'transform',
-          backfaceVisibility: 'hidden',
-          WebkitBackfaceVisibility: 'hidden',
-          WebkitFontSmoothing: 'antialiased',
-          transform: 'translateZ(0)'
-        }}
-      >
-        <div className="relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
-            <div className="relative w-full h-full rounded-full overflow-hidden">
-              <Image src="/images/unsplash_mAQZ3X_8_l0.png" alt="Flower 3" fill className="object-cover" />
-            </div>
-          </div>
-          <div className="absolute -top-2 -right-2 text-3xl">🌼</div>
-        </div>
-      </div>
-
-      {/* Photo 4 */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{ 
-          animation: 'photo4Path 50s linear infinite',
-          transformOrigin: 'center center',
-          willChange: 'transform',
-          backfaceVisibility: 'hidden',
-          WebkitBackfaceVisibility: 'hidden',
-          WebkitFontSmoothing: 'antialiased',
-          transform: 'translateZ(0)'
-        }}
-      >
-        <div className="relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
-            <div className="relative w-full h-full rounded-full overflow-hidden">
-              <Image src="/images/Nwe1.png" alt="Flower 4" fill className="object-cover" />
-            </div>
-          </div>
-          <div className="absolute -bottom-2 -right-2 text-3xl">🌻</div>
-        </div>
-      </div>
-
-      {/* Photo 5 */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{ 
-          animation: 'photo5Path 50s linear infinite',
-          transformOrigin: 'center center',
-          willChange: 'transform',
-          backfaceVisibility: 'hidden',
-          WebkitBackfaceVisibility: 'hidden',
-          WebkitFontSmoothing: 'antialiased',
-          transform: 'translateZ(0)'
-        }}
-      >
-        <div className="relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
-            <div className="relative w-full h-full rounded-full overflow-hidden">
-              <Image src="/images/new3.png" alt="Flower 5" fill className="object-cover" />
-            </div>
-          </div>
-          <div className="absolute -bottom-2 -left-2 text-3xl">🌷</div>
-        </div>
-      </div>
-
-      {/* Photo 6 */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{ 
-          animation: 'photo6Path 50s linear infinite',
-          transformOrigin: 'center center',
-          willChange: 'transform',
-          backfaceVisibility: 'hidden',
-          WebkitBackfaceVisibility: 'hidden',
-          WebkitFontSmoothing: 'antialiased',
-          transform: 'translateZ(0)'
-        }}
-      >
-        <div className="relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
-            <div className="relative w-full h-full rounded-full overflow-hidden">
-              <Image src="/images/Rectangle 23841.png" alt="Flower 6" fill className="object-cover" />
-            </div>
-          </div>
-          <div className="absolute -bottom-2 -left-2 text-3xl">🌹</div>
-        </div>
-      </div>
-
-      {/* Photo 7 */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{ 
-          animation: 'photo7Path 50s linear infinite',
-          transformOrigin: 'center center',
-          willChange: 'transform',
-          backfaceVisibility: 'hidden',
-          WebkitBackfaceVisibility: 'hidden',
-          WebkitFontSmoothing: 'antialiased',
-          transform: 'translateZ(0)'
-        }}
-      >
-        <div className="relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
-            <div className="relative w-full h-full rounded-full overflow-hidden">
-              <Image src="/images/Rectangle 23845.png" alt="Flower 7" fill className="object-cover" />
-            </div>
-          </div>
-          <div className="absolute -top-2 -left-2 text-3xl">🏵️</div>
-        </div>
-      </div>
-
-      {/* Photo 8 */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{ 
-          animation: 'photo8Path 50s linear infinite',
-          transformOrigin: 'center center',
-          willChange: 'transform',
-          backfaceVisibility: 'hidden',
-          WebkitBackfaceVisibility: 'hidden',
-          WebkitFontSmoothing: 'antialiased',
-          transform: 'translateZ(0)'
-        }}
-      >
-        <div className="relative">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
-            <div className="relative w-full h-full rounded-full overflow-hidden">
-              <Image src="/images/Rectangle 23847.png" alt="Flower 8" fill className="object-cover" />
-            </div>
-          </div>
-          <div className="absolute -top-2 -left-2 text-3xl">💐</div>
-        </div>
-      </div>
-
-      {/* Center text */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-20">
-        <h3 className="text-3xl md:text-4xl font-bold text-gray-800" style={{ fontFamily: "'Caveat', cursive" }}>
-          Blooming<br/>Together
-        </h3>
-      </div>
-    </div>
-
-    {/* Caption */}
-    <div className="text-center mt-12">
-      <p className="text-2xl text-gray-700" style={{ fontFamily: "'Caveat', cursive" }}>
-        A crown of memories, each petal a moment 🌸
-      </p>
-    </div>
-  </div>
-</section>
 
 
 

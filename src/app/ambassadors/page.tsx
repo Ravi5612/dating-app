@@ -45,15 +45,110 @@ const Ambassadors = () => {
       <Header />
       
       <main>
-        {/* Hero Section */}
-        <div className="relative w-full h-[28rem] md:h-[34rem] lg:h-[40rem]">
+      <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 overflow-hidden">
+  {/* Navigation */}
+  <nav className="relative z-30 flex justify-between items-center px-6 md:px-12 py-6">
+    <div className="text-pink-600 font-bold text-xl" style={{ fontFamily: "'Poppins', sans-serif" }}>
+      LOVE CONNECT
+    </div>
+    <div className="flex gap-8 text-sm md:text-base">
+      <a href="#info" className="text-pink-500 hover:text-pink-600 font-medium transition-colors">Info</a>
+      <a href="#features" className="text-pink-500 hover:text-pink-600 font-medium transition-colors">Features</a>
+    </div>
+  </nav>
+
+  {/* Main Content */}
+  <div className="relative max-w-7xl mx-auto px-6 md:px-12 py-8">
+    <div className="relative min-h-[700px]">
+      
+      {/* Image - BEHIND (positioned to align with "YOUR") */}
+      <div className="absolute top-24 md:top-32 right-0 md:right-8 lg:right-16 w-[400px] md:w-[500px] lg:w-[600px] h-[400px] md:h-[500px] lg:h-[550px] z-0">
+        <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
           <Image 
-            src="/images/ambassodars.png" 
-            alt="Happy couple" 
-            fill
+            src="/images/unsplash_fdlZBWIP0aM.png" 
+            alt="Happy Couple" 
+            fill 
             className="object-cover"
+            priority
           />
+          
+          {/* Floating Badge - Top Right */}
+          <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-3 shadow-xl z-30">
+            <div className="flex items-center gap-2">
+              <span className="text-3xl">💕</span>
+              <div>
+                <p className="text-xs text-gray-600">Success Rate</p>
+                <p className="text-lg font-bold text-pink-600">98%</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Stats Card */}
+          <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-xl z-30">
+            <div className="grid grid-cols-3 gap-4 text-center">
+              <div>
+                <p className="text-2xl font-bold text-pink-600">2M+</p>
+                <p className="text-xs text-gray-600">Users</p>
+              </div>
+              <div>
+                <p className="text-2xl font-bold text-pink-600">500K</p>
+                <p className="text-xs text-gray-600">Matches</p>
+              </div>
+              <div>
+                <p className="text-2xl font-bold text-pink-600">98%</p>
+                <p className="text-xs text-gray-600">Happy</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      {/* Big Typography - ON TOP */}
+      <div className="relative z-10 w-full">
+   <h1 
+  className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-[0.85] text-pink-600 mb-12" 
+  style={{ 
+    fontFamily: "'Playfair Display', serif", 
+    letterSpacing: '-0.03em',
+    wordBreak: 'keep-all',
+    whiteSpace: 'normal'
+  }}
+>
+  <span className="inline-block">FIND</span>
+  <span className="inline-block" style={{ marginLeft: '3rem' }}>YOUR</span><br />
+  <span className="inline-block">PERFECT</span><br />
+  <span className="inline-block">MATCH</span>
+</h1>
+        
+        {/* Description */}
+        <div className="space-y-4 max-w-md text-pink-600 mb-8">
+          <p className="text-base leading-relaxed">
+            We're a modern dating platform connecting hearts across the globe. Our mission is to help you find meaningful connections through intelligent matching and authentic interactions.
+          </p>
+          <p className="text-base leading-relaxed">
+            We've been creating love stories for over 5 years, with millions of successful matches. Join our community and discover your perfect partner today.
+          </p>
+        </div>
+
+        {/* CTA Button */}
+        <button className="group bg-pink-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-pink-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 flex items-center gap-3">
+          <span>Start Matching</span>
+          <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  {/* Scroll Indicator */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce z-20">
+    <p className="text-xs text-pink-500 font-medium">Scroll to explore</p>
+    <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </div>
+</section>
 
         <section className="py-16 md:py-20 bg-gradient-to-br from-pink-100 to-pink-200">
           <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
@@ -342,7 +437,7 @@ const Ambassadors = () => {
         </section>
         
         <TestimonialCarousel />
-
+{/* 
         <section className="py-4 bg-teal-400 overflow-hidden">
           <div className="whitespace-nowrap">
             <div 
@@ -378,7 +473,7 @@ const Ambassadors = () => {
               100% { transform: translateX(-100%); }
             }
           `}</style>
-        </section>
+        </section> */}
 
         <section className="py-16 md:py-20 bg-gray-100">
           <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
@@ -467,119 +562,223 @@ const Ambassadors = () => {
             
           </div>
         </section>
-<section className="py-20 bg-gradient-to-b from-cyan-50 via-yellow-50 to-orange-50">
-  <div className="max-w-7xl mx-auto px-4 md:px-8">
+<section className="py-20 bg-gradient-to-b from-pink-50 to-purple-50">
+  <div className="max-w-6xl mx-auto px-4 md:px-8">
     
     {/* Header */}
     <div className="text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-        ☀️ Sunbeam Gallery
+        🌸 Flower Crown Memories
       </h2>
       <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-        Radiant memories shining bright like sunshine
+        Blooming moments arranged in a beautiful floral crown
       </p>
     </div>
 
-    {/* Sunbeam Container - INCREASED */}
-    <div className="relative w-full h-[900px] md:h-[1000px] flex items-center justify-center">
+    {/* Flower Crown Circle */}
+    <div className="relative w-full h-[600px] md:h-[700px] flex items-center justify-center overflow-hidden">
       
-      {/* Sun rays background - LONGER */}
+      {/* Decorative flower background */}
       <div className="absolute inset-0 flex items-center justify-center">
-        {[...Array(12)].map((_, i) => (
-          <div 
-            key={i}
-            className="absolute w-2 bg-gradient-to-t from-transparent via-yellow-200 to-transparent opacity-30"
-            style={{
-              height: '500px',
-              transform: `rotate(${i * 30}deg)`,
-              transformOrigin: 'bottom center'
-            }}
-          ></div>
-        ))}
+        <div className="w-[560px] h-[560px] md:w-[660px] md:h-[660px] rounded-full border-4 border-dashed border-pink-200 opacity-40"></div>
       </div>
 
-      {/* Center Sun - BIGGER */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-56 md:h-56 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-full shadow-2xl z-20 flex items-center justify-center">
-        <span className="text-7xl md:text-8xl">☀️</span>
-      </div>
-
-      {/* Ray 1 - Top - BIGGER */}
-      <div className="absolute top-[5%] left-1/2 -translate-x-1/2">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-4 border-yellow-300 shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-2">
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
-            <Image src="/images/unsplash_fdlZBWIP0aM.png" alt="Ray 1" fill className="object-cover" />
+      {/* Photo 1 - RIGHT to RIGHT */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ 
+          animation: 'photo1Path 40s linear infinite',
+          transformOrigin: 'center center',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'antialiased',
+          transform: 'translateZ(0)'
+        }}
+      >
+        <div className="relative">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
+            <div className="relative w-full h-full rounded-full overflow-hidden">
+              <Image src="/images/unsplash_fdlZBWIP0aM.png" alt="Flower 1" fill className="object-cover" />
+            </div>
           </div>
+          <div className="absolute -top-2 -right-2 text-3xl">🌸</div>
         </div>
       </div>
 
-      {/* Ray 2 - Top Right - BIGGER */}
-      <div className="absolute top-[12%] right-[15%]">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-4 border-orange-300 shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-2">
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
-            <Image src="/images/unsplash_jpkfc5_d-DI.png" alt="Ray 2" fill className="object-cover" />
+      {/* Photo 2 - RIGHT to RIGHT */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ 
+          animation: 'photo2Path 40s linear infinite',
+          transformOrigin: 'center center',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'antialiased',
+          transform: 'translateZ(0)'
+        }}
+      >
+        <div className="relative">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
+            <div className="relative w-full h-full rounded-full overflow-hidden">
+              <Image src="/images/unsplash_jpkfc5_d-DI.png" alt="Flower 2" fill className="object-cover" />
+            </div>
           </div>
+          <div className="absolute -top-2 -right-2 text-3xl">🌺</div>
         </div>
       </div>
 
-      {/* Ray 3 - Right - BIGGER */}
-      <div className="absolute top-1/2 -translate-y-1/2 right-[5%]">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-4 border-yellow-300 shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-2">
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
-            <Image src="/images/unsplash_mAQZ3X_8_l0.png" alt="Ray 3" fill className="object-cover" />
+      {/* Photo 3 - RIGHT to RIGHT */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ 
+          animation: 'photo3Path 40s linear infinite',
+          transformOrigin: 'center center',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'antialiased',
+          transform: 'translateZ(0)'
+        }}
+      >
+        <div className="relative">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
+            <div className="relative w-full h-full rounded-full overflow-hidden">
+              <Image src="/images/unsplash_mAQZ3X_8_l0.png" alt="Flower 3" fill className="object-cover" />
+            </div>
           </div>
+          <div className="absolute -top-2 -right-2 text-3xl">🌼</div>
         </div>
       </div>
 
-      {/* Ray 4 - Bottom Right - BIGGER */}
-      <div className="absolute bottom-[12%] right-[15%]">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-4 border-orange-300 shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-2">
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
-            <Image src="/images/Nwe1.png" alt="Ray 4" fill className="object-cover" />
+      {/* Photo 4 - RIGHT to RIGHT */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ 
+          animation: 'photo4Path 40s linear infinite',
+          transformOrigin: 'center center',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'antialiased',
+          transform: 'translateZ(0)'
+        }}
+      >
+        <div className="relative">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
+            <div className="relative w-full h-full rounded-full overflow-hidden">
+              <Image src="/images/Nwe1.png" alt="Flower 4" fill className="object-cover" />
+            </div>
           </div>
+          <div className="absolute -bottom-2 -right-2 text-3xl">🌻</div>
         </div>
       </div>
 
-      {/* Ray 5 - Bottom - BIGGER */}
-      <div className="absolute bottom-[5%] left-1/2 -translate-x-1/2">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-4 border-yellow-300 shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-2">
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
-            <Image src="/images/new3.png" alt="Ray 5" fill className="object-cover" />
+      {/* Photo 5 - LEFT to LEFT */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ 
+          animation: 'photo5Path 40s linear infinite',
+          transformOrigin: 'center center',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'antialiased',
+          transform: 'translateZ(0)'
+        }}
+      >
+        <div className="relative">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
+            <div className="relative w-full h-full rounded-full overflow-hidden">
+              <Image src="/images/new3.png" alt="Flower 5" fill className="object-cover" />
+            </div>
           </div>
+          <div className="absolute -bottom-2 -left-2 text-3xl">🌷</div>
         </div>
       </div>
 
-      {/* Ray 6 - Bottom Left - BIGGER */}
-      <div className="absolute bottom-[12%] left-[15%]">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-4 border-orange-300 shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-2">
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
-            <Image src="/images/Rectangle 23841.png" alt="Ray 6" fill className="object-cover" />
+      {/* Photo 6 - LEFT to LEFT */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ 
+          animation: 'photo6Path 40s linear infinite',
+          transformOrigin: 'center center',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'antialiased',
+          transform: 'translateZ(0)'
+        }}
+      >
+        <div className="relative">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
+            <div className="relative w-full h-full rounded-full overflow-hidden">
+              <Image src="/images/Rectangle 23841.png" alt="Flower 6" fill className="object-cover" />
+            </div>
           </div>
+          <div className="absolute -bottom-2 -left-2 text-3xl">🌹</div>
         </div>
       </div>
 
-      {/* Ray 7 - Left - BIGGER */}
-      <div className="absolute top-1/2 -translate-y-1/2 left-[5%]">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-4 border-yellow-300 shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-2">
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
-            <Image src="/images/Rectangle 23845.png" alt="Ray 7" fill className="object-cover" />
+      {/* Photo 7 - LEFT to LEFT */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ 
+          animation: 'photo7Path 40s linear infinite',
+          transformOrigin: 'center center',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'antialiased',
+          transform: 'translateZ(0)'
+        }}
+      >
+        <div className="relative">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
+            <div className="relative w-full h-full rounded-full overflow-hidden">
+              <Image src="/images/Rectangle 23845.png" alt="Flower 7" fill className="object-cover" />
+            </div>
           </div>
+          <div className="absolute -top-2 -left-2 text-3xl">🏵️</div>
         </div>
       </div>
 
-      {/* Ray 8 - Top Left - BIGGER */}
-      <div className="absolute top-[12%] left-[15%]">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-4 border-orange-300 shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-2">
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
-            <Image src="/images/Rectangle 23847.png" alt="Ray 8" fill className="object-cover" />
+      {/* Photo 8 - LEFT to LEFT */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ 
+          animation: 'photo8Path 40s linear infinite',
+          transformOrigin: 'center center',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'antialiased',
+          transform: 'translateZ(0)'
+        }}
+      >
+        <div className="relative">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300 bg-white p-1">
+            <div className="relative w-full h-full rounded-full overflow-hidden">
+              <Image src="/images/Rectangle 23847.png" alt="Flower 8" fill className="object-cover" />
+            </div>
           </div>
+          <div className="absolute -top-2 -left-2 text-3xl">💐</div>
         </div>
+      </div>
+
+      {/* Center text */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-20">
+        <h3 className="text-3xl md:text-4xl font-bold text-gray-800" style={{ fontFamily: "'Caveat', cursive" }}>
+          Blooming<br/>Together
+        </h3>
       </div>
     </div>
 
     {/* Caption */}
     <div className="text-center mt-12">
       <p className="text-2xl text-gray-700" style={{ fontFamily: "'Caveat', cursive" }}>
-        You are my sunshine, my only sunshine ☀️✨
+        A crown of memories, each petal a moment 🌸
       </p>
     </div>
   </div>
