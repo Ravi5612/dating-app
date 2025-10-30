@@ -387,49 +387,270 @@ export default function About() {
   </div>
 </section>
 
-        <section className="py-16 md:py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              
-              {/* Left Column - Image */}
-              <div className="order-1 lg:order-1">
-                <div className="relative w-full h-64 md:h-72 lg:h-80 rounded-2xl overflow-hidden shadow-lg">
-                  <Image 
-                    src="/images/Nwe1.png"
-                    alt="Couple having meaningful conversation over coffee" 
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+   {/* Virtual Dating Section */}
+<section className="relative py-20 md:py-28 bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 overflow-hidden">
+  
+  {/* Background Decorative Elements */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+    <div className="absolute top-20 left-10 w-96 h-96 bg-purple-300 rounded-full blur-3xl animate-pulse"></div>
+    <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-pink-300 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-rose-200 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+  </div>
+
+  {/* Floating Hearts */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute top-32 left-1/4 text-6xl text-purple-300 opacity-20 animate-float">💜</div>
+    <div className="absolute top-1/3 right-1/4 text-7xl text-pink-300 opacity-25 animate-float" style={{animationDelay: '1s'}}>💕</div>
+    <div className="absolute bottom-1/3 left-1/3 text-5xl text-rose-300 opacity-20 animate-float" style={{animationDelay: '2s'}}>💗</div>
+  </div>
+
+  <div className="relative max-w-7xl mx-auto px-6 md:px-12 z-10">
+    
+    {/* Section Header */}
+    <div className="text-center mb-16">
+      
+      {/* Top Badge */}
+      <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm px-5 py-2 rounded-full shadow-lg border-2 border-purple-200 mb-6">
+        <span className="text-2xl">🎥</span>
+        <span className="text-purple-600 font-bold text-sm uppercase tracking-wide">Next-Gen Dating</span>
+      </div>
+
+      {/* Main Heading */}
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-pink-600 mb-6 leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        Experience Virtual Dating
+      </h2>
+
+      {/* Decorative Underline */}
+      <div className="flex items-center justify-center gap-2 mb-6">
+        <div className="w-8 h-1.5 bg-purple-300 rounded-full"></div>
+        <div className="w-32 h-1.5 bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 rounded-full"></div>
+        <div className="w-8 h-1.5 bg-purple-300 rounded-full"></div>
+      </div>
+
+      {/* Subtitle */}
+      <p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        Connect face-to-face from anywhere in the world. Our <span className="font-bold text-pink-600">AI-powered video dating</span> creates authentic connections in a safe, virtual environment.
+      </p>
+    </div>
+
+    {/* Main Content Grid */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+      
+      {/* Left Side - Video Call Mockup */}
+      <div className="relative">
+        
+        {/* Main Video Call Card */}
+        <div className="relative bg-white/90 backdrop-blur-lg rounded-3xl p-6 shadow-2xl border-2 border-pink-200">
+          
+          {/* Video Grid */}
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            
+            {/* Person 1 */}
+            <div className="relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-100 to-pink-100 group">
+              <Image 
+                src="/images/15.png" 
+                alt="Virtual Date Person 1" 
+                fill 
+                className="object-cover group-hover:scale-110 transition-all duration-500"
+              />
+              {/* Name Badge */}
+              <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                <p className="text-sm font-bold text-pink-600">Sarah, 24</p>
               </div>
-              
-              {/* Right Column - Content */}
-              <div className="order-2 lg:order-2 space-y-8">
-                
-                {/* Heading */}
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-                  Simple, Safe & Intentional
-                </h1>
-                
-                {/* Description */}
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                  We match you based on shared interests and values. No distractions, 
-                  just a direct and meaningful conversation with someone who truly 
-                  matches your vibe.
-                </p>
-                
-                {/* CTA Button */}
-                <div className="pt-4">
-                  <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300">
-                    DOWNLOAD VELVET
-                  </button>
-                </div>
-                
+              {/* Active Indicator */}
+              <div className="absolute top-3 right-3 flex items-center gap-2 bg-green-500 px-3 py-1 rounded-full">
+                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <span className="text-white text-xs font-bold">LIVE</span>
               </div>
-              
+            </div>
+
+            {/* Person 2 */}
+            <div className="relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-pink-100 to-rose-100 group">
+              <Image 
+                src="/images/Rectangle 23845.png" 
+                alt="Virtual Date Person 2" 
+                fill 
+                className="object-cover group-hover:scale-110 transition-all duration-500"
+              />
+              {/* Name Badge */}
+              <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                <p className="text-sm font-bold text-purple-600">Mike, 26</p>
+              </div>
+              {/* Active Indicator */}
+              <div className="absolute top-3 right-3 flex items-center gap-2 bg-green-500 px-3 py-1 rounded-full">
+                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <span className="text-white text-xs font-bold">LIVE</span>
+              </div>
             </div>
           </div>
-        </section>
+
+          {/* Video Controls */}
+          <div className="flex items-center justify-center gap-4">
+            
+            {/* Mute Button */}
+            <button className="w-14 h-14 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg">
+              <span className="text-2xl">🎤</span>
+            </button>
+
+            {/* Video Off Button */}
+            <button className="w-14 h-14 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg">
+              <span className="text-2xl">📹</span>
+            </button>
+
+            {/* End Call Button */}
+            <button className="w-16 h-16 bg-gradient-to-br from-red-500 to-rose-600 hover:from-red-600 hover:to-rose-700 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-xl">
+              <span className="text-3xl">📞</span>
+            </button>
+
+            {/* Chat Button */}
+            <button className="w-14 h-14 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg">
+              <span className="text-2xl">💬</span>
+            </button>
+
+            {/* Gift Button */}
+            <button className="w-14 h-14 bg-gradient-to-br from-pink-400 to-rose-400 hover:from-pink-500 hover:to-rose-500 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg">
+              <span className="text-2xl">🎁</span>
+            </button>
+          </div>
+
+          {/* Timer Badge */}
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full shadow-xl">
+            <p className="text-sm font-bold flex items-center gap-2">
+              <span className="text-lg">⏱️</span>
+              <span>15:42 mins</span>
+            </p>
+          </div>
+        </div>
+
+        {/* Floating Feature Cards */}
+        <div className="absolute -left-8 top-1/4 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl border-2 border-purple-200 transform hover:scale-105 transition-all duration-300 hidden lg:block">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center">
+              <span className="text-2xl">🔒</span>
+            </div>
+            <div>
+              <p className="text-xs text-gray-600 font-semibold">100%</p>
+              <p className="text-sm font-bold text-purple-600">Secure</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="absolute -right-8 bottom-1/4 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl border-2 border-pink-200 transform hover:scale-105 transition-all duration-300 hidden lg:block">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-rose-400 rounded-xl flex items-center justify-center">
+              <span className="text-2xl">🌐</span>
+            </div>
+            <div>
+              <p className="text-xs text-gray-600 font-semibold">HD Quality</p>
+              <p className="text-sm font-bold text-pink-600">Video</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Side - Features List */}
+      <div className="space-y-6">
+        
+        {/* Feature 1 */}
+        <div className="group bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-lg border-2 border-purple-100 hover:border-purple-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div className="flex items-start gap-4">
+            <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all">
+              <span className="text-3xl">🎭</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-purple-600 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                Virtual Date Experiences
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Choose from curated virtual date scenarios - coffee shop, movie night, or rooftop dinner. Make every date special!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Feature 2 */}
+        <div className="group bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-lg border-2 border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div className="flex items-start gap-4">
+            <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-rose-400 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all">
+              <span className="text-3xl">🎮</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-pink-600 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                Interactive Games & Activities
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Break the ice with fun games, quizzes, and activities designed to spark conversations and laughter.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Feature 3 */}
+        <div className="group bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-lg border-2 border-rose-100 hover:border-rose-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div className="flex items-start gap-4">
+            <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-purple-400 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all">
+              <span className="text-3xl">🎁</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-rose-600 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                Send Virtual Gifts
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Express your feelings with virtual flowers, chocolates, and more. Make your date feel special instantly!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="pt-4">
+          <button className="group w-full bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 hover:from-purple-700 hover:via-pink-700 hover:to-rose-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 flex items-center justify-center gap-3">
+            <span className="text-2xl">🎥</span>
+            <span>Start Virtual Date Now</span>
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    {/* Stats Section */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      
+      {/* Stat 1 */}
+      <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 text-center shadow-lg border-2 border-purple-100 hover:border-purple-300 hover:shadow-xl transition-all transform hover:scale-105">
+        <div className="text-4xl mb-3">⏱️</div>
+        <div className="text-3xl font-black text-purple-600 mb-1">50K+</div>
+        <div className="text-sm text-gray-600 font-semibold">Virtual Dates</div>
+      </div>
+
+      {/* Stat 2 */}
+      <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 text-center shadow-lg border-2 border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all transform hover:scale-105">
+        <div className="text-4xl mb-3">💑</div>
+        <div className="text-3xl font-black text-pink-600 mb-1">5K+</div>
+        <div className="text-sm text-gray-600 font-semibold">Success Stories</div>
+      </div>
+
+      {/* Stat 3 */}
+      <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 text-center shadow-lg border-2 border-rose-100 hover:border-rose-300 hover:shadow-xl transition-all transform hover:scale-105">
+        <div className="text-4xl mb-3">⭐</div>
+        <div className="text-3xl font-black text-rose-600 mb-1">4.9/5</div>
+        <div className="text-sm text-gray-600 font-semibold">User Rating</div>
+      </div>
+
+      {/* Stat 4 */}
+      <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 text-center shadow-lg border-2 border-purple-100 hover:border-purple-300 hover:shadow-xl transition-all transform hover:scale-105">
+        <div className="text-4xl mb-3">🌍</div>
+        <div className="text-3xl font-black text-purple-600 mb-1">24/7</div>
+        <div className="text-sm text-gray-600 font-semibold">Available</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>    
 
         <section className="py-16 md:py-20 bg-pink-100">
           <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
