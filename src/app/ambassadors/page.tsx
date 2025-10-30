@@ -123,10 +123,10 @@ const Ambassadors = () => {
         {/* Description */}
         <div className="space-y-4 max-w-md text-pink-600 mb-8">
           <p className="text-base leading-relaxed">
-            We're a modern dating platform connecting hearts across the globe. Our mission is to help you find meaningful connections through intelligent matching and authentic interactions.
+            We are a modern dating platform connecting hearts across the globe. Our mission is to help you find meaningful connections through intelligent matching and authentic interactions.
           </p>
           <p className="text-base leading-relaxed">
-            We've been creating love stories for over 5 years, with millions of successful matches. Join our community and discover your perfect partner today.
+            We have been creating love stories for over 5 years, with millions of successful matches. Join our community and discover your perfect partner today.
           </p>
         </div>
 
