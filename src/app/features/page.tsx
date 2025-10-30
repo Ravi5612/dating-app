@@ -28,7 +28,7 @@ export default function About() {
   return (
     <div>
       <Header />
-      <section className="relative h-screen min-h-[600px] overflow-hidden bg-gradient-to-br from-pink-100 via-rose-50 to-purple-100">
+     <section className="relative h-screen min-h-[600px] overflow-hidden bg-gradient-to-br from-pink-100 via-rose-50 to-purple-100">
   {/* Background Image with Pink Overlay */}
   <div className="absolute inset-0 z-0">
     <Image 
@@ -64,21 +64,47 @@ export default function About() {
         </button>
       </div>
 
-      {/* Right Side - Floating Cards */}
-      <div className="relative h-[500px] hidden lg:block">
+      {/* Right Side - Floating Cards - LARGER & BETTER POSITIONED */}
+      <div className="relative h-[600px] hidden lg:block">
         
-        {/* Card 1 - Top Left - Heading Card */}
-      <div 
-  className="absolute top-0 left-0 bg-white rounded-xl shadow-2xl overflow-hidden w-48 border-t-4 border-pink-400 animate-float"
+        {/* Card 1 - Top Left - Image Card (BIGGER) */}
+        <div 
+          className="absolute top-0 left-0 bg-white rounded-2xl shadow-2xl overflow-hidden w-64 border-t-4 border-pink-400 animate-float"
+          style={{ 
+            animation: 'floatCard1 6s ease-in-out infinite',
+            animationDelay: '0s'
+          }}
+        >
+          {/* Image Section - BIGGER */}
+          <div className="relative h-48 w-full bg-gradient-to-br from-pink-100 to-rose-100">
+            <Image 
+              src="/images/15.png" 
+              alt="Card Image" 
+              fill 
+              className="object-cover"
+            />
+          </div>
+          
+          {/* Text Content */}
+          <div className="p-5">
+            <h3 className="text-base font-bold text-pink-600 mb-2">Real People, Real Impact</h3>
+            <p className="text-sm text-gray-600">Meet Our Ambassadors</p>
+            <div className="mt-3 w-16 h-1.5 bg-gradient-to-r from-pink-400 to-rose-400 rounded"></div>
+          </div>
+        </div>
+
+        {/* Card 2 - Top Right - Heading Card (REPOSITIONED) */}
+       <div 
+  className="absolute top-8 right-0 bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl shadow-2xl overflow-hidden w-56 border-l-4 border-rose-400 animate-float"
   style={{ 
-    animation: 'floatCard1 6s ease-in-out infinite',
-    animationDelay: '0s'
+    animation: 'floatCard2 7s ease-in-out infinite',
+    animationDelay: '0.5s'
   }}
 >
   {/* Image Section */}
   <div className="relative h-32 w-full bg-gradient-to-br from-pink-100 to-rose-100">
     <Image 
-      src="/images/15.png" 
+      src="/images/Rectangle 23845.png" 
       alt="Card Image" 
       fill 
       className="object-cover"
@@ -86,54 +112,22 @@ export default function About() {
   </div>
   
   {/* Text Content */}
-  <div 
-  className="absolute top-12 left-1/3 bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl shadow-2xl overflow-hidden w-44 border-l-4 border-rose-400 animate-float"
-  style={{ 
-    animation: 'floatCard2 7s ease-in-out infinite',
-    animationDelay: '0.5s'
-  }}
->
-  {/* Image Section */}
-  <div className="relative h-28 w-full bg-gradient-to-br from-pink-100 to-rose-100">
-    <Image 
-      src="/images/Rectangle 23841.png
-  " 
-          alt="Card Image" 
-      fill 
-      className="object-cover"
-    />
-  </div>
-  
-  {/* Text Content */}
-  <div className="p-4">
-    <h3 className="text-sm font-bold text-rose-600 mb-2">Heading</h3>
-    <p className="text-xs text-gray-600">This is an example</p>
-    <div className="mt-3 w-12 h-1 bg-gradient-to-r from-pink-400 to-rose-400 rounded"></div>
+  <div className="p-6">
+    <h3 className="text-base font-bold text-rose-600 mb-3">Heading</h3>
+    <p className="text-sm text-gray-600 mb-3">This is an example of beautiful content</p>
+    <div className="w-14 h-1.5 bg-gradient-to-r from-pink-400 to-rose-400 rounded"></div>
   </div>
 </div>
-  </div>
 
-        {/* Card 2 - Top Center - Another Heading */}
+        {/* Card 3 - Center Right - Large Image Card (BIGGER) */}
         <div 
-          className="absolute top-12 left-1/3 bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl shadow-2xl p-6 w-44 border-l-4 border-rose-400 animate-float"
-          style={{ 
-            animation: 'floatCard2 7s ease-in-out infinite',
-            animationDelay: '0.5s'
-          }}
-        >
-          <h3 className="text-sm font-bold text-rose-600 mb-2">Heading</h3>
-          <p className="text-xs text-gray-600">This is an example</p>
-        </div>
-
-        {/* Card 3 - Center - Image Card */}
-        <div 
-          className="absolute top-24 right-0 bg-white rounded-2xl shadow-2xl overflow-hidden w-56 border-4 border-pink-200 animate-float"
+          className="absolute top-44 right-8 bg-white rounded-2xl shadow-2xl overflow-hidden w-72 border-4 border-pink-200 animate-float"
           style={{ 
             animation: 'floatCard3 8s ease-in-out infinite',
             animationDelay: '1s'
           }}
         >
-          <div className="relative h-40 bg-gradient-to-br from-pink-200 to-rose-200">
+          <div className="relative h-52 bg-gradient-to-br from-pink-200 to-rose-200">
             <Image 
               src="/images/ambassodars.png" 
               alt="Wedding Detail" 
@@ -141,16 +135,16 @@ export default function About() {
               className="object-cover"
             />
           </div>
-          <div className="p-4 bg-gradient-to-br from-pink-50 to-white">
-            <h3 className="text-sm font-bold text-pink-600 mb-1">More about our brand</h3>
-            <p className="text-xs text-gray-600 mb-3">Discover our story</p>
-            <div className="w-8 h-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded"></div>
+          <div className="p-5 bg-gradient-to-br from-pink-50 to-white">
+            <h3 className="text-base font-bold text-pink-600 mb-2">More about our brand</h3>
+            <p className="text-sm text-gray-600 mb-3">Discover our love story and journey</p>
+            <div className="w-10 h-1.5 bg-gradient-to-r from-pink-500 to-rose-500 rounded"></div>
           </div>
         </div>
 
-        {/* Card 4 - Bottom Center - Color Palette (Pink Theme) */}
+        {/* Card 4 - Bottom Left - Color Palette (BIGGER) */}
         <div 
-          className="absolute bottom-20 left-1/4 bg-white rounded-xl shadow-2xl p-5 w-40 border-2 border-pink-300 animate-float"
+          className="absolute bottom-32 left-8 bg-white rounded-xl shadow-2xl p-6 w-52 border-2 border-pink-300 animate-float"
           style={{ 
             animation: 'floatCard4 7.5s ease-in-out infinite',
             animationDelay: '1.5s'
@@ -158,42 +152,49 @@ export default function About() {
         >
           <div className="space-y-3">
             <div className="flex gap-2">
-              <div className="w-full h-8 bg-pink-500 rounded shadow-inner"></div>
-              <div className="w-full h-8 bg-rose-400 rounded shadow-inner"></div>
+              <div className="w-full h-10 bg-pink-500 rounded shadow-lg"></div>
+              <div className="w-full h-10 bg-rose-400 rounded shadow-lg"></div>
             </div>
             <div className="flex gap-2">
-              <div className="w-full h-8 bg-pink-300 rounded shadow-inner"></div>
-              <div className="w-full h-8 bg-purple-400 rounded shadow-inner"></div>
+              <div className="w-full h-10 bg-pink-300 rounded shadow-lg"></div>
+              <div className="w-full h-10 bg-purple-400 rounded shadow-lg"></div>
             </div>
             <div className="flex gap-2">
-              <div className="w-full h-8 bg-pink-200 rounded shadow-inner"></div>
-              <div className="w-full h-8 bg-rose-300 rounded shadow-inner"></div>
+              <div className="w-full h-10 bg-pink-200 rounded shadow-lg"></div>
+              <div className="w-full h-10 bg-rose-300 rounded shadow-lg"></div>
             </div>
           </div>
         </div>
 
-        {/* Card 5 - Bottom Right - Mockup Device */}
+        {/* Card 5 - Bottom Right - Mockup Device (BIGGER) */}
         <div 
-          className="absolute bottom-0 right-8 bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl shadow-2xl p-1 w-48 border-2 border-pink-300 animate-float"
+          className="absolute bottom-0 right-0 bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl shadow-2xl p-1.5 w-64 border-2 border-pink-300 animate-float"
           style={{ 
             animation: 'floatCard5 6.5s ease-in-out infinite',
             animationDelay: '2s'
           }}
         >
-          <div className="bg-white rounded-xl p-4 space-y-3">
-            <div className="h-3 bg-gradient-to-r from-pink-300 to-rose-300 rounded w-3/4"></div>
-            <div className="h-2 bg-pink-100 rounded w-full"></div>
-            <div className="h-2 bg-pink-100 rounded w-5/6"></div>
-            <div className="h-16 bg-gradient-to-br from-pink-200 to-rose-200 rounded"></div>
-            <div className="h-2 bg-pink-100 rounded w-full"></div>
-            <div className="h-2 bg-pink-100 rounded w-4/5"></div>
+          <div className="bg-white rounded-xl p-5 space-y-3">
+             <div className="relative h-32 w-full bg-gradient-to-br from-pink-100 to-rose-100">
+    <Image 
+      src="/images/Rectangle 23845.png" 
+      alt="Card Image" 
+      fill 
+      className="object-cover"
+    />
+  </div>
+            <div className="h-3 bg-pink-100 rounded w-full"></div>
+            <div className="h-3 bg-pink-100 rounded w-4/5"></div>
           </div>
         </div>
 
-        {/* Decorative Floating Hearts */}
-        <div className="absolute top-10 right-20 text-4xl animate-pulse opacity-30">💕</div>
-        <div className="absolute bottom-32 left-12 text-3xl animate-pulse opacity-20" style={{ animationDelay: '1s' }}>💖</div>
-        <div className="absolute top-1/2 right-32 text-2xl animate-pulse opacity-25" style={{ animationDelay: '2s' }}>💗</div>
+      
+
+        {/* Decorative Floating Hearts - MORE */}
+        <div className="absolute top-10 right-24 text-5xl animate-pulse opacity-30">💕</div>
+        <div className="absolute bottom-40 left-16 text-4xl animate-pulse opacity-25" style={{ animationDelay: '1s' }}>💖</div>
+        <div className="absolute top-1/3 right-40 text-3xl animate-pulse opacity-20" style={{ animationDelay: '2s' }}>💗</div>
+        <div className="absolute bottom-56 right-32 text-4xl animate-pulse opacity-30" style={{ animationDelay: '1.5s' }}>❤️</div>
       </div>
     </div>
   </div>
@@ -213,82 +214,178 @@ export default function About() {
   </div>
 </section>
       <main>
-        <section className="py-16 md:py-20 bg-pink-100 relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
-            
-            {/* Decorative Dots */}
-            <div className="absolute top-8 right-1/4 w-3 h-3 bg-pink-500 rounded-full"></div>
-            <div className="absolute top-12 left-1/3 w-2 h-2 bg-orange-400 rounded-full"></div>
-            <div className="absolute bottom-8 right-8 w-4 h-4 bg-green-500 rounded-full"></div>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              
-              {/* Left Column - Content */}
-              <div className="order-2 lg:order-1 space-y-8">
-                
-                {/* Main Heading */}
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-                  Make Meaningful Connections, One-on-One
-                </h1>
-                
-                {/* Description */}
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-lg">
-                  Tired of endless swiping? Meet 1 to 1 is designed to help you connect 
-                  in a more personal and authentic way. Whether you&apos;re looking for 
-                  friendship, networking, or something more, we make one-on-one 
-                  meetings effortless.
-                </p>
-                
-                {/* CTA Button */}
-                <div className="pt-4">
-                  <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300">
-                    DOWNLOAD VELVET
-                  </button>
+     <section className="relative py-16 md:py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 overflow-hidden">
+  
+  {/* Decorative Background Blurs */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+    <div className="absolute top-20 left-20 w-72 h-72 bg-pink-300 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-20 right-20 w-96 h-96 bg-rose-300 rounded-full blur-3xl"></div>
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-purple-200 rounded-full blur-3xl"></div>
+  </div>
+
+  {/* Decorative Dots - Pink Theme */}
+  <div className="absolute top-8 right-1/4 w-4 h-4 bg-pink-400 rounded-full shadow-lg animate-pulse"></div>
+  <div className="absolute top-12 left-1/3 w-3 h-3 bg-rose-400 rounded-full shadow-lg animate-pulse" style={{animationDelay: '0.5s'}}></div>
+  <div className="absolute bottom-8 right-8 w-5 h-5 bg-purple-400 rounded-full shadow-lg animate-pulse" style={{animationDelay: '1s'}}></div>
+  <div className="absolute top-32 left-16 w-3 h-3 bg-pink-300 rounded-full shadow-lg animate-pulse" style={{animationDelay: '1.5s'}}></div>
+  <div className="absolute bottom-32 left-1/4 w-4 h-4 bg-rose-300 rounded-full shadow-lg animate-pulse" style={{animationDelay: '2s'}}></div>
+
+  {/* Floating Hearts */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute top-24 right-32 text-5xl text-pink-300 opacity-20 animate-float">💕</div>
+    <div className="absolute bottom-40 left-24 text-6xl text-rose-300 opacity-15 animate-float" style={{animationDelay: '1s'}}>💖</div>
+  </div>
+
+  <div className="relative max-w-7xl mx-auto px-6 md:px-12 z-10">
+    
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      
+      {/* Left Column - Enhanced Content */}
+      <div className="order-2 lg:order-1 space-y-8">
+        
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border-2 border-pink-200">
+          <span className="text-2xl">💑</span>
+          <span className="text-pink-600 font-bold text-sm">Authentic Connections</span>
+        </div>
+
+        {/* Main Heading */}
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-pink-600 leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          Make Meaningful Connections, One-on-One
+        </h1>
+
+        {/* Decorative Underline */}
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-1.5 bg-pink-300 rounded-full"></div>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full"></div>
+          <div className="w-6 h-1.5 bg-pink-300 rounded-full"></div>
+        </div>
+        
+        {/* Description Card */}
+        <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg border-2 border-pink-100">
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            Tired of endless swiping? <span className="font-bold text-pink-600">Velvet</span> is designed to help you connect 
+            in a more <span className="font-bold text-pink-600">personal and authentic</span> way. Whether you are looking for 
+            friendship, networking, or something more, we make one-on-one 
+            meetings effortless.
+          </p>
+        </div>
+
+        {/* Features List */}
+        <div className="grid grid-cols-2 gap-4">
+          <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-xl p-4 shadow-md border border-pink-100">
+            <span className="text-2xl">✓</span>
+            <span className="text-sm font-semibold text-pink-600">Real Profiles</span>
+          </div>
+          <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-xl p-4 shadow-md border border-pink-100">
+            <span className="text-2xl">✓</span>
+            <span className="text-sm font-semibold text-pink-600">Safe & Secure</span>
+          </div>
+        </div>
+        
+        {/* CTA Button - Pink Theme */}
+        <div className="pt-4">
+          <button className="group bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 hover:from-pink-700 hover:via-rose-700 hover:to-purple-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center gap-3">
+            <span className="text-2xl">💕</span>
+            <span>DOWNLOAD VELVET</span>
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </button>
+
+          {/* Trust Indicator */}
+          <div className="flex items-center gap-2 mt-4 text-sm text-gray-600">
+            <span className="text-xl">⭐</span>
+            <span className="font-semibold">4.8/5 Rating • 100K+ Downloads</span>
+          </div>
+        </div>
+        
+      </div>
+      
+      {/* Right Column - Enhanced Image Grid */}
+      <div className="order-1 lg:order-2 relative">
+        
+        {/* Decorative Elements Behind Images */}
+        <div className="absolute -top-4 -right-4 w-24 h-24 bg-pink-300 rounded-full blur-2xl opacity-50"></div>
+        <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-rose-300 rounded-full blur-2xl opacity-50"></div>
+
+        <div className="relative grid grid-cols-2 gap-4">
+          
+          {/* Large Image - Top with Pink Border */}
+          <div className="col-span-2 relative">
+            <div className="bg-gradient-to-br from-pink-400 via-rose-400 to-purple-500 rounded-3xl p-1.5 shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
+              <div className="relative w-full h-48 md:h-56 lg:h-64 rounded-2xl overflow-hidden bg-white p-1">
+                <div className="relative w-full h-full rounded-xl overflow-hidden">
+                  <Image 
+                    src="/images/unsplash_fdlZBWIP0aM.png" 
+                    alt="Couple having meaningful conversation" 
+                    fill
+                    className="object-cover"
+                  />
+                  {/* Overlay Badge */}
+                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-pink-200">
+                    <span className="text-pink-600 font-bold text-sm flex items-center gap-2">
+                      <span className="text-xl">💬</span>
+                      Real Conversations
+                    </span>
+                  </div>
                 </div>
-                
               </div>
-              
-              {/* Right Column - Image Grid */}
-              <div className="order-1 lg:order-2">
-                <div className="grid grid-cols-2 gap-4">
-                  
-                  {/* Large Image - Top */}
-                  <div className="col-span-2">
-                    <div className="relative w-full h-48 md:h-56 lg:h-64 rounded-2xl overflow-hidden shadow-lg">
-                      <Image 
-                        src="/images/unsplash_fdlZBWIP0aM.png" 
-                        alt="Couple having meaningful conversation" 
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                  
-                  {/* Small images - Bottom Row */}
-                  <div className="relative w-full h-32 md:h-40 lg:h-48 rounded-2xl overflow-hidden shadow-lg">
-                    <Image 
-                      src="/images/unsplash_jpkfc5_d-DI.png" 
-                      alt="Friends connecting over coffee" 
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  
-                  <div className="relative w-full h-32 md:h-40 lg:h-48 rounded-2xl overflow-hidden shadow-lg">
-                    <Image 
-                      src="/images/unsplash_mAQZ3X_8_l0.png" 
-                      alt="People networking and chatting" 
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  
-                </div>
-              </div>
-              
             </div>
           </div>
-        </section>
+          
+          {/* Small images - Bottom Row with Pink Borders */}
+          <div className="relative">
+            <div className="bg-gradient-to-br from-pink-300 to-rose-300 rounded-2xl p-1 shadow-xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-300">
+              <div className="relative w-full h-32 md:h-40 lg:h-48 rounded-xl overflow-hidden">
+                <Image 
+                  src="/images/unsplash_jpkfc5_d-DI.png" 
+                  alt="Friends connecting over coffee" 
+                  fill
+                  className="object-cover"
+                />
+                {/* Corner Badge */}
+                <div className="absolute bottom-2 right-2 bg-pink-500 rounded-full p-2 shadow-lg">
+                  <span className="text-white text-xl">☕</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="relative">
+            <div className="bg-gradient-to-br from-rose-300 to-purple-400 rounded-2xl p-1 shadow-xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-300">
+              <div className="relative w-full h-32 md:h-40 lg:h-48 rounded-xl overflow-hidden">
+                <Image 
+                  src="/images/unsplash_mAQZ3X_8_l0.png" 
+                  alt="People networking and chatting" 
+                  fill
+                  className="object-cover"
+                />
+                {/* Corner Badge */}
+                <div className="absolute bottom-2 right-2 bg-rose-500 rounded-full p-2 shadow-lg">
+                  <span className="text-white text-xl">🤝</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        {/* Floating Stats Card */}
+        <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border-2 border-pink-200 hidden lg:block">
+          <div className="flex items-center gap-3">
+            <div className="text-3xl">💑</div>
+            <div>
+              <p className="text-xs text-gray-600 font-semibold">Happy Couples</p>
+              <p className="text-2xl font-black text-pink-600">50K+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
         <section className="py-16 md:py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
