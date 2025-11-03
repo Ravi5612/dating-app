@@ -232,209 +232,314 @@ const Ambassadors = () => {
             </div>
           </div>
         </section>
-<section className="py-20 bg-gradient-to-b from-red-50 to-blue-50">
-  <div className="max-w-7xl mx-auto px-4 md:px-8">
+<section className="py-20 bg-gradient-to-b from-pink-200 via-rose-200 to-purple-200 relative overflow-hidden">
+  
+  {/* Background Decorative Elements */}
+  <div className="absolute inset-0 overflow-hidden opacity-30">
+    <div className="absolute top-20 left-10 w-96 h-96 bg-pink-500 rounded-full blur-3xl animate-pulse"></div>
+    <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-rose-500 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-purple-400 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+  </div>
+
+  <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
     
-    {/* Header */}
+    {/* Header with Mixed Colors */}
     <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-        🧩 Mini Collage Grids
+      
+      {/* Top Badge */}
+      <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full shadow-xl border-2 border-pink-400 mb-6">
+        <span className="text-2xl">🧩</span>
+        <span className="text-pink-700 font-bold text-sm uppercase tracking-wide">Memory Collections</span>
+      </div>
+
+      {/* Main Heading - Mixed Pink/Black */}
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <span className="text-pink-700">Mini Collage</span>{' '}
+        <span className="text-gray-900">Grids</span>
       </h2>
-      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-        Multiple memories in one beautiful frame
+
+      {/* Decorative Underline */}
+      <div className="flex items-center justify-center gap-2 mb-4">
+        <div className="w-8 h-1.5 bg-pink-500 rounded-full"></div>
+        <div className="w-32 h-1.5 bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 rounded-full"></div>
+        <div className="w-8 h-1.5 bg-pink-500 rounded-full"></div>
+      </div>
+
+      <p className="text-xl max-w-2xl mx-auto font-semibold">
+        <span className="text-gray-900">Multiple</span>{' '}
+        <span className="text-pink-700 font-black">memories</span>{' '}
+        <span className="text-gray-900">in one</span>{' '}
+        <span className="text-pink-700 font-black">beautiful frame</span>
       </p>
     </div>
 
     {/* Collage Grid */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
       
-      {/* Collage 1 */}
-      <div className="bg-white p-6 rounded-3xl shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-        <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
-          Best Day Ever ✨
+      {/* Collage 1 - Dark Pink Theme */}
+      <div className="bg-white/95 backdrop-blur-lg p-6 rounded-3xl shadow-2xl hover:shadow-pink-500/30 transition-all duration-300 border-2 border-pink-300 hover:border-pink-500 transform hover:-translate-y-2">
+        <h3 className="text-2xl font-bold mb-6 text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <span className="text-pink-700">Best Day</span>{' '}
+          <span className="text-gray-900">Ever ✨</span>
         </h3>
         
         <div className="grid grid-cols-3 gap-3">
-          <div className="col-span-2 row-span-2 relative h-80 rounded-2xl overflow-hidden border-4 border-pink-200">
+          <div className="col-span-2 row-span-2 relative h-80 rounded-2xl overflow-hidden border-4 border-pink-400 shadow-lg">
             <Image src="/images/unsplash_fdlZBWIP0aM.png" alt="Main" fill className="object-cover" />
           </div>
-          <div className="relative h-[155px] rounded-2xl overflow-hidden border-4 border-pink-200">
+          <div className="relative h-[155px] rounded-2xl overflow-hidden border-4 border-pink-400 shadow-lg">
             <Image src="/images/unsplash_jpkfc5_d-DI.png" alt="Side 1" fill className="object-cover" />
           </div>
-          <div className="relative h-[155px] rounded-2xl overflow-hidden border-4 border-pink-200">
+          <div className="relative h-[155px] rounded-2xl overflow-hidden border-4 border-pink-400 shadow-lg">
             <Image src="/images/unsplash_mAQZ3X_8_l0.png" alt="Side 2" fill className="object-cover" />
           </div>
         </div>
 
-        <p className="mt-4 text-center text-gray-600">
-          Three moments, one perfect day
+        <p className="mt-4 text-center font-semibold">
+          <span className="text-gray-900">Three</span>{' '}
+          <span className="text-pink-700 font-bold">moments,</span>{' '}
+          <span className="text-gray-900">one</span>{' '}
+          <span className="text-pink-700 font-bold">perfect day</span>
         </p>
       </div>
 
-      {/* Collage 2 */}
-      <div className="bg-white p-6 rounded-3xl shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-        <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
-          Squad Goals 💕
+      {/* Collage 2 - Dark Pink Theme */}
+      <div className="bg-white/95 backdrop-blur-lg p-6 rounded-3xl shadow-2xl hover:shadow-rose-500/30 transition-all duration-300 border-2 border-rose-300 hover:border-rose-500 transform hover:-translate-y-2">
+        <h3 className="text-2xl font-bold mb-6 text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <span className="text-gray-900">Squad</span>{' '}
+          <span className="text-rose-700">Goals 💕</span>
         </h3>
         
         <div className="grid grid-cols-2 gap-3">
-          <div className="relative h-40 rounded-2xl overflow-hidden border-4 border-purple-200">
+          <div className="relative h-40 rounded-2xl overflow-hidden border-4 border-rose-400 shadow-lg">
             <Image src="/images/Nwe1.png" alt="Photo 1" fill className="object-cover" />
           </div>
-          <div className="relative h-40 rounded-2xl overflow-hidden border-4 border-purple-200">
+          <div className="relative h-40 rounded-2xl overflow-hidden border-4 border-rose-400 shadow-lg">
             <Image src="/images/new3.png" alt="Photo 2" fill className="object-cover" />
           </div>
-          <div className="col-span-2 relative h-48 rounded-2xl overflow-hidden border-4 border-purple-200">
+          <div className="col-span-2 relative h-48 rounded-2xl overflow-hidden border-4 border-rose-400 shadow-lg">
             <Image src="/images/Rectangle 23841.png" alt="Photo 3" fill className="object-cover" />
           </div>
         </div>
 
-        <p className="mt-4 text-center text-gray-600">
-          Making memories together
+        <p className="mt-4 text-center font-semibold">
+          <span className="text-rose-700 font-bold">Making memories</span>{' '}
+          <span className="text-gray-900">together</span>
         </p>
       </div>
 
-      {/* Collage 3 */}
-      <div className="bg-white p-6 rounded-3xl shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-        <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
-          Adventure Time 🌟
+      {/* Collage 3 - Dark Pink Theme */}
+      <div className="bg-white/95 backdrop-blur-lg p-6 rounded-3xl shadow-2xl hover:shadow-pink-500/30 transition-all duration-300 border-2 border-pink-300 hover:border-pink-500 transform hover:-translate-y-2">
+        <h3 className="text-2xl font-bold mb-6 text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <span className="text-pink-700">Adventure</span>{' '}
+          <span className="text-gray-900">Time 🌟</span>
         </h3>
         
         <div className="grid grid-cols-3 gap-3">
-          <div className="relative h-[250px] rounded-2xl overflow-hidden border-4 border-blue-200">
+          <div className="relative h-[250px] rounded-2xl overflow-hidden border-4 border-pink-500 shadow-lg">
             <Image src="/images/Rectangle 23845.png" alt="Photo 1" fill className="object-cover" />
           </div>
-          <div className="col-span-2 relative h-[250px] rounded-2xl overflow-hidden border-4 border-blue-200">
+          <div className="col-span-2 relative h-[250px] rounded-2xl overflow-hidden border-4 border-pink-500 shadow-lg">
             <Image src="/images/Rectangle 23847.png" alt="Photo 2" fill className="object-cover" />
           </div>
         </div>
 
-        <p className="mt-4 text-center text-gray-600">
-          Life is an adventure
+        <p className="mt-4 text-center font-semibold">
+          <span className="text-gray-900">Life is an</span>{' '}
+          <span className="text-pink-700 font-bold">adventure</span>
         </p>
       </div>
 
-      {/* Collage 4 */}
-      <div className="bg-white p-6 rounded-3xl shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-        <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
-          Happy Moments 🎉
+      {/* Collage 4 - Dark Pink Theme */}
+      <div className="bg-white/95 backdrop-blur-lg p-6 rounded-3xl shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 border-2 border-purple-300 hover:border-purple-500 transform hover:-translate-y-2">
+        <h3 className="text-2xl font-bold mb-6 text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <span className="text-gray-900">Happy</span>{' '}
+          <span className="text-purple-700">Moments 🎉</span>
         </h3>
         
         <div className="grid grid-cols-3 gap-3">
-          <div className="col-span-3 relative h-48 rounded-2xl overflow-hidden border-4 border-green-200">
+          <div className="col-span-3 relative h-48 rounded-2xl overflow-hidden border-4 border-purple-400 shadow-lg">
             <Image src="/images/Group 1597884004.png" alt="Wide" fill className="object-cover" />
           </div>
-          <div className="relative h-32 rounded-2xl overflow-hidden border-4 border-green-200">
+          <div className="relative h-32 rounded-2xl overflow-hidden border-4 border-purple-400 shadow-lg">
             <Image src="/images/unsplash_fdlZBWIP0aM.png" alt="Small 1" fill className="object-cover" />
           </div>
-          <div className="relative h-32 rounded-2xl overflow-hidden border-4 border-green-200">
+          <div className="relative h-32 rounded-2xl overflow-hidden border-4 border-purple-400 shadow-lg">
             <Image src="/images/unsplash_jpkfc5_d-DI.png" alt="Small 2" fill className="object-cover" />
           </div>
-          <div className="relative h-32 rounded-2xl overflow-hidden border-4 border-green-200">
+          <div className="relative h-32 rounded-2xl overflow-hidden border-4 border-purple-400 shadow-lg">
             <Image src="/images/unsplash_mAQZ3X_8_l0.png" alt="Small 3" fill className="object-cover" />
           </div>
         </div>
 
-        <p className="mt-4 text-center text-gray-600">
-          Collecting moments, not things
+        <p className="mt-4 text-center font-semibold">
+          <span className="text-purple-700 font-bold">Collecting moments,</span>{' '}
+          <span className="text-gray-900">not things</span>
         </p>
       </div>
     </div>
 
-    {/* Caption */}
-    <div className="text-center mt-12">
-      <p className="text-2xl text-gray-700" style={{ fontFamily: "'Caveat', cursive" }}>
-        Every grid tells a unique story 🧩
-      </p>
+    {/* Caption - Mixed Pink/Black */}
+    <div className="text-center mt-16">
+      <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border-2 border-pink-300 max-w-3xl mx-auto">
+        <p className="text-2xl md:text-3xl font-bold mb-3" style={{ fontFamily: "'Caveat', cursive" }}>
+          <span className="text-gray-900">Every grid tells a</span>{' '}
+          <span className="text-pink-700">unique story</span>{' '}
+          <span className="text-3xl">🧩</span>
+        </p>
+        <div className="flex items-center justify-center gap-2">
+          <span className="text-3xl animate-pulse">💕</span>
+          <span className="text-3xl animate-pulse" style={{animationDelay: '0.5s'}}>✨</span>
+          <span className="text-3xl animate-pulse" style={{animationDelay: '1s'}}>🎉</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-        <section className="py-16 md:py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
-            
-            {/* Header */}
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
-                How Our Ambassadors Create Connections
-              </h2>
-            </div>
-            
-            {/* Carousel Container */}
-            <div className="relative mb-8">
-              <div className="overflow-hidden">
-                <div 
-                  className="flex transition-transform duration-500 ease-in-out"
-                  style={{ transform: `translateX(-${currentSlide * (100 / images.length)}%)` }}
-                >
-                  {images.map((image, index) => (
-                    <div key={index} className="w-full md:w-1/2 lg:w-1/4 flex-shrink-0 px-2">
-                      <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div className="relative w-full h-48 md:h-56">
-                          <Image 
-                            src={image.src}
-                            alt={image.alt}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+        <section className="py-16 md:py-20 bg-gradient-to-b from-pink-200 via-rose-200 to-purple-200 relative overflow-hidden">
+  
+  {/* Background Decorative Elements */}
+  <div className="absolute inset-0 overflow-hidden opacity-30">
+    <div className="absolute top-20 left-10 w-96 h-96 bg-pink-500 rounded-full blur-3xl animate-pulse"></div>
+    <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-rose-500 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+  </div>
+
+  <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+    
+    {/* Header with Mixed Colors */}
+    <div className="text-center mb-12">
+      
+      {/* Top Badge */}
+      <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full shadow-xl border-2 border-pink-400 mb-6">
+        <span className="text-2xl">🌟</span>
+        <span className="text-pink-700 font-bold text-sm uppercase tracking-wide">Our Ambassadors</span>
+      </div>
+
+      {/* Main Heading - Mixed Pink/Black */}
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <span className="text-gray-900">How Our</span>{' '}
+        <span className="text-pink-700">Ambassadors</span>{' '}
+        <span className="text-gray-900">Create</span>{' '}
+        <span className="text-pink-700">Connections</span>
+      </h2>
+
+      {/* Decorative Underline */}
+      <div className="flex items-center justify-center gap-2 mt-4">
+        <div className="w-8 h-1.5 bg-pink-500 rounded-full"></div>
+        <div className="w-32 h-1.5 bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 rounded-full"></div>
+        <div className="w-8 h-1.5 bg-pink-500 rounded-full"></div>
+      </div>
+    </div>
+    
+    {/* Carousel Container */}
+    <div className="relative mb-8">
+      <div className="overflow-hidden rounded-3xl">
+        <div 
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentSlide * (100 / images.length)}%)` }}
+        >
+          {images.map((image, index) => (
+            <div key={index} className="w-full md:w-1/2 lg:w-1/4 flex-shrink-0 px-3">
+              <div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden border-4 border-pink-400 hover:border-pink-600 transition-all duration-300 transform hover:scale-105 hover:shadow-pink-500/30">
+                <div className="relative w-full h-48 md:h-56">
+                  <Image 
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                  />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-pink-600/30 to-transparent"></div>
+                </div>
+                {/* Optional Caption */}
+                <div className="p-4 text-center">
+                  <p className="font-bold text-pink-700">{image.alt}</p>
                 </div>
               </div>
             </div>
-            
-            {/* Navigation Controls */}
-            <div className="flex justify-center items-center space-x-4 mb-8">
-              
-              {/* Previous Arrow */}
-              <button 
-                onClick={prevSlide}
-                className="p-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
-              >
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              
-              {/* Dots Indicators */}
-              <div className="flex space-x-2">
-                {images.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                      currentSlide === index ? 'bg-red-500' : 'bg-gray-300'
-                    }`}
-                  />
-                ))}
-              </div>
-              
-              {/* Next Arrow */}
-              <button 
-                onClick={nextSlide}
-                className="p-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
-              >
-                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-              
-            </div>
-            
-            {/* CTA Buttons */}
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <button className="border-2 border-pink-400 text-pink-400 px-8 py-3 rounded-lg font-semibold hover:bg-pink-400 hover:text-white transition-colors duration-300">
-                JOIN NOW
-              </button>
-              
-              <button className="border-2 border-pink-400 text-pink-400 px-8 py-3 rounded-lg font-semibold hover:bg-pink-400 hover:text-white transition-colors duration-300">
-                LEARN MORE
-              </button>
-            </div>
-            
-          </div>
-        </section>
+          ))}
+        </div>
+      </div>
+    </div>
+    
+    {/* Navigation Controls - Dark Pink */}
+    <div className="flex justify-center items-center space-x-4 mb-8">
+      
+      {/* Previous Arrow */}
+      <button 
+        onClick={prevSlide}
+        className="w-12 h-12 bg-white/90 backdrop-blur-sm border-2 border-pink-400 rounded-full hover:bg-pink-600 hover:border-pink-600 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-pink-500/50 transform hover:scale-110 group"
+      >
+        <svg className="w-6 h-6 text-pink-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      
+      {/* Dots Indicators - Pink */}
+      <div className="flex space-x-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`w-4 h-4 rounded-full transition-all duration-300 border-2 ${
+              currentSlide === index 
+                ? 'bg-pink-600 border-pink-600 scale-125 shadow-lg' 
+                : 'bg-white border-pink-400 hover:bg-pink-300 hover:scale-110'
+            }`}
+          />
+        ))}
+      </div>
+      
+      {/* Next Arrow */}
+      <button 
+        onClick={nextSlide}
+        className="w-12 h-12 bg-white/90 backdrop-blur-sm border-2 border-pink-400 rounded-full hover:bg-pink-600 hover:border-pink-600 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-pink-500/50 transform hover:scale-110 group"
+      >
+        <svg className="w-6 h-6 text-pink-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+      
+    </div>
+    
+    {/* CTA Buttons - Dark Pink Gradient */}
+    <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+      <button className="group bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 hover:from-pink-700 hover:via-rose-700 hover:to-purple-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-pink-500/50 transform hover:scale-105 flex items-center gap-3">
+        <span>JOIN NOW</span>
+        <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+      
+      <button className="group bg-white text-pink-700 border-2 border-pink-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-pink-600 hover:text-white transition-all duration-300 shadow-lg transform hover:scale-105 flex items-center gap-3">
+        <span>LEARN MORE</span>
+        <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+    </div>
+
+    {/* Bottom Stats */}
+    <div className="mt-12 grid grid-cols-3 gap-6 max-w-3xl mx-auto">
+      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border-2 border-pink-300 hover:border-pink-500 transition-all hover:shadow-pink-500/30">
+        <div className="text-3xl mb-2">👥</div>
+        <div className="text-2xl font-black text-pink-700">500+</div>
+        <div className="text-sm text-gray-900 font-semibold">Ambassadors</div>
+      </div>
+      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border-2 border-rose-300 hover:border-rose-500 transition-all hover:shadow-rose-500/30">
+        <div className="text-3xl mb-2">💑</div>
+        <div className="text-2xl font-black text-rose-700">10K+</div>
+        <div className="text-sm text-gray-900 font-semibold">Connections</div>
+      </div>
+      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border-2 border-purple-300 hover:border-purple-500 transition-all hover:shadow-purple-500/30">
+        <div className="text-3xl mb-2">⭐</div>
+        <div className="text-2xl font-black text-purple-700">4.9/5</div>
+        <div className="text-sm text-gray-900 font-semibold">Rating</div>
+      </div>
+    </div>
+    
+  </div>
+</section>
         
         <TestimonialCarousel />
 {/* 
@@ -475,42 +580,122 @@ const Ambassadors = () => {
           `}</style>
         </section> */}
 
-        <section className="py-16 md:py-20 bg-gray-100">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              
-              {/* Left Column - Heading */}
-              <div className="order-1 lg:order-1">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-                  Find Your Match, Join the Journey
-                </h1>
-              </div>
-              
-              {/* Right Column - Content */}
-              <div className="order-2 lg:order-2 text-center lg:text-left">
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8">
-                  Take the first step toward finding meaningful connections. Our platform is 
-                  designed to help you meet like-minded people in a safe and exciting way. 
-                  Whether you&apos;re looking for deep conversations, shared interests, or just 
-                  someone to explore life with, we make it easy to start. Join now and make your 
-                  move!
-                </p>
-                
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <button className="border-2 border-pink-400 text-pink-400 px-8 py-3 rounded-lg font-semibold hover:bg-pink-400 hover:text-white transition-colors duration-300">
-                    APPLY NOW
-                  </button>
-                  
-                  <button className="border-2 border-pink-400 text-pink-400 px-8 py-3 rounded-lg font-semibold hover:bg-pink-400 hover:text-white transition-colors duration-300">
-                    FAQ
-                  </button>
-                </div>
-              </div>
-              
+      <section className="py-16 md:py-20 bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 relative overflow-hidden">
+  
+  {/* Background Decorative Elements */}
+  <div className="absolute inset-0 overflow-hidden opacity-30">
+    <div className="absolute top-20 right-20 w-96 h-96 bg-pink-500 rounded-full blur-3xl animate-pulse"></div>
+    <div className="absolute bottom-20 left-20 w-[500px] h-[500px] bg-rose-500 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+  </div>
+
+  {/* Floating Hearts */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute top-32 right-1/4 text-6xl text-pink-500 opacity-30 animate-float">💕</div>
+    <div className="absolute bottom-32 left-1/4 text-7xl text-rose-500 opacity-25 animate-float" style={{animationDelay: '1s'}}>💖</div>
+  </div>
+
+  <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      
+      {/* Left Column - Heading with Mixed Pink/Black */}
+      <div className="order-1 lg:order-1">
+        
+        {/* Top Badge */}
+        <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full shadow-xl border-2 border-pink-400 mb-6">
+          <span className="text-2xl">✨</span>
+          <span className="text-pink-700 font-bold text-sm uppercase tracking-wide">Start Your Journey</span>
+        </div>
+
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <span className="text-pink-700">Find Your Match,</span>{' '}
+          <span className="text-gray-900">Join the</span>{' '}
+          <span className="text-pink-700">Journey</span>
+        </h1>
+
+        {/* Decorative Underline */}
+        <div className="flex items-start gap-2 mb-6">
+          <div className="w-8 h-1.5 bg-pink-500 rounded-full"></div>
+          <div className="w-32 h-1.5 bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 rounded-full"></div>
+          <div className="w-8 h-1.5 bg-pink-500 rounded-full"></div>
+        </div>
+      </div>
+      
+      {/* Right Column - Content Card */}
+      <div className="order-2 lg:order-2">
+        
+        {/* Content Card */}
+        <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-8 shadow-2xl border-2 border-pink-300 hover:border-pink-500 transition-all duration-300 hover:shadow-pink-500/30">
+          
+          <p className="text-base md:text-lg leading-relaxed mb-8 font-medium">
+            <span className="text-gray-900">Take the first step toward finding</span>{' '}
+            <span className="font-bold text-pink-700">meaningful connections.</span>{' '}
+            <span className="text-gray-900">Our platform is designed to help you meet</span>{' '}
+            <span className="font-bold text-pink-700">like-minded people</span>{' '}
+            <span className="text-gray-900">in a safe and exciting way.</span>
+            <br /><br />
+            <span className="text-gray-900">Whether you are looking for</span>{' '}
+            <span className="font-bold text-pink-700">deep conversations, shared interests,</span>{' '}
+            <span className="text-gray-900">or just someone to explore life with, we make it easy to start. Join now and</span>{' '}
+            <span className="font-bold text-pink-700">make your move!</span>
+          </p>
+          
+          {/* CTA Buttons - Dark Pink */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button className="group bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 hover:from-pink-700 hover:via-rose-700 hover:to-purple-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-pink-500/50 transform hover:scale-105 flex items-center justify-center gap-3">
+              <span>APPLY NOW</span>
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            
+            <button className="group bg-white text-pink-700 border-2 border-pink-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-pink-600 hover:text-white transition-all duration-300 shadow-lg transform hover:scale-105 flex items-center justify-center gap-3">
+              <span>FAQ</span>
+              <svg className="w-5 h-5 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Trust Badges */}
+          <div className="flex items-center justify-start gap-6 mt-6 flex-wrap">
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-green-600 text-xl">✓</span>
+              <span className="text-gray-800 font-semibold">100% Verified</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-green-600 text-xl">✓</span>
+              <span className="text-gray-800 font-semibold">Safe & Secure</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-green-600 text-xl">✓</span>
+              <span className="text-gray-800 font-semibold">AI Powered</span>
             </div>
           </div>
-        </section>
+        </div>
+
+        {/* Stats Row */}
+        <div className="grid grid-cols-3 gap-4 mt-6">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 text-center shadow-lg border-2 border-pink-300 hover:border-pink-500 transition-all">
+            <div className="text-2xl mb-1">👥</div>
+            <div className="text-xl font-black text-pink-700">100K+</div>
+            <div className="text-xs text-gray-900 font-semibold">Users</div>
+          </div>
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 text-center shadow-lg border-2 border-rose-300 hover:border-rose-500 transition-all">
+            <div className="text-2xl mb-1">💑</div>
+            <div className="text-xl font-black text-rose-700">50K+</div>
+            <div className="text-xs text-gray-900 font-semibold">Couples</div>
+          </div>
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 text-center shadow-lg border-2 border-purple-300 hover:border-purple-500 transition-all">
+            <div className="text-2xl mb-1">⭐</div>
+            <div className="text-xl font-black text-purple-700">4.8/5</div>
+            <div className="text-xs text-gray-900 font-semibold">Rating</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
         <section className="py-8 md:py-12 bg-pink-100">
           <div className="max-w-full overflow-hidden">

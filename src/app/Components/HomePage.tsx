@@ -704,11 +704,11 @@ const handleScroll = () => setScrollPos(window.scrollY);
           }
         }
       `}</style>
-     <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">
-  {/* Dynamic Background */}
+     <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 relative overflow-hidden">
+  {/* Dynamic Background - Dark Pink */}
   <div className="absolute inset-0">
     <div 
-      className="absolute w-96 h-106 bg-gradient-to-r from-blue-200/30 to-purple-200/30 rounded-full blur-3xl animate-pulse"
+      className="absolute w-96 h-106 bg-gradient-to-r from-pink-500/30 to-purple-500/30 rounded-full blur-3xl animate-pulse"
       style={{
         top: '10%',
         left: `${10 + mouseX * 0.01}%`,
@@ -716,7 +716,7 @@ const handleScroll = () => setScrollPos(window.scrollY);
       }}
     />
     <div 
-      className="absolute w-72 h-102 bg-gradient-to-r from-pink-200/40 to-rose-200/40 rounded-full blur-2xl animate-bounce"
+      className="absolute w-72 h-102 bg-gradient-to-r from-rose-500/40 to-pink-500/40 rounded-full blur-2xl animate-bounce"
       style={{
         bottom: '20%',
         right: `${15 + mouseX * -0.008}%`,
@@ -726,20 +726,23 @@ const handleScroll = () => setScrollPos(window.scrollY);
   </div>
   
   <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
-    {/* Enhanced Heading */}
+    {/* Enhanced Heading - Mixed Pink/Black */}
     <div className="mb-12 md:mb-16 text-center">
       <div className="inline-flex items-center gap-3 mb-4">
        
        
       </div>
       <h2 
-        className="text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-purple-700 to-pink-600 mb-3"
+        className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3"
         style={{ fontFamily: "'Inter', sans-serif" }}
       >
-        More Than Just Matches
+        <span className="text-gray-900">More Than Just</span>{' '}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-700 via-rose-700 to-purple-700">Matches</span>
       </h2>
-      <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
-        Experience the future of connecting with our premium features designed for meaningful relationships
+      <p className="text-base md:text-lg max-w-2xl mx-auto">
+        <span className="text-gray-900">Experience the future of connecting with our</span>{' '}
+        <span className="text-pink-700 font-semibold">premium features</span>{' '}
+        <span className="text-gray-900">designed for meaningful relationships</span>
       </p>
     </div>
 
@@ -779,57 +782,57 @@ const handleScroll = () => setScrollPos(window.scrollY);
                 />
               </div>
 
-              {/* Image Section - HEIGHT KAM KI GAI */}
-             {/* Image Section - HEIGHT MAXIMUM BADI KI GAI */}
-<div className="relative h-60 md:h-64 lg:h-72 overflow-hidden">
-  {/* Gradient Overlay Background */}
-  <div 
-    className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}
-  />
-  
-  {/* Main Image */}
-  <div className="relative w-full h-full">
-    <Image 
-      src={card.image}
-      alt={card.title}
-      fill
-      className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
-    />
-  </div>
-  
-  {/* Floating Icon - SIZE MAXIMUM BADI KI GAI */}
-  <div 
-    className="absolute top-5 right-5 w-14 h-14 bg-white/90 backdrop-blur-md rounded-2xl flex items-center justify-center text-3xl shadow-xl transform transition-all duration-500 group-hover:scale-125 group-hover:rotate-12"
-    style={{ animation: 'float 4s ease-in-out infinite' }}
-  >
-    {card.icon}
-  </div>
-  
-  {/* Stats Badge - SIZE MAXIMUM BADI KI GAI */}
-  <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md text-white px-5 py-2.5 rounded-xl text-base font-semibold">
-    {card.stats}
-  </div>
-  
-  {/* Glowing Border on Image */}
-  <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/30 rounded-2xl transition-all duration-500" />
-</div>
+              {/* Image Section */}
+              <div className="relative h-60 md:h-64 lg:h-72 overflow-hidden">
+                {/* Gradient Overlay Background */}
+                <div 
+                  className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}
+                />
+                
+                {/* Main Image */}
+                <div className="relative w-full h-full">
+                  <Image 
+                    src={card.image}
+                    alt={card.title}
+                    fill
+                    className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
+                  />
+                </div>
+                
+                {/* Floating Icon */}
+                <div 
+                  className="absolute top-5 right-5 w-14 h-14 bg-white/90 backdrop-blur-md rounded-2xl flex items-center justify-center text-3xl shadow-xl transform transition-all duration-500 group-hover:scale-125 group-hover:rotate-12"
+                  style={{ animation: 'float 4s ease-in-out infinite' }}
+                >
+                  {card.icon}
+                </div>
+                
+                {/* Stats Badge */}
+                <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md text-white px-5 py-2.5 rounded-xl text-base font-semibold">
+                  {card.stats}
+                </div>
+                
+                {/* Glowing Border on Image */}
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/30 rounded-2xl transition-all duration-500" />
+              </div>
 
-              {/* Content Section - PADDING KAM KI GAI */}
+              {/* Content Section */}
               <div className="p-3 relative">
-                {/* Decorative Element - SIZE KAM KI GAI */}
+                {/* Decorative Element */}
                 <div className={`w-8 h-1 bg-gradient-to-r ${card.gradient} rounded-full mb-2 transform group-hover:scale-x-150 transition-transform duration-500`} />
                 
-                {/* Title - SIZE KAM KI GAI */}
-                <h3 className="font-bold text-base md:text-lg mb-1 text-gray-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-600 transition-all duration-500">
-                  {card.title}
+                {/* Title - Mixed Pink/Black */}
+                <h3 className="font-bold text-base md:text-lg mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-700 group-hover:to-rose-700 transition-all duration-500">
+                  <span className="text-pink-700">{card.title.split(' ')[0]}</span>{' '}
+                  <span className="text-gray-900">{card.title.split(' ').slice(1).join(' ')}</span>
                 </h3>
                 
-                {/* Description - SIZE KAM KI GAI */}
-                <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-2 group-hover:text-gray-700 transition-colors duration-300">
+                {/* Description - Black Text */}
+                <p className="text-gray-900 text-xs md:text-sm leading-relaxed mb-2 transition-colors duration-300">
                   {card.description}
                 </p>
                 
-                {/* Action Button - SIZE KAM KI GAI */}
+                {/* Action Button */}
                 <button 
                   className={`w-full bg-gradient-to-r ${card.gradient} text-white py-1.5 px-3 rounded-xl font-semibold text-xs transform transition-all duration-300 hover:scale-105 hover:shadow-xl relative overflow-hidden group/btn`}
                 >
@@ -841,13 +844,13 @@ const handleScroll = () => setScrollPos(window.scrollY);
               {/* 3D Border Effect */}
               <div className="absolute inset-0 rounded-2xl border border-white/20 group-hover:border-white/40 transition-all duration-500" />
               
-              {/* Additional Floating Elements - SIZE KAM KI GAI */}
+              {/* Additional Floating Elements */}
               <div 
                 className="absolute -top-1 -left-1 w-3 h-3 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{ animation: 'float 3s ease-in-out infinite' }}
               />
               <div 
-                className="absolute -bottom-1 -right-1 w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                className="absolute -bottom-1 -right-1 w-2 h-2 bg-gradient-to-r from-rose-400 to-pink-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{ animation: 'float 4s ease-in-out infinite 1s' }}
               />
             </div>
@@ -856,13 +859,13 @@ const handleScroll = () => setScrollPos(window.scrollY);
       ))}
     </div>
 
-    {/* Bottom CTA - SIZE KAM KI GAI */}
+    {/* Bottom CTA - Dark Pink */}
     <div className="text-center mt-12">
-      <button className="group bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 text-white px-8 py-3 rounded-xl font-bold text-base transform transition-all duration-300 hover:scale-105 hover:shadow-xl relative overflow-hidden">
+      <button className="group bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 text-white px-8 py-3 rounded-xl font-bold text-base transform transition-all duration-300 hover:scale-105 hover:shadow-xl relative overflow-hidden">
         <span className="relative z-10 flex items-center justify-center gap-2">
           ✨ Experience All Features
         </span>
-        <div className="absolute inset-0 bg-gradient-to-r from-rose-600 via-pink-600 to-purple-600 transform translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-rose-600 to-pink-600 transform translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
       </button>
     </div>
   </div>
@@ -1078,7 +1081,7 @@ const handleScroll = () => setScrollPos(window.scrollY);
           }
         }
       `}</style>
-      <section className="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+ <section className="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-pink-200 via-rose-200 to-purple-200 relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div 
@@ -1271,13 +1274,23 @@ const handleScroll = () => setScrollPos(window.scrollY);
       {index === 1 && (
         <div className="space-y-4">
           <div className="text-center mb-6">
+            
             <h1 className="text-2xl font-bold text-gray-900 mb-1">Find Your Match</h1>
             <p className="text-gray-500 text-sm">Based on your interests</p>
           </div>
 
           {/* Profile Card */}
           <div className="relative h-80 bg-gradient-to-br from-purple-200 to-pink-200 rounded-3xl overflow-hidden shadow-xl">
-            <div className="absolute inset-0 bg-black/10"></div>
+            <div className="absolute inset-0 bg-black/10">
+            <div className="relative h-80 rounded-3xl overflow-hidden shadow-xl">
+  <Image 
+    src="/images/Rectangle 23845.png"
+    alt="Profile"
+    fill
+    className="object-cover"
+  />
+   </div>
+            </div>
             <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/60 to-transparent text-white">
               <h3 className="text-xl font-bold mb-1">Sarah, 25</h3>
               <p className="text-sm mb-2">2.5 km away</p>

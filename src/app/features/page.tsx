@@ -388,20 +388,20 @@ export default function About() {
 </section>
 
    {/* Virtual Dating Section */}
-<section className="relative py-20 md:py-28 bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 overflow-hidden">
+<section className="relative py-20 md:py-28 bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 overflow-hidden">
   
-  {/* Background Decorative Elements */}
-  <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-    <div className="absolute top-20 left-10 w-96 h-96 bg-purple-300 rounded-full blur-3xl animate-pulse"></div>
-    <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-pink-300 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-rose-200 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+  {/* Background Decorative Elements - Darker Pink */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
+    <div className="absolute top-20 left-10 w-96 h-96 bg-pink-500 rounded-full blur-3xl animate-pulse"></div>
+    <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-rose-500 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-purple-400 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
   </div>
 
-  {/* Floating Hearts */}
+  {/* Floating Hearts - Darker */}
   <div className="absolute inset-0 overflow-hidden pointer-events-none">
-    <div className="absolute top-32 left-1/4 text-6xl text-purple-300 opacity-20 animate-float">💜</div>
-    <div className="absolute top-1/3 right-1/4 text-7xl text-pink-300 opacity-25 animate-float" style={{animationDelay: '1s'}}>💕</div>
-    <div className="absolute bottom-1/3 left-1/3 text-5xl text-rose-300 opacity-20 animate-float" style={{animationDelay: '2s'}}>💗</div>
+    <div className="absolute top-32 left-1/4 text-6xl text-pink-500 opacity-30 animate-float">💕</div>
+    <div className="absolute top-1/3 right-1/4 text-7xl text-rose-500 opacity-35 animate-float" style={{animationDelay: '1s'}}>💖</div>
+    <div className="absolute bottom-1/3 left-1/3 text-5xl text-purple-500 opacity-30 animate-float" style={{animationDelay: '2s'}}>❤️</div>
   </div>
 
   <div className="relative max-w-7xl mx-auto px-6 md:px-12 z-10">
@@ -409,44 +409,49 @@ export default function About() {
     {/* Section Header */}
     <div className="text-center mb-16">
       
-      {/* Top Badge */}
-      <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm px-5 py-2 rounded-full shadow-lg border-2 border-purple-200 mb-6">
+      {/* Top Badge - Dark Pink */}
+      <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-5 py-2 rounded-full shadow-xl border-2 border-pink-400 mb-6">
         <span className="text-2xl">🎥</span>
-        <span className="text-purple-600 font-bold text-sm uppercase tracking-wide">Next-Gen Dating</span>
+        <span className="text-pink-700 font-bold text-sm uppercase tracking-wide">Next-Gen Dating</span>
       </div>
 
-      {/* Main Heading */}
-      <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-pink-600 mb-6 leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
-        Experience Virtual Dating
+      {/* Main Heading - Half Pink Half Black */}
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <span className="text-pink-600">Experience</span>{' '}
+        <span className="text-gray-900">Virtual Dating</span>
       </h2>
 
-      {/* Decorative Underline */}
+      {/* Decorative Underline - Dark Pink */}
       <div className="flex items-center justify-center gap-2 mb-6">
-        <div className="w-8 h-1.5 bg-purple-300 rounded-full"></div>
-        <div className="w-32 h-1.5 bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 rounded-full"></div>
-        <div className="w-8 h-1.5 bg-purple-300 rounded-full"></div>
+        <div className="w-8 h-1.5 bg-pink-500 rounded-full"></div>
+        <div className="w-32 h-1.5 bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 rounded-full"></div>
+        <div className="w-8 h-1.5 bg-pink-500 rounded-full"></div>
       </div>
 
-      {/* Subtitle */}
-      <p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-        Connect face-to-face from anywhere in the world. Our <span className="font-bold text-pink-600">AI-powered video dating</span> creates authentic connections in a safe, virtual environment.
+      {/* Subtitle - Mixed Colors */}
+      <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-semibold">
+        <span className="text-gray-900">Connect face-to-face from anywhere in the world. Our</span>{' '}
+        <span className="font-black text-pink-700">AI-powered video dating</span>{' '}
+        <span className="text-gray-900">creates</span>{' '}
+        <span className="font-black text-pink-700">authentic connections</span>{' '}
+        <span className="text-gray-900">in a safe, virtual environment.</span>
       </p>
     </div>
 
     {/* Main Content Grid */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
       
-      {/* Left Side - Video Call Mockup */}
+      {/* Left Side - Video Call Mockup - Dark Pink */}
       <div className="relative">
         
         {/* Main Video Call Card */}
-        <div className="relative bg-white/90 backdrop-blur-lg rounded-3xl p-6 shadow-2xl border-2 border-pink-200">
+        <div className="relative bg-white/95 backdrop-blur-lg rounded-3xl p-6 shadow-2xl border-2 border-pink-400">
           
           {/* Video Grid */}
           <div className="grid grid-cols-2 gap-4 mb-4">
             
             {/* Person 1 */}
-            <div className="relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-100 to-pink-100 group">
+            <div className="relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-pink-200 to-rose-200 group">
               <Image 
                 src="/images/15.png" 
                 alt="Virtual Date Person 1" 
@@ -454,18 +459,18 @@ export default function About() {
                 className="object-cover group-hover:scale-110 transition-all duration-500"
               />
               {/* Name Badge */}
-              <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                <p className="text-sm font-bold text-pink-600">Sarah, 24</p>
+              <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-pink-300">
+                <p className="text-sm font-bold text-pink-700">Sarah, 24</p>
               </div>
               {/* Active Indicator */}
-              <div className="absolute top-3 right-3 flex items-center gap-2 bg-green-500 px-3 py-1 rounded-full">
+              <div className="absolute top-3 right-3 flex items-center gap-2 bg-green-600 px-3 py-1 rounded-full shadow-lg">
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                 <span className="text-white text-xs font-bold">LIVE</span>
               </div>
             </div>
 
             {/* Person 2 */}
-            <div className="relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-pink-100 to-rose-100 group">
+            <div className="relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br from-rose-200 to-purple-200 group">
               <Image 
                 src="/images/Rectangle 23845.png" 
                 alt="Virtual Date Person 2" 
@@ -473,48 +478,48 @@ export default function About() {
                 className="object-cover group-hover:scale-110 transition-all duration-500"
               />
               {/* Name Badge */}
-              <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                <p className="text-sm font-bold text-purple-600">Mike, 26</p>
+              <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-pink-300">
+                <p className="text-sm font-bold text-purple-700">Mike, 26</p>
               </div>
               {/* Active Indicator */}
-              <div className="absolute top-3 right-3 flex items-center gap-2 bg-green-500 px-3 py-1 rounded-full">
+              <div className="absolute top-3 right-3 flex items-center gap-2 bg-green-600 px-3 py-1 rounded-full shadow-lg">
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                 <span className="text-white text-xs font-bold">LIVE</span>
               </div>
             </div>
           </div>
 
-          {/* Video Controls */}
+          {/* Video Controls - Dark Pink */}
           <div className="flex items-center justify-center gap-4">
             
             {/* Mute Button */}
-            <button className="w-14 h-14 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg">
+            <button className="w-14 h-14 bg-pink-100 hover:bg-pink-200 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg border border-pink-300">
               <span className="text-2xl">🎤</span>
             </button>
 
             {/* Video Off Button */}
-            <button className="w-14 h-14 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg">
+            <button className="w-14 h-14 bg-pink-100 hover:bg-pink-200 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg border border-pink-300">
               <span className="text-2xl">📹</span>
             </button>
 
             {/* End Call Button */}
-            <button className="w-16 h-16 bg-gradient-to-br from-red-500 to-rose-600 hover:from-red-600 hover:to-rose-700 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-xl">
+            <button className="w-16 h-16 bg-gradient-to-br from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-xl">
               <span className="text-3xl">📞</span>
             </button>
 
             {/* Chat Button */}
-            <button className="w-14 h-14 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg">
+            <button className="w-14 h-14 bg-pink-100 hover:bg-pink-200 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg border border-pink-300">
               <span className="text-2xl">💬</span>
             </button>
 
-            {/* Gift Button */}
-            <button className="w-14 h-14 bg-gradient-to-br from-pink-400 to-rose-400 hover:from-pink-500 hover:to-rose-500 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg">
+            {/* Gift Button - Dark Pink */}
+            <button className="w-14 h-14 bg-gradient-to-br from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg">
               <span className="text-2xl">🎁</span>
             </button>
           </div>
 
-          {/* Timer Badge */}
-          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full shadow-xl">
+          {/* Timer Badge - Dark Pink */}
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-pink-600 to-rose-600 text-white px-6 py-2 rounded-full shadow-xl">
             <p className="text-sm font-bold flex items-center gap-2">
               <span className="text-lg">⏱️</span>
               <span>15:42 mins</span>
@@ -522,89 +527,92 @@ export default function About() {
           </div>
         </div>
 
-        {/* Floating Feature Cards */}
-        <div className="absolute -left-8 top-1/4 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl border-2 border-purple-200 transform hover:scale-105 transition-all duration-300 hidden lg:block">
+        {/* Floating Feature Cards - Dark Pink */}
+        <div className="absolute -left-8 top-1/4 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl border-2 border-pink-400 transform hover:scale-105 transition-all duration-300 hidden lg:block">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center">
+            <div className="w-12 h-12 bg-gradient-to-br from-pink-600 to-rose-600 rounded-xl flex items-center justify-center">
               <span className="text-2xl">🔒</span>
             </div>
             <div>
-              <p className="text-xs text-gray-600 font-semibold">100%</p>
-              <p className="text-sm font-bold text-purple-600">Secure</p>
+              <p className="text-xs text-gray-800 font-semibold">100%</p>
+              <p className="text-sm font-bold text-pink-700">Secure</p>
             </div>
           </div>
         </div>
 
-        <div className="absolute -right-8 bottom-1/4 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl border-2 border-pink-200 transform hover:scale-105 transition-all duration-300 hidden lg:block">
+        <div className="absolute -right-8 bottom-1/4 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl border-2 border-pink-400 transform hover:scale-105 transition-all duration-300 hidden lg:block">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-rose-400 rounded-xl flex items-center justify-center">
+            <div className="w-12 h-12 bg-gradient-to-br from-rose-600 to-purple-600 rounded-xl flex items-center justify-center">
               <span className="text-2xl">🌐</span>
             </div>
             <div>
-              <p className="text-xs text-gray-600 font-semibold">HD Quality</p>
-              <p className="text-sm font-bold text-pink-600">Video</p>
+              <p className="text-xs text-gray-800 font-semibold">HD Quality</p>
+              <p className="text-sm font-bold text-rose-700">Video</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Right Side - Features List */}
+      {/* Right Side - Features List - Mixed Pink/Black Text */}
       <div className="space-y-6">
         
         {/* Feature 1 */}
-        <div className="group bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-lg border-2 border-purple-100 hover:border-purple-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+        <div className="group bg-white/95 backdrop-blur-lg rounded-2xl p-6 shadow-xl border-2 border-pink-300 hover:border-pink-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
           <div className="flex items-start gap-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all">
+            <div className="w-16 h-16 bg-gradient-to-br from-pink-600 to-rose-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all shadow-lg">
               <span className="text-3xl">🎭</span>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-purple-600 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                Virtual Date Experiences
+              <h3 className="text-xl font-bold mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                <span className="text-pink-700">Virtual Date</span>{' '}
+                <span className="text-gray-900">Experiences</span>
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Choose from curated virtual date scenarios - coffee shop, movie night, or rooftop dinner. Make every date special!
+              <p className="text-gray-800 leading-relaxed font-medium">
+                Choose from curated virtual date scenarios - <span className="font-bold text-pink-700">coffee shop, movie night,</span> or rooftop dinner. Make every date special!
               </p>
             </div>
           </div>
         </div>
 
         {/* Feature 2 */}
-        <div className="group bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-lg border-2 border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+        <div className="group bg-white/95 backdrop-blur-lg rounded-2xl p-6 shadow-xl border-2 border-pink-300 hover:border-pink-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
           <div className="flex items-start gap-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-rose-400 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all">
+            <div className="w-16 h-16 bg-gradient-to-br from-rose-600 to-pink-700 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all shadow-lg">
               <span className="text-3xl">🎮</span>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-pink-600 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                Interactive Games & Activities
+              <h3 className="text-xl font-bold mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                <span className="text-gray-900">Interactive</span>{' '}
+                <span className="text-pink-700">Games & Activities</span>
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Break the ice with fun games, quizzes, and activities designed to spark conversations and laughter.
+              <p className="text-gray-800 leading-relaxed font-medium">
+                Break the ice with <span className="font-bold text-pink-700">fun games, quizzes,</span> and activities designed to spark <span className="font-bold text-pink-700">conversations and laughter.</span>
               </p>
             </div>
           </div>
         </div>
 
         {/* Feature 3 */}
-        <div className="group bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-lg border-2 border-rose-100 hover:border-rose-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+        <div className="group bg-white/95 backdrop-blur-lg rounded-2xl p-6 shadow-xl border-2 border-pink-300 hover:border-pink-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
           <div className="flex items-start gap-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-purple-400 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all">
+            <div className="w-16 h-16 bg-gradient-to-br from-pink-700 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all shadow-lg">
               <span className="text-3xl">🎁</span>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-rose-600 mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                Send Virtual Gifts
+              <h3 className="text-xl font-bold mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                <span className="text-pink-700">Send Virtual</span>{' '}
+                <span className="text-gray-900">Gifts</span>
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Express your feelings with virtual flowers, chocolates, and more. Make your date feel special instantly!
+              <p className="text-gray-800 leading-relaxed font-medium">
+                Express your feelings with <span className="font-bold text-pink-700">virtual flowers, chocolates,</span> and more. Make your date feel <span className="font-bold text-pink-700">special instantly!</span>
               </p>
             </div>
           </div>
         </div>
 
-        {/* CTA Button */}
+        {/* CTA Button - Dark Pink */}
         <div className="pt-4">
-          <button className="group w-full bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 hover:from-purple-700 hover:via-pink-700 hover:to-rose-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105 flex items-center justify-center gap-3">
+          <button className="group w-full bg-gradient-to-r from-pink-700 via-rose-700 to-purple-700 hover:from-pink-800 hover:via-rose-800 hover:to-purple-800 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl hover:shadow-pink-600/50 transform hover:scale-105 flex items-center justify-center gap-3">
             <span className="text-2xl">🎥</span>
             <span>Start Virtual Date Now</span>
             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -616,41 +624,41 @@ export default function About() {
 
     </div>
 
-    {/* Stats Section */}
+    {/* Stats Section - Dark Pink */}
     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
       
       {/* Stat 1 */}
-      <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 text-center shadow-lg border-2 border-purple-100 hover:border-purple-300 hover:shadow-xl transition-all transform hover:scale-105">
+      <div className="bg-white/95 backdrop-blur-lg rounded-2xl p-6 text-center shadow-xl border-2 border-pink-300 hover:border-pink-500 hover:shadow-2xl transition-all transform hover:scale-105">
         <div className="text-4xl mb-3">⏱️</div>
-        <div className="text-3xl font-black text-purple-600 mb-1">50K+</div>
-        <div className="text-sm text-gray-600 font-semibold">Virtual Dates</div>
+        <div className="text-3xl font-black text-pink-700 mb-1">50K+</div>
+        <div className="text-sm text-gray-900 font-bold">Virtual Dates</div>
       </div>
 
       {/* Stat 2 */}
-      <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 text-center shadow-lg border-2 border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all transform hover:scale-105">
+      <div className="bg-white/95 backdrop-blur-lg rounded-2xl p-6 text-center shadow-xl border-2 border-pink-300 hover:border-pink-500 hover:shadow-2xl transition-all transform hover:scale-105">
         <div className="text-4xl mb-3">💑</div>
-        <div className="text-3xl font-black text-pink-600 mb-1">5K+</div>
-        <div className="text-sm text-gray-600 font-semibold">Success Stories</div>
+        <div className="text-3xl font-black text-pink-700 mb-1">5K+</div>
+        <div className="text-sm text-gray-900 font-bold">Success Stories</div>
       </div>
 
       {/* Stat 3 */}
-      <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 text-center shadow-lg border-2 border-rose-100 hover:border-rose-300 hover:shadow-xl transition-all transform hover:scale-105">
+      <div className="bg-white/95 backdrop-blur-lg rounded-2xl p-6 text-center shadow-xl border-2 border-pink-300 hover:border-pink-500 hover:shadow-2xl transition-all transform hover:scale-105">
         <div className="text-4xl mb-3">⭐</div>
-        <div className="text-3xl font-black text-rose-600 mb-1">4.9/5</div>
-        <div className="text-sm text-gray-600 font-semibold">User Rating</div>
+        <div className="text-3xl font-black text-pink-700 mb-1">4.9/5</div>
+        <div className="text-sm text-gray-900 font-bold">User Rating</div>
       </div>
 
       {/* Stat 4 */}
-      <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 text-center shadow-lg border-2 border-purple-100 hover:border-purple-300 hover:shadow-xl transition-all transform hover:scale-105">
+      <div className="bg-white/95 backdrop-blur-lg rounded-2xl p-6 text-center shadow-xl border-2 border-pink-300 hover:border-pink-500 hover:shadow-2xl transition-all transform hover:scale-105">
         <div className="text-4xl mb-3">🌍</div>
-        <div className="text-3xl font-black text-purple-600 mb-1">24/7</div>
-        <div className="text-sm text-gray-600 font-semibold">Available</div>
+        <div className="text-3xl font-black text-pink-700 mb-1">24/7</div>
+        <div className="text-sm text-gray-900 font-bold">Available</div>
       </div>
 
     </div>
 
   </div>
-</section>    
+</section>  
 
         <section className="py-16 md:py-20 bg-pink-100">
           <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
@@ -808,90 +816,142 @@ export default function About() {
 
 
 {/* SECTION 4 - 📸 Polaroid Wall */}
-<section className="py-20 bg-gradient-to-b from-purple-50 to-amber-50 relative">
+<section className="py-20 bg-gradient-to-b from-pink-100 via-rose-100 to-purple-100 relative overflow-hidden">
   
-  {/* Cork Board Texture */}
-  <div className="absolute inset-0 opacity-10" style={{
-    backgroundImage: 'url("data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Crect fill="%23d4a574" width="100" height="100"/%3E%3C/svg%3E")',
+  {/* Pink Gradient Background Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-br from-pink-200/50 via-rose-200/40 to-purple-200/50"></div>
+
+  {/* Decorative Background Circles */}
+  <div className="absolute inset-0 overflow-hidden opacity-20">
+    <div className="absolute top-20 left-10 w-96 h-96 bg-pink-400 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-rose-400 rounded-full blur-3xl"></div>
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-purple-300 rounded-full blur-3xl"></div>
+  </div>
+
+  {/* Cork Board Texture - Pink Tinted */}
+  <div className="absolute inset-0 opacity-5" style={{
+    backgroundImage: 'url("data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Crect fill="%23ec4899" width="100" height="100"/%3E%3C/svg%3E")',
     backgroundSize: '50px 50px'
   }}></div>
 
-  <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+  <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
     
-    {/* Header */}
+    {/* Header with Pink Theme */}
     <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-        📸 Memory Wall
+      
+      {/* Top Badge */}
+      <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-5 py-2 rounded-full shadow-lg border-2 border-pink-300 mb-6">
+        <span className="text-2xl">📸</span>
+        <span className="text-pink-600 font-bold text-sm uppercase tracking-wide">Cherished Moments</span>
+      </div>
+
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        Memory Wall
       </h2>
-      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-        Pinned moments that make us smile every single day
+
+      {/* Decorative Underline */}
+      <div className="flex items-center justify-center gap-2 mb-4">
+        <div className="w-8 h-1.5 bg-pink-400 rounded-full"></div>
+        <div className="w-32 h-1.5 bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500 rounded-full"></div>
+        <div className="w-8 h-1.5 bg-pink-400 rounded-full"></div>
+      </div>
+
+      <p className="text-xl text-gray-800 max-w-2xl mx-auto font-semibold">
+        Pinned moments that make us smile <span className="text-pink-600 font-black">every single day</span> 💕
       </p>
     </div>
 
-    {/* Polaroid Grid */}
+    {/* Polaroid Grid with Pink Theme */}
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
       
       {[
-        { img: '/images/unsplash_fdlZBWIP0aM.png', caption: 'Best Day Ever!', rotation: '-rotate-6', tape: 'bg-red-400' },
-        { img: '/images/unsplash_jpkfc5_d-DI.png', caption: 'Coffee & Laughs', rotation: 'rotate-3', tape: 'bg-blue-400' },
-        { img: '/images/unsplash_mAQZ3X_8_l0.png', caption: 'Squad Goals', rotation: '-rotate-2', tape: 'bg-yellow-400' },
-        { img: '/images/Nwe1.png', caption: 'Forever Vibes', rotation: 'rotate-4', tape: 'bg-green-400' },
-        { img: '/images/new3.png', caption: 'Happy Place', rotation: '-rotate-3', tape: 'bg-purple-400' },
-        { img: '/images/Rectangle 23841.png', caption: 'Good Times', rotation: 'rotate-2', tape: 'bg-pink-400' },
-        { img: '/images/Rectangle 23845.png', caption: 'Sweet Memories', rotation: '-rotate-4', tape: 'bg-orange-400' },
-        { img: '/images/Rectangle 23847.png', caption: 'Pure Joy', rotation: 'rotate-5', tape: 'bg-cyan-400' }
+        { img: '/images/unsplash_fdlZBWIP0aM.png', caption: 'Best Day Ever!', rotation: '-rotate-6', tape: 'bg-pink-500' },
+        { img: '/images/unsplash_jpkfc5_d-DI.png', caption: 'Coffee & Laughs', rotation: 'rotate-3', tape: 'bg-rose-500' },
+        { img: '/images/unsplash_mAQZ3X_8_l0.png', caption: 'Squad Goals', rotation: '-rotate-2', tape: 'bg-pink-400' },
+        { img: '/images/Nwe1.png', caption: 'Forever Vibes', rotation: 'rotate-4', tape: 'bg-purple-500' },
+        { img: '/images/new3.png', caption: 'Happy Place', rotation: '-rotate-3', tape: 'bg-rose-400' },
+        { img: '/images/Rectangle 23841.png', caption: 'Good Times', rotation: 'rotate-2', tape: 'bg-pink-600' },
+        { img: '/images/Rectangle 23845.png', caption: 'Sweet Memories', rotation: '-rotate-4', tape: 'bg-rose-500' },
+        { img: '/images/Rectangle 23847.png', caption: 'Pure Joy', rotation: 'rotate-5', tape: 'bg-purple-600' }
       ].map((item, index) => (
         <div 
           key={index}
-          className={`relative transform ${item.rotation} hover:rotate-0 hover:scale-110 transition-all duration-300 hover:z-20`}
+          className={`relative transform ${item.rotation} hover:rotate-0 hover:scale-110 transition-all duration-500 hover:z-20`}
         >
-          {/* Polaroid */}
-          <div className="bg-white p-4 pb-16 shadow-2xl">
+          {/* Polaroid with Enhanced Shadow */}
+          <div className="bg-white p-4 pb-16 shadow-2xl rounded-sm">
             
-            {/* Tape */}
-            <div className={`absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-6 ${item.tape} opacity-60 rounded-sm transform -rotate-12 shadow-md`}></div>
-
-            {/* Photo */}
-            <div className="relative w-full h-48 md:h-56 bg-gray-200 overflow-hidden">
-              <Image src={item.img} alt={item.caption} fill className="object-cover" />
+            {/* Tape - Pink Theme with Shadow */}
+            <div className={`absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-7 ${item.tape} opacity-80 rounded-sm transform -rotate-12 shadow-lg`}>
+              <div className="absolute inset-0 bg-white/20 rounded-sm"></div>
             </div>
 
-            {/* Caption */}
+            {/* Photo with Border */}
+            <div className="relative w-full h-48 md:h-56 bg-gradient-to-br from-pink-100 to-rose-100 overflow-hidden border-4 border-pink-50">
+              <Image 
+                src={item.img} 
+                alt={item.caption} 
+                fill 
+                className="object-cover"
+              />
+            </div>
+
+            {/* Caption - Black/Pink Text */}
             <div className="mt-4 text-center">
-              <p className="text-sm md:text-base font-handwriting text-gray-700" style={{ fontFamily: "'Caveat', cursive" }}>
+              <p className="text-base md:text-lg font-bold text-pink-600" style={{ fontFamily: "'Caveat', cursive" }}>
                 {item.caption}
               </p>
             </div>
+
+            {/* Corner Decorations */}
+            <div className="absolute top-2 right-2 w-3 h-3 bg-pink-300 rounded-full opacity-60"></div>
+            <div className="absolute top-2 left-2 w-3 h-3 bg-pink-300 rounded-full opacity-60"></div>
           </div>
 
-          {/* Push Pin */}
-          <div className={`absolute -top-2 left-1/2 -translate-x-1/2 w-6 h-6 ${item.tape} rounded-full shadow-lg`}>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-white rounded-full"></div>
+          {/* Push Pin - Pink Theme */}
+          <div className={`absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 ${item.tape} rounded-full shadow-xl border-2 border-white`}>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-white rounded-full shadow-inner"></div>
           </div>
+
+          {/* Hover Glow Effect */}
+          <div className={`absolute inset-0 bg-gradient-to-br ${item.tape} opacity-0 hover:opacity-10 transition-opacity duration-500 rounded-sm -z-10 blur-xl`}></div>
         </div>
       ))}
     </div>
 
-    {/* Caption */}
+    {/* Bottom Caption with Pink/Black Theme */}
     <div className="text-center mt-16">
-      <p className="text-2xl text-gray-700" style={{ fontFamily: "'Caveat', cursive" }}>
-        Every polaroid holds a piece of our hearts 💝
-      </p>
+      <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border-2 border-pink-200 max-w-3xl mx-auto">
+        <p className="text-2xl md:text-3xl font-bold text-gray-900 mb-2" style={{ fontFamily: "'Caveat', cursive" }}>
+          Every polaroid holds a piece of our hearts
+        </p>
+        <div className="flex items-center justify-center gap-2 mt-4">
+          <span className="text-4xl animate-pulse">💝</span>
+          <span className="text-4xl animate-pulse" style={{animationDelay: '0.5s'}}>💕</span>
+          <span className="text-4xl animate-pulse" style={{animationDelay: '1s'}}>💖</span>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
 
 {/* SECTION 5 - 💗 Filmstrip Collage */}
-<section className="py-20 bg-gradient-to-b from-amber-50 to-gray-100">
+<section className="py-20 bg-gradient-to-b from-pink-200 via-rose-200 to-purple-200">
   <div className="max-w-6xl mx-auto px-4 md:px-8">
     
-    {/* Header */}
+    {/* Header - Mixed Pink/Black */}
     <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-        💗 Our Love Story Reel
+      <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <span className="text-gray-900">💗 Our</span>{' '}
+        <span className="text-pink-700">Love Story</span>{' '}
+        <span className="text-gray-900">Reel</span>
       </h2>
-      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-        Frame by frame, moment by moment, building beautiful memories together
+      <p className="text-xl max-w-2xl mx-auto">
+        <span className="text-gray-900">Frame by frame,</span>{' '}
+        <span className="text-pink-700 font-semibold">moment by moment,</span>{' '}
+        <span className="text-gray-900">building beautiful</span>{' '}
+        <span className="text-pink-700 font-semibold">memories together</span>
       </p>
     </div>
 
@@ -935,15 +995,16 @@ export default function About() {
       </div>
     </div>
 
-    {/* Caption */}
+    {/* Caption - Mixed Pink/Black */}
     <div className="text-center mt-8">
-      <p className="text-2xl text-gray-700" style={{ fontFamily: "'Caveat', cursive" }}>
-        Life is like a movie, and you are my favorite scene 🎬
+      <p className="text-2xl" style={{ fontFamily: "'Caveat', cursive" }}>
+        <span className="text-gray-900">Life is like a movie, and</span>{' '}
+        <span className="text-pink-700 font-bold">you are my favorite scene</span>{' '}
+        <span>🎬</span>
       </p>
     </div>
   </div>
 </section>
-
 
 
 

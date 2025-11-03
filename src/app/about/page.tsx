@@ -560,8 +560,7 @@ export default function About() {
   </div>
 </section>
 
-<section className="relative py-20 bg-gradient-to-br from-pink-100 via-rose-100 to-purple-100 overflow-hidden">
-  
+<section className="relative py-20 bg-gradient-to-br from-pink-200 via-rose-200 to-purple-200 overflow-hidden">
   {/* Decorative Background Elements */}
   <div className="absolute inset-0 overflow-hidden pointer-events-none">
     <div className="absolute top-20 left-10 w-64 h-64 bg-pink-300 rounded-full blur-3xl opacity-30"></div>
