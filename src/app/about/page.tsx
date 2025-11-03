@@ -398,162 +398,137 @@ export default function About() {
 </section>
 
   {/* Moments Gallery Section - PINK THEME */}
-<section className="relative py-20 bg-gradient-to-b from-pink-50 via-rose-50 to-purple-50 overflow-hidden">
+<section className="relative py-20 bg-gradient-to-b from-pink-200 via-rose-200 to-purple-200 overflow-hidden">
   
-  {/* Decorative Background Pattern */}
+  {/* Decorative Background - Dark Pink */}
   <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-    <div className="absolute top-10 left-10 w-72 h-72 bg-pink-300 rounded-full blur-3xl"></div>
-    <div className="absolute bottom-20 right-20 w-96 h-96 bg-rose-300 rounded-full blur-3xl"></div>
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-200 rounded-full blur-3xl opacity-50"></div>
-  </div>
-
-  {/* Floating Decorative Hearts */}
-  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-    <div className="absolute top-20 left-1/4 text-5xl text-pink-300 opacity-20 animate-float">💕</div>
-    <div className="absolute top-40 right-1/3 text-6xl text-rose-300 opacity-15 animate-float" style={{animationDelay: '1s'}}>💖</div>
-    <div className="absolute bottom-32 left-1/3 text-7xl text-pink-200 opacity-20 animate-float" style={{animationDelay: '2s'}}>❤️</div>
-    <div className="absolute bottom-20 right-1/4 text-5xl text-rose-200 opacity-25 animate-float" style={{animationDelay: '1.5s'}}>💗</div>
+    <div className="absolute top-10 left-10 w-72 h-72 bg-pink-500 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-20 right-20 w-96 h-96 bg-rose-500 rounded-full blur-3xl"></div>
   </div>
 
   <div className="relative max-w-7xl mx-auto px-6 md:px-12 z-10">
     
-    {/* Enhanced Section Header */}
+    {/* Header - Mixed Pink/Black */}
     <div className="text-center mb-16">
-      
-      {/* Decorative Top Element */}
-      <div className="flex items-center justify-center gap-3 mb-4">
-        <div className="w-12 h-1 bg-gradient-to-r from-transparent to-pink-400 rounded-full"></div>
-        <span className="text-4xl">📸</span>
-        <div className="w-12 h-1 bg-gradient-to-l from-transparent to-pink-400 rounded-full"></div>
-      </div>
-
-      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-pink-600 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-        Moments Gallery
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <span className="text-pink-700">Moments</span>{' '}
+        <span className="text-gray-900">Gallery</span>
       </h2>
-      
-      {/* Enhanced Underline with Gradient */}
-      <div className="flex items-center justify-center gap-2 mb-4">
-        <div className="w-8 h-1.5 bg-pink-300 rounded-full"></div>
-        <div className="w-24 h-1.5 bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500 rounded-full"></div>
-        <div className="w-8 h-1.5 bg-pink-300 rounded-full"></div>
-      </div>
-
-      <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-        Capturing authentic moments of love and connection 💕
+      <p className="text-lg md:text-xl max-w-2xl mx-auto">
+        <span className="text-gray-900">Capturing</span>{' '}
+        <span className="text-pink-700 font-semibold">authentic moments</span>{' '}
+        <span className="text-gray-900">of love and connection 💕</span>
       </p>
-
-      {/* Stats Bar */}
-      <div className="flex items-center justify-center gap-8 mt-6 flex-wrap">
-        <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-pink-200">
-          <span className="text-2xl">📷</span>
-          <span className="text-pink-600 font-bold">1000+ Photos</span>
-        </div>
-        <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-rose-200">
-          <span className="text-2xl">💑</span>
-          <span className="text-rose-600 font-bold">500+ Couples</span>
-        </div>
-      </div>
     </div>
 
-    {/* Enhanced Polaroid Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-20">
-      {polaroidGallery.map((photo) => (
-        <div 
-          key={photo.id}
-          className={`flex justify-center ${photo.position}`}
-          onMouseEnter={() => setHoveredCard(photo.id)}
-          onMouseLeave={() => setHoveredCard(null)}
-        >
-          <div className={`
-            group relative bg-white p-4 pb-16 shadow-2xl rounded-sm
-            transform transition-all duration-500
-            ${hoveredCard === photo.id ? 'scale-110 rotate-0 z-30 shadow-pink-300' : `scale-100 ${photo.rotation}`}
-          `}>
-            
-            {/* Enhanced Tape with Texture */}
-            <div className={`absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 ${photo.tapeColor} opacity-80 rounded-sm transform rotate-6 shadow-lg`}>
-              <div className="absolute inset-0 bg-white/20 rounded-sm"></div>
-            </div>
-            
-            {/* Photo Container with Border */}
-            <div className="relative w-72 h-72 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden rounded-sm border-4 border-gray-100">
-              <Image 
-                src={photo.image} 
-                alt={photo.caption} 
-                fill
-                className={`object-cover transition-all duration-700 ${hoveredCard === photo.id ? 'scale-110 brightness-110' : 'scale-100'}`}
-              />
-              
-              {/* Overlay Gradient on Hover */}
-              {hoveredCard === photo.id && (
-                <div className="absolute inset-0 bg-gradient-to-t from-pink-500/20 to-transparent"></div>
-              )}
-            </div>
-            
-            {/* Enhanced Caption */}
-            <div className="mt-4 text-center relative">
-              <p className="text-xl md:text-2xl font-bold text-pink-600" style={{ fontFamily: "'Caveat', cursive" }}>
-                {photo.caption}
-              </p>
-              
-              {/* Decorative Underline */}
-              {hoveredCard === photo.id && (
-                <div className="w-16 h-0.5 bg-pink-400 mx-auto mt-1 rounded-full"></div>
-              )}
-            </div>
+    {/* Clothesline Gallery */}
+    <div className="relative">
+      
+      {/* Horizontal Rope/Line */}
+      <div className="w-full h-2 bg-gradient-to-r from-pink-400 via-rose-500 to-pink-400 rounded-full shadow-lg"></div>
+      
+      {/* Support Poles */}
+      <div className="absolute top-0 left-0 w-3 h-3 bg-pink-600 rounded-full shadow-xl"></div>
+      <div className="absolute top-0 right-0 w-3 h-3 bg-pink-600 rounded-full shadow-xl"></div>
 
-            {/* Floating Heart on Hover */}
-            {hoveredCard === photo.id && (
-              <div className="absolute -top-6 -right-6 text-5xl animate-bounce z-40">
-                💕
-              </div>
-            )}
-
-            {/* Corner Pin Effect */}
-            <div className="absolute top-2 right-2 w-3 h-3 bg-gray-400 rounded-full shadow-md opacity-60"></div>
-            <div className="absolute top-2 left-2 w-3 h-3 bg-gray-400 rounded-full shadow-md opacity-60"></div>
-
-            {/* Hover Glow Effect */}
-            {hoveredCard === photo.id && (
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-400/20 to-rose-400/20 rounded-sm -z-10 blur-xl"></div>
-            )}
-
-            {/* Photo Number Badge */}
-            <div className="absolute bottom-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-pink-200">
-              <span className="text-xs font-bold text-pink-600">{photo.id}</span>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-
-    {/* Bottom CTA Section */}
-    <div className="mt-20 text-center">
-      <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border-2 border-pink-200 max-w-3xl mx-auto">
-        <h3 className="text-2xl md:text-3xl font-bold text-pink-600 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-          Want to be featured here? 💕
-        </h3>
-        <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-          Share your love story with us and inspire thousands of couples on their journey to find true love.
-        </p>
+      {/* Photos Hanging from Rope */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         
-        <button className="group bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 hover:from-pink-700 hover:via-rose-700 hover:to-purple-700 text-white font-bold px-10 py-4 rounded-full text-lg transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center gap-3 mx-auto">
-          <span className="text-2xl">📸</span>
-          <span>Share Your Story</span>
-          <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-
-        {/* Social Proof */}
-        <div className="flex items-center justify-center gap-2 mt-6 text-sm text-gray-600">
-          <div className="flex -space-x-2">
-            <div className="w-8 h-8 bg-pink-300 rounded-full border-2 border-white"></div>
-            <div className="w-8 h-8 bg-rose-300 rounded-full border-2 border-white"></div>
-            <div className="w-8 h-8 bg-purple-300 rounded-full border-2 border-white"></div>
+        {/* Photo 1 - Swinging Animation */}
+        <div className="flex flex-col items-center -mt-1 animate-swing" style={{ animationDelay: '0s' }}>
+          <div className="w-8 h-3 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full shadow-md"></div>
+          <div className="w-0.5 h-12 bg-pink-400"></div>
+          <div className="bg-white p-3 pb-12 shadow-xl rounded-sm transform transition-all duration-500 rotate-3 hover:scale-110 hover:rotate-0 hover:shadow-pink-500/50">
+            <div className="relative w-40 h-40 overflow-hidden rounded-sm">
+              <Image 
+                src="/images/unsplash_fdlZBWIP0aM.png"
+                alt="Moment 1"
+                fill
+                className="object-cover hover:scale-110 transition-all duration-500"
+              />
+            </div>
+            <p className="mt-3 text-center text-pink-700 font-bold text-sm" style={{ fontFamily: "'Caveat', cursive" }}>
+              Love ❤️
+            </p>
           </div>
-          <span className="font-semibold">Join 500+ couples who shared their moments</span>
         </div>
+
+        {/* Photo 2 - Swinging Animation */}
+        <div className="flex flex-col items-center -mt-1 animate-swing" style={{ animationDelay: '0.5s' }}>
+          <div className="w-8 h-3 bg-gradient-to-r from-rose-500 to-pink-500 rounded-full shadow-md"></div>
+          <div className="w-0.5 h-40 bg-pink-400"></div>
+          <div className="bg-white p-3 pb-12 shadow-xl rounded-sm transform transition-all duration-500 -rotate-2 hover:scale-110 hover:rotate-0 hover:shadow-rose-500/50">
+            <div className="relative w-40 h-40 overflow-hidden rounded-sm">
+              <Image 
+                src="/images/Rectangle 23845.png"
+                alt="Moment 2"
+                fill
+                className="object-cover hover:scale-110 transition-all duration-500"
+              />
+            </div>
+            <p className="mt-3 text-center text-rose-700 font-bold text-sm" style={{ fontFamily: "'Caveat', cursive" }}>
+              Together 💕
+            </p>
+          </div>
+        </div>
+
+        {/* Photo 3 - Swinging Animation */}
+        <div className="flex flex-col items-center -mt-1 animate-swing" style={{ animationDelay: '1s' }}>
+          <div className="w-8 h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-md"></div>
+          <div className="w-0.5 h-12 bg-pink-400"></div>
+          <div className="bg-white p-3 pb-12 shadow-xl rounded-sm transform transition-all duration-500 rotate-1 hover:scale-110 hover:rotate-0 hover:shadow-purple-500/50">
+            <div className="relative w-40 h-40 overflow-hidden rounded-sm">
+              <Image 
+                src="/images/Rectangle 23847.png"
+                alt="Moment 3"
+                fill
+                className="object-cover hover:scale-110 transition-all duration-500"
+              />
+            </div>
+            <p className="mt-3 text-center text-purple-700 font-bold text-sm" style={{ fontFamily: "'Caveat', cursive" }}>
+              Forever 💖
+            </p>
+          </div>
+        </div>
+
+        {/* Photo 4 - Swinging Animation */}
+        <div className="flex flex-col items-center -mt-1 animate-swing" style={{ animationDelay: '1.5s' }}>
+          <div className="w-8 h-3 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full shadow-md"></div>
+          <div className="w-0.5 h-40 bg-pink-400"></div>
+          <div className="bg-white p-3 pb-12 shadow-xl rounded-sm transform transition-all duration-500 -rotate-3 hover:scale-110 hover:rotate-0 hover:shadow-pink-500/50">
+            <div className="relative w-40 h-40 overflow-hidden rounded-sm">
+              <Image 
+                src="/images/Group 1597884004.png"
+                alt="Moment 4"
+                fill
+                className="object-cover hover:scale-110 transition-all duration-500"
+              />
+            </div>
+            <p className="mt-3 text-center text-pink-700 font-bold text-sm" style={{ fontFamily: "'Caveat', cursive" }}>
+              Happy 💗
+            </p>
+          </div>
+        </div>
+
+        {/* Photo 5 - Swinging Animation */}
+        <div className="flex flex-col items-center -mt-1 animate-swing" style={{ animationDelay: '2s' }}>
+          <div className="w-8 h-3 bg-gradient-to-r from-rose-500 to-purple-500 rounded-full shadow-md"></div>
+          <div className="w-0.5 h-12 bg-pink-400"></div>
+          <div className="bg-white p-3 pb-12 shadow-xl rounded-sm transform transition-all duration-500 rotate-2 hover:scale-110 hover:rotate-0 hover:shadow-rose-500/50">
+            <div className="relative w-40 h-40 overflow-hidden rounded-sm">
+              <Image 
+                src="/images/about.png"
+                alt="Moment 5"
+                fill
+                className="object-cover hover:scale-110 transition-all duration-500"
+              />
+            </div>
+            <p className="mt-3 text-center text-rose-700 font-bold text-sm" style={{ fontFamily: "'Caveat', cursive" }}>
+              Smile 😊
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
 

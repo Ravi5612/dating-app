@@ -759,3 +759,82 @@ body {
   0%, 100% { transform: translateY(0px) rotate(12deg); }
   50% { transform: translateY(-18px) rotate(12deg); }
 }
+
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+}
+
+.animate-swing {
+  animation: swing 3s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+
+/* Left Cover Opens */
+@keyframes openLeft {
+  0%, 20% {
+    transform: rotateY(0deg);
+  }
+  30%, 70% {
+    transform: rotateY(-160deg);
+  }
+  80%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/* Right Cover Opens */
+@keyframes openRight {
+  0%, 20% {
+    transform: rotateY(0deg);
+  }
+  30%, 70% {
+    transform: rotateY(160deg);
+  }
+  80%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/* Pages Show */
+@keyframes showPages {
+  0%, 25% {
+    opacity: 0;
+  }
+  35%, 65% {
+    opacity: 1;
+  }
+  75%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 25s linear infinite;
+}
+/* Image frame fix */
+.frame-container {
+  position: relative;
+  overflow: hidden; /* image ko frame ke andar rakhega */
+}
+
+.frame-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10; /* frame ko image ke upar rakhta hai */
+}
