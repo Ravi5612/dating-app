@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
@@ -11,7 +12,196 @@ const EventPage = () => {
       
      <main className="bg-white">
         {/* Hero Section */}
+<section className="py-20 bg-gradient-to-br from-pink-100 via-rose-100 to-pink-50 relative overflow-hidden">
+  
+  {/* CSS Animation */}
+  <style jsx>{`
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    @keyframes sway {
+      0%, 100% { transform: translateX(0px); }
+      50% { transform: translateX(10px); }
+    }
+    .balloon-float {
+      animation: float 3s ease-in-out infinite;
+    }
+    .balloon-sway {
+      animation: sway 2s ease-in-out infinite;
+    }
+  `}</style>
+
+  <div className="max-w-7xl mx-auto px-4 md:px-8 relative">
     
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+      
+      {/* Left Images */}
+      <div className="hidden lg:flex flex-col gap-8 justify-start pt-0">
+        
+        {/* Image 1 - Near girls */}
+        <div className="relative ml-auto balloon-float hover:scale-110 transition-all duration-300" style={{ animationDelay: '0s' }}>
+          {/* Balloon */}
+          <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-2xl bg-purple-200 p-2 hover:shadow-purple-400">
+            <div className="w-full h-full rounded-full overflow-hidden">
+              <img src="/images/16.png" alt="Near girls" className="w-full h-full object-cover" />
+            </div>
+          </div>
+          
+          {/* Rope */}
+          <div className="absolute top-full left-1/2 -translate-x-1/2">
+  <svg width="50" height="100" viewBox="0 0 50 100" fill="none" className="balloon-sway" style={{ transformOrigin: 'top center' }}>
+    <path 
+      d="M25 0 Q 38 12, 25 25 Q 12 38, 25 50 Q 38 62, 25 75 Q 12 88, 25 100" 
+      stroke="#10B981" 
+      strokeWidth="5" 
+      fill="none"
+      strokeLinecap="round"
+    />
+  </svg>
+</div>
+          
+          {/* Label at end of rope */}
+          <div className="absolute top-[calc(100%+3rem)] left-1/2 -translate-x-1/2 bg-purple-300 px-6 py-2 rounded-full shadow-lg whitespace-nowrap">
+            <p className="text-sm font-semibold text-gray-800">💬 Near girls</p>
+          </div>
+          
+          {/* Decorative line */}
+          <div className="absolute -right-8 top-1/2 w-16 h-0.5 bg-gray-300"></div>
+        </div>
+
+        {/* Image 2 - Dance class */}
+        <div className="relative mr-auto balloon-float hover:scale-110 transition-all duration-300" style={{ animationDelay: '1s' }}>
+          {/* Balloon */}
+          <div className="relative w-56 h-56 rounded-full overflow-hidden shadow-2xl bg-pink-200 p-2 hover:shadow-pink-400">
+            <div className="w-full h-full rounded-full overflow-hidden">
+              <img src="/images/rav2.png" alt="Dance class" className="w-full h-full object-cover" />
+            </div>
+          </div>
+          
+       <div className="absolute top-full left-1/2 -translate-x-1/2">
+  <svg width="50" height="100" viewBox="0 0 50 100" fill="none" className="balloon-sway" style={{ transformOrigin: 'top center' }}>
+    <path 
+      d="M25 0 Q 38 12, 25 25 Q 12 38, 25 50 Q 38 62, 25 75 Q 12 88, 25 100" 
+      stroke="#10B981" 
+      strokeWidth="5" 
+      fill="none"
+      strokeLinecap="round"
+    />
+  </svg>
+</div>
+          {/* Label at end of rope */}
+          <div className="absolute top-[calc(100%+3rem)] left-1/2 -translate-x-1/2 bg-pink-300 px-6 py-2 rounded-full shadow-lg whitespace-nowrap">
+            <p className="text-sm font-semibold text-gray-800">Dance class 🎵</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Center Content */}
+      <div className="text-center space-y-8 lg:col-span-1">
+        <h1 className="leading-tight">
+          <span className="block text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            The <span className="inline-block">🧑</span> <span className="text-pink-600">people</span>
+          </span>
+          <span className="block text-5xl md:text-6xl lg:text-7xl font-bold text-pink-600 mt-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            platform.
+          </span>
+          <span className="block text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-800 mt-4" style={{ fontFamily: "'Inter', sans-serif" }}>
+            Where <span className="inline-block">🔥</span> interests
+          </span>
+          <span className="block text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-800 mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>
+            become <span className="inline-block">💗</span>
+          </span>
+          <span className="block text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-pink-600 via-rose-500 to-pink-700 bg-clip-text text-transparent mt-2" style={{ fontFamily: "'Playfair Display', serif" }}>
+            friendships.
+          </span>
+        </h1>
+        
+        <button className="bg-gradient-to-r from-gray-900 to-gray-800 hover:from-pink-600 hover:to-rose-600 text-white font-bold px-10 py-5 rounded-full text-lg md:text-xl transition-all duration-300 shadow-2xl hover:shadow-pink-300 transform hover:scale-110 border-2 border-transparent hover:border-pink-300" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          Join Meetup ✨
+        </button>
+      </div>
+
+      {/* Right Images */}
+      <div className="hidden lg:flex flex-col gap-8 justify-start pt-0">
+        
+        {/* Image 3 - Speaking club */}
+      {/* Image 3 - Speaking club */}
+<div className="relative mr-auto balloon-float hover:scale-110 transition-all duration-300" style={{ animationDelay: '0.5s' }}>
+  {/* Balloon */}
+  <div className="relative w-52 h-52 rounded-full overflow-hidden shadow-2xl bg-pink-200 p-2 hover:shadow-pink-400">
+    <div className="w-full h-full rounded-full overflow-hidden">
+      <img src="/images/Nwe1.png" alt="Speaking club" className="w-full h-full object-cover" />
+    </div>
+  </div>
+  
+  {/* Rope */}
+ {/* Extra Lamba Rope */}
+<div className="absolute top-full left-1/2 -translate-x-1/2">
+  <svg width="50" height="100" viewBox="0 0 50 100" fill="none" className="balloon-sway" style={{ transformOrigin: 'top center' }}>
+    <path 
+      d="M25 0 Q 38 12, 25 25 Q 12 38, 25 50 Q 38 62, 25 75 Q 12 88, 25 100" 
+      stroke="#10B981" 
+      strokeWidth="5" 
+      fill="none"
+      strokeLinecap="round"
+    />
+  </svg>
+</div>
+  
+  {/* Label at end of rope (NICHE) */}
+  <div className="absolute top-[calc(100%+3rem)] left-1/2 -translate-x-1/2 bg-pink-300 px-6 py-4 rounded-full shadow-lg whitespace-nowrap">
+    <p className="text-sm font-semibold text-gray-800">Speaking club</p>
+  </div>
+  
+  {/* Decorative arrow */}
+  <div className="absolute -right-12 top-8">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-gray-400">
+      <path d="M5 35 Q 20 5, 35 25" stroke="currentColor" strokeWidth="2" fill="none"/>
+      <path d="M32 20 L38 26 L30 28" fill="currentColor"/>
+    </svg>
+  </div>
+</div>
+
+        {/* Image 4 - Every Thursday */}
+        <div className="relative ml-auto balloon-float hover:scale-110 transition-all duration-300" style={{ animationDelay: '1.5s' }}>
+          {/* Balloon */}
+          <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-2xl bg-yellow-200 p-2 hover:shadow-yellow-400">
+            <div className="w-full h-full rounded-full overflow-hidden">
+              <img src="/images/new6.png" alt="Every Thursday" className="w-full h-full object-cover" />
+            </div>
+          </div>
+          
+          {/* Rope */}
+          <div className="absolute top-full left-1/2 -translate-x-1/2">
+  <svg width="50" height="100" viewBox="0 0 50 100" fill="none" className="balloon-sway" style={{ transformOrigin: 'top center' }}>
+    <path 
+      d="M25 0 Q 38 12, 25 25 Q 12 38, 25 50 Q 38 62, 25 75 Q 12 88, 25 100" 
+      stroke="#10B981" 
+      strokeWidth="5" 
+      fill="none"
+      strokeLinecap="round"
+    />
+  </svg>
+</div>
+          
+          {/* Label at end of rope */}
+          <div className="absolute top-[calc(100%+3rem)] right-4 bg-yellow-300 px-6 py-2 rounded-full shadow-lg whitespace-nowrap transform rotate-6">
+            <p className="text-sm font-semibold text-gray-800">🎸 Every Thursday</p>
+          </div>
+          
+          {/* Decorative squiggle */}
+          <div className="absolute -left-8 top-1/2">
+            <svg width="30" height="60" viewBox="0 0 30 60" fill="none" className="text-gray-400">
+              <path d="M5 5 Q 15 20, 5 35 Q 15 50, 5 55" stroke="currentColor" strokeWidth="2" fill="none"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
         <section className="py-16 md:py-20 bg-pink-100">
           <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -77,7 +267,7 @@ const EventPage = () => {
                 <div className="bg-white rounded-lg shadow-lg p-2 md:p-3">
                   <div className="relative w-full h-48 md:h-56 lg:h-64 bg-gray-200 rounded-md overflow-hidden">
                     <Image 
-                      src="/images/unsplash_jpkfc5_d-DI.png"
+                      src="/images/nwe1.png"
                       alt="Couple having coffee together" 
                       fill
                       className="object-cover"
