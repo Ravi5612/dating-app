@@ -230,7 +230,142 @@ const EventPage = () => {
             </div>
           </div>
         </section>
+<section className="py-20 bg-gradient-to-br from-pink-50 to-rose-100 relative overflow-hidden">
+  <div className="max-w-7xl mx-auto px-4 md:px-8 relative">
+    
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        Choose Your <span className="text-pink-600">Ticket</span>
+      </h2>
+      <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+        Select the perfect pass for an unforgettable experience
+      </p>
+    </div>
 
+    {/* Pricing Cards */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      {/* Basic Tier */}
+      <div className="relative group hover:scale-105 transition-all duration-300">
+        <div className="bg-white rounded-3xl p-8 shadow-2xl border-4 border-pink-200 hover:border-pink-400">
+          <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-pink-300 px-6 py-2 rounded-full">
+            <p className="text-sm font-bold text-gray-900">BASIC</p>
+          </div>
+          
+          <div className="mt-4 text-center">
+            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-pink-200 to-rose-300 p-1 mb-6">
+              <div className="w-full h-full rounded-full overflow-hidden">
+                <img src="/images/ticket-basic.jpg" alt="Basic" className="w-full h-full object-cover" />
+              </div>
+            </div>
+            
+            <h3 className="text-3xl font-bold text-gray-900 mb-2">₹999</h3>
+            <p className="text-gray-600 mb-6">Per Person</p>
+            
+            <ul className="space-y-3 text-left mb-8">
+              <li className="flex items-center text-gray-700">
+                <span className="text-pink-500 mr-3">✓</span> General Entry
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="text-pink-500 mr-3">✓</span> Welcome Drink
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="text-pink-500 mr-3">✓</span> Event Merchandise
+              </li>
+              <li className="flex items-center text-gray-400">
+                <span className="text-gray-300 mr-3">✗</span> VIP Lounge Access
+              </li>
+            </ul>
+            
+            <button className="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 rounded-full transition-all">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Premium Tier - Featured */}
+      <div className="relative group hover:scale-105 transition-all duration-300 md:-mt-4">
+        <div className="bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl p-8 shadow-2xl border-4 border-yellow-400">
+          <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-yellow-400 px-6 py-2 rounded-full animate-pulse">
+            <p className="text-sm font-bold text-gray-900">⭐ POPULAR</p>
+          </div>
+          
+          <div className="mt-4 text-center">
+            <div className="w-32 h-32 mx-auto rounded-full bg-white p-1 mb-6">
+              <div className="w-full h-full rounded-full overflow-hidden">
+                <img src="/images/ticket-premium.jpg" alt="Premium" className="w-full h-full object-cover" />
+              </div>
+            </div>
+            
+            <h3 className="text-3xl font-bold text-white mb-2">₹1,999</h3>
+            <p className="text-pink-100 mb-6">Per Person</p>
+            
+            <ul className="space-y-3 text-left mb-8">
+              <li className="flex items-center text-white">
+                <span className="text-yellow-300 mr-3">✓</span> Priority Entry
+              </li>
+              <li className="flex items-center text-white">
+                <span className="text-yellow-300 mr-3">✓</span> Complimentary Meals
+              </li>
+              <li className="flex items-center text-white">
+                <span className="text-yellow-300 mr-3">✓</span> VIP Lounge Access
+              </li>
+              <li className="flex items-center text-white">
+                <span className="text-yellow-300 mr-3">✓</span> Meet & Greet
+              </li>
+            </ul>
+            
+            <button className="w-full bg-white hover:bg-gray-100 text-pink-600 font-bold py-4 rounded-full transition-all">
+              Buy Now 🔥
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* VIP Tier */}
+      <div className="relative group hover:scale-105 transition-all duration-300">
+        <div className="bg-white rounded-3xl p-8 shadow-2xl border-4 border-pink-200 hover:border-pink-400">
+          <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-pink-400 to-purple-500 px-6 py-2 rounded-full">
+            <p className="text-sm font-bold text-white">VIP</p>
+          </div>
+          
+          <div className="mt-4 text-center">
+            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-purple-300 to-pink-300 p-1 mb-6">
+              <div className="w-full h-full rounded-full overflow-hidden">
+                <img src="/images/ticket-vip.jpg" alt="VIP" className="w-full h-full object-cover" />
+              </div>
+            </div>
+            
+            <h3 className="text-3xl font-bold text-gray-900 mb-2">₹4,999</h3>
+            <p className="text-gray-600 mb-6">Per Person</p>
+            
+            <ul className="space-y-3 text-left mb-8">
+              <li className="flex items-center text-gray-700">
+                <span className="text-pink-500 mr-3">✓</span> All Premium Benefits
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="text-pink-500 mr-3">✓</span> Backstage Access
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="text-pink-500 mr-3">✓</span> Photo Opportunities
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="text-pink-500 mr-3">✓</span> Exclusive Gift Hamper
+              </li>
+            </ul>
+            
+            <button className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-4 rounded-full transition-all">
+              Buy Now 👑
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
         <section className="py-16 md:py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
             
@@ -294,7 +429,598 @@ const EventPage = () => {
             
           </div>
         </section>
+<section className="py-20 bg-gradient-to-b from-white to-pink-50 relative">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+    
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+        <span className="text-gray-900">Our Beautiful</span> <span className="text-pink-600">Celebrations</span>
+      </h2>
+      <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+        Moments that made our hearts full 💕
+      </p>
+    </div>
 
+    {/* Masonry Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      
+      {/* Large Image 1 */}
+      <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/wedding1.jpg" alt="Wedding" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="absolute bottom-6 left-6 text-white">
+            <h3 className="text-2xl font-bold mb-2">The Big Day 💍</h3>
+            <p className="text-sm">December 15, 2024</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Small Image 1 */}
+      <div className="relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/party1.jpg" alt="Party" className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <p className="text-white font-bold text-lg">Sangeet Night 🎵</p>
+        </div>
+      </div>
+
+      {/* Small Image 2 */}
+      <div className="relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/party2.jpg" alt="Party" className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <p className="text-white font-bold text-lg">Mehendi Ceremony 🌿</p>
+        </div>
+      </div>
+
+      {/* Small Image 3 */}
+      <div className="relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/party3.jpg" alt="Party" className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <p className="text-white font-bold text-lg">Haldi Fun 💛</p>
+        </div>
+      </div>
+
+      {/* Small Image 4 */}
+      <div className="relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/party4.jpg" alt="Party" className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <p className="text-white font-bold text-lg">Reception 🎉</p>
+        </div>
+      </div>
+
+      {/* Large Image 2 */}
+      <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/wedding2.jpg" alt="Wedding" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="absolute bottom-6 left-6 text-white">
+            <h3 className="text-2xl font-bold mb-2">Forever Together 💕</h3>
+            <p className="text-sm">Candid Moments</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    {/* View All Button */}
+    <div className="text-center mt-12">
+      <button className="bg-pink-600 hover:bg-pink-700 text-white font-bold px-12 py-4 rounded-full text-lg transition-all shadow-lg hover:shadow-pink-300 transform hover:scale-105">
+        View Full Gallery 📸
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section className="py-20 bg-gradient-to-br from-white via-pink-50 to-rose-50 relative">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+    
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <span className="text-gray-900">Connect &</span> <span className="text-pink-600">Network</span>
+      </h2>
+      <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+        Meet like-minded people and grow your circle! 🤝
+      </p>
+    </div>
+
+    {/* Networking Cards */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      
+      {/* Card 1 - Speed Networking */}
+      <div className="relative group">
+        <div className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-300 transition-all">
+          <div className="relative h-64">
+            <img src="/images/networking1.jpg" alt="Speed Networking" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-pink-600/90 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 text-white">
+              <h3 className="text-3xl font-bold mb-2">Speed Networking</h3>
+              <p className="text-pink-100">3:00 PM - 5:00 PM</p>
+            </div>
+          </div>
+          <div className="p-8">
+            <div className="flex items-center space-x-4 mb-4">
+              <span className="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold">⚡ Fast-paced</span>
+              <span className="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-semibold">👥 50+ People</span>
+            </div>
+            <p className="text-gray-600 mb-6">
+              Meet 20+ professionals in 2 hours! Quick 5-minute conversations to expand your network rapidly.
+            </p>
+            <button className="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 rounded-full transition-all">
+              Register Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Card 2 - Panel Discussion */}
+      <div className="relative group">
+        <div className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-300 transition-all">
+          <div className="relative h-64">
+            <img src="/images/networking2.jpg" alt="Panel Discussion" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-purple-600/90 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 text-white">
+              <h3 className="text-3xl font-bold mb-2">Panel Discussion</h3>
+              <p className="text-purple-100">5:30 PM - 7:00 PM</p>
+            </div>
+          </div>
+          <div className="p-8">
+            <div className="flex items-center space-x-4 mb-4">
+              <span className="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-semibold">🎤 Expert Talks</span>
+              <span className="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold">💡 Insights</span>
+            </div>
+            <p className="text-gray-600 mb-6">
+              Learn from industry leaders. Q&A session included with networking cocktails after the panel.
+            </p>
+            <button className="w-full bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 rounded-full transition-all">
+              Register Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Attendees Showcase */}
+    <div className="bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl p-12 shadow-2xl text-center">
+      <h3 className="text-4xl font-bold text-white mb-6">Who's Coming?</h3>
+      
+      {/* Avatar Stack */}
+      <div className="flex justify-center items-center mb-8">
+        <div className="flex -space-x-4">
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+            <div key={i} className="w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-lg transform hover:scale-110 hover:z-10 transition-all">
+              <img src={`/images/attendee-${i}.jpg`} alt="Attendee" className="w-full h-full object-cover" />
+            </div>
+          ))}
+        </div>
+        <span className="ml-4 bg-white text-pink-600 font-bold px-6 py-3 rounded-full text-lg">
+          +250 More!
+        </span>
+      </div>
+
+      <p className="text-pink-100 text-xl mb-6">
+        Join 250+ entrepreneurs, designers, developers, and creators
+      </p>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+        <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4">
+          <p className="text-4xl font-bold text-white">89</p>
+          <p className="text-pink-100">Startups</p>
+        </div>
+        <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4">
+          <p className="text-4xl font-bold text-white">45</p>
+          <p className="text-pink-100">Investors</p>
+        </div>
+        <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4">
+          <p className="text-4xl font-bold text-white">120</p>
+          <p className="text-pink-100">Tech Pros</p>
+        </div>
+        <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4">
+          <p className="text-4xl font-bold text-white">56</p>
+          <p className="text-pink-100">Creatives</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="py-20 bg-gradient-to-br from-pink-200 via-purple-200 to-rose-200 relative overflow-hidden">
+  
+  {/* Animated Background Elements */}
+  <div className="absolute inset-0">
+    <div className="absolute top-20 left-10 text-6xl animate-bounce">🎊</div>
+    <div className="absolute top-40 right-20 text-5xl animate-pulse">🎉</div>
+    <div className="absolute bottom-20 left-1/4 text-7xl animate-spin" style={{ animationDuration: '10s' }}>🎪</div>
+    <div className="absolute bottom-40 right-1/3 text-6xl animate-bounce" style={{ animationDelay: '1s' }}>🎭</div>
+  </div>
+
+  <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+    
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-6xl md:text-7xl font-extrabold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+        <span className="bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent">
+          Festival Celebrations
+        </span>
+      </h2>
+      <p className="text-2xl text-gray-800 max-w-2xl mx-auto font-semibold">
+        Join the biggest celebration of the year! 🎊
+      </p>
+    </div>
+
+    {/* Festival Highlights */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+      
+      {/* Left - Main Festival Image */}
+      <div className="relative group">
+        <div className="absolute -inset-4 bg-gradient-to-r from-pink-400 to-purple-500 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+        <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl">
+          <img src="/images/festival-main.jpg" alt="Festival" className="w-full h-96 object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+          <div className="absolute bottom-8 left-8 right-8">
+            <h3 className="text-4xl font-bold text-white mb-2">Holi Festival 2025</h3>
+            <p className="text-pink-200 text-lg">March 25-27, 2025</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Right - Festival Details */}
+      <div className="space-y-6">
+        <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all">
+          <div className="flex items-start space-x-4">
+            <div className="text-5xl">🎵</div>
+            <div>
+              <h4 className="text-2xl font-bold text-gray-900 mb-2">Live Music & DJ</h4>
+              <p className="text-gray-600">Non-stop entertainment with top artists and DJs</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all">
+          <div className="flex items-start space-x-4">
+            <div className="text-5xl">🍔</div>
+            <div>
+              <h4 className="text-2xl font-bold text-gray-900 mb-2">Food Festival</h4>
+              <p className="text-gray-600">50+ food stalls with delicious varieties</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all">
+          <div className="flex items-start space-x-4">
+            <div className="text-5xl">🎨</div>
+            <div>
+              <h4 className="text-2xl font-bold text-gray-900 mb-2">Art & Culture</h4>
+              <p className="text-gray-600">Traditional performances and exhibitions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Festival Activities Carousel */}
+    <div className="bg-white rounded-3xl p-8 shadow-2xl">
+      <h3 className="text-3xl font-bold text-center mb-8">
+        <span className="text-gray-900">Featured</span> <span className="text-pink-600">Activities</span>
+      </h3>
+      
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {[
+          { icon: '🎪', title: 'Magic Shows', time: '11 AM' },
+          { icon: '🎭', title: 'Dance Battles', time: '2 PM' },
+          { icon: '🎤', title: 'Concerts', time: '6 PM' },
+          { icon: '🎆', title: 'Fireworks', time: '9 PM' }
+        ].map((activity, i) => (
+          <div key={i} className="text-center p-6 rounded-2xl bg-gradient-to-br from-pink-50 to-rose-100 hover:from-pink-100 hover:to-rose-200 transition-all cursor-pointer transform hover:scale-105">
+            <div className="text-6xl mb-4">{activity.icon}</div>
+            <h4 className="font-bold text-gray-900 text-lg mb-2">{activity.title}</h4>
+            <p className="text-pink-600 font-semibold">{activity.time}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* CTA */}
+    <div className="text-center mt-12">
+      <button className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white font-bold px-16 py-6 rounded-full text-xl transition-all shadow-2xl hover:shadow-pink-400 transform hover:scale-110">
+        Get Festival Pass 🎉
+      </button>
+    </div>
+  </div>
+</section>
+
+<section className="py-20 bg-white relative overflow-hidden">
+  
+  {/* Background Pattern */}
+  <div className="absolute inset-0 opacity-5">
+    <div className="absolute inset-0" style={{
+      backgroundImage: 'radial-gradient(circle, #ec4899 1px, transparent 1px)',
+      backgroundSize: '30px 30px'
+    }}></div>
+  </div>
+
+  <div className="max-w-7xl mx-auto px-4 md:px-8 relative">
+    
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <span className="text-gray-900">Our Amazing</span> <span className="text-pink-600">Sponsors</span>
+      </h2>
+      <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+        Thank you for making this event possible! 🙏
+      </p>
+    </div>
+
+    {/* Sponsor Tiers */}
+    
+    {/* Title Sponsors */}
+    <div className="mb-16">
+      <div className="text-center mb-8">
+        <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-8 py-3 rounded-full font-bold text-lg">
+          👑 TITLE SPONSORS
+        </span>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        {[1, 2].map((i) => (
+          <div key={i} className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-3xl p-8 shadow-2xl hover:shadow-pink-300 transition-all duration-300 hover:scale-105 border-4 border-pink-200">
+            <div className="bg-white rounded-2xl p-8 h-40 flex items-center justify-center">
+              <img src={`/images/sponsor-title-${i}.png`} alt="Title Sponsor" className="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Gold Sponsors */}
+    <div className="mb-16">
+      <div className="text-center mb-8">
+        <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-3 rounded-full font-bold">
+          🥇 GOLD SPONSORS
+        </span>
+      </div>
+      
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {[1, 2, 3, 4].map((i) => (
+          <div key={i} className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-pink-200 transition-all duration-300 hover:scale-105 border-2 border-pink-100">
+            <div className="h-32 flex items-center justify-center">
+              <img src={`/images/sponsor-gold-${i}.png`} alt="Gold Sponsor" className="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Silver Sponsors */}
+    <div>
+      <div className="text-center mb-8">
+        <span className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-8 py-3 rounded-full font-bold">
+          🥈 SILVER SPONSORS
+        </span>
+      </div>
+      
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+        {[1, 2, 3, 4, 5, 6].map((i) => (
+          <div key={i} className="bg-white rounded-xl p-4 shadow-lg hover:shadow-pink-200 transition-all duration-300 hover:scale-105">
+            <div className="h-20 flex items-center justify-center">
+              <img src={`/images/sponsor-silver-${i}.png`} alt="Silver Sponsor" className="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Become Sponsor CTA */}
+    <div className="mt-16 text-center">
+      <div className="bg-gradient-to-r from-pink-500 to-rose-600 rounded-3xl p-12 shadow-2xl">
+        <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          Want to Sponsor Our Event? 🤝
+        </h3>
+        <p className="text-pink-100 text-lg mb-6">
+          Join these amazing brands and get incredible visibility!
+        </p>
+        <button className="bg-white hover:bg-gray-100 text-pink-600 font-bold px-10 py-4 rounded-full text-lg transition-all shadow-lg transform hover:scale-105">
+          Become a Sponsor
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<section className="py-20 bg-gradient-to-br from-pink-100 to-rose-50 relative overflow-hidden">
+  
+  {/* Decorative Elements */}
+  <div className="absolute top-10 right-10 text-6xl opacity-20">✈️</div>
+  <div className="absolute bottom-10 left-10 text-6xl opacity-20">🗺️</div>
+
+  <div className="max-w-7xl mx-auto px-4 md:px-8 relative">
+    
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <span className="text-gray-900">Explore</span> <span className="text-pink-600">Amazing Places</span>
+      </h2>
+      <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+        Pack your bags for the adventure of a lifetime! 🌍
+      </p>
+    </div>
+
+    {/* Destinations Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      {[
+        { 
+          img: '/images/goa.jpg', 
+          title: 'Goa Beach Paradise', 
+          desc: 'Sun, sand & sea', 
+          days: '3 Days', 
+          price: '₹12,999',
+          badge: '🏖️'
+        },
+        { 
+          img: '/images/manali.jpg', 
+          title: 'Manali Mountains', 
+          desc: 'Snow & adventure', 
+          days: '4 Days', 
+          price: '₹15,999',
+          badge: '⛰️'
+        },
+        { 
+          img: '/images/jaipur.jpg', 
+          title: 'Jaipur Heritage', 
+          desc: 'Royal palaces', 
+          days: '2 Days', 
+          price: '₹9,999',
+          badge: '🏰'
+        },
+        { 
+          img: '/images/kerala.jpg', 
+          title: 'Kerala Backwaters', 
+          desc: 'Serene houseboats', 
+          days: '5 Days', 
+          price: '₹18,999',
+          badge: '🚤'
+        },
+        { 
+          img: '/images/ladakh.jpg', 
+          title: 'Ladakh Adventure', 
+          desc: 'Himalayan roads', 
+          days: '7 Days', 
+          price: '₹25,999',
+          badge: '🏍️'
+        },
+        { 
+          img: '/images/udaipur.jpg', 
+          title: 'Udaipur Lakes', 
+          desc: 'City of romance', 
+          days: '3 Days', 
+          price: '₹13,999',
+          badge: '🛶'
+        }
+      ].map((destination, index) => (
+        <div key={index} className="relative group cursor-pointer">
+          
+          {/* Card */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105 hover:rotate-1">
+            
+            {/* Image */}
+            <div className="relative h-64 overflow-hidden">
+              <img src={destination.img} alt={destination.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              
+              {/* Badge */}
+              <div className="absolute top-4 right-4 text-4xl animate-bounce">
+                {destination.badge}
+              </div>
+              
+              {/* Overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-pink-600/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="text-sm font-semibold">🗓️ {destination.days}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{destination.title}</h3>
+              <p className="text-gray-600 mb-4">{destination.desc}</p>
+              
+              <div className="flex items-center justify-between">
+                <span className="text-3xl font-bold text-pink-600">{destination.price}</span>
+                <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-full transition-all transform group-hover:scale-110">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Floating Pin Effect */}
+          <div className="absolute -top-3 -right-3 w-8 h-8 bg-red-500 rounded-full shadow-lg animate-pulse"></div>
+        </div>
+      ))}
+
+    </div>
+  </div>
+</section>
+<section className="py-20 bg-gradient-to-b from-white to-pink-50 relative">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+    
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+        <span className="text-gray-900">Our Beautiful</span> <span className="text-pink-600">Celebrations</span>
+      </h2>
+      <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+        Moments that made our hearts full 💕
+      </p>
+    </div>
+
+    {/* Masonry Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      
+      {/* Large Image 1 */}
+      <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/wedding1.jpg" alt="Wedding" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="absolute bottom-6 left-6 text-white">
+            <h3 className="text-2xl font-bold mb-2">The Big Day 💍</h3>
+            <p className="text-sm">December 15, 2024</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Small Image 1 */}
+      <div className="relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/party1.jpg" alt="Party" className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <p className="text-white font-bold text-lg">Sangeet Night 🎵</p>
+        </div>
+      </div>
+
+      {/* Small Image 2 */}
+      <div className="relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/party2.jpg" alt="Party" className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <p className="text-white font-bold text-lg">Mehendi Ceremony 🌿</p>
+        </div>
+      </div>
+
+      {/* Small Image 3 */}
+      <div className="relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/party3.jpg" alt="Party" className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <p className="text-white font-bold text-lg">Haldi Fun 💛</p>
+        </div>
+      </div>
+
+      {/* Small Image 4 */}
+      <div className="relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/party4.jpg" alt="Party" className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <p className="text-white font-bold text-lg">Reception 🎉</p>
+        </div>
+      </div>
+
+      {/* Large Image 2 */}
+      <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl shadow-xl">
+        <img src="/images/wedding2.jpg" alt="Wedding" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="absolute bottom-6 left-6 text-white">
+            <h3 className="text-2xl font-bold mb-2">Forever Together 💕</h3>
+            <p className="text-sm">Candid Moments</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    {/* View All Button */}
+    <div className="text-center mt-12">
+      <button className="bg-pink-600 hover:bg-pink-700 text-white font-bold px-12 py-4 rounded-full text-lg transition-all shadow-lg hover:shadow-pink-300 transform hover:scale-105">
+        View Full Gallery 📸
+      </button>
+    </div>
+  </div>
+</section>
         <section className="py-16 md:py-20 bg-pink-100">
           <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
             
