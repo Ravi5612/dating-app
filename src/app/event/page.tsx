@@ -582,7 +582,7 @@ const EventPage = () => {
 
     {/* Attendees Showcase */}
     <div className="bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl p-12 shadow-2xl text-center">
-      <h3 className="text-4xl font-bold text-white mb-6">Who's Coming?</h3>
+      <h3 className="text-4xl font-bold text-white mb-6">Who is Coming?</h3>
       
       {/* Avatar Stack */}
       <div className="flex justify-center items-center mb-8">
